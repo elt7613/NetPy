@@ -1,0 +1,195 @@
+.section-1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background: #fff;
+    justify-content: center;
+    width: 100%;
+    max-width: 2000px;
+    min-height: 80vh;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Roboto",sans-serif;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.section-1 h1 {
+    font-size: 5em;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 0.5em;
+    font-family: "Roboto",sans-serif;
+    transition: all 0.5s ease;
+}
+
+.section-1 .highlight {
+    color: #0d47a1;
+    transition: all 0.5s ease;
+}
+
+.section-1 p {
+    font-size: 1.1em;
+    color: #0d47a1;
+    margin-bottom: 2.5em;
+    line-height: 1.4;
+    font-weight: 900;
+    font-family: "Montserrat",sans-serif;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.section-1 .contact-us-btn {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 230px;
+    padding: 15px;
+    display: inline-block;
+    background-color: #0D47A1;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3em;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.section-1 .contact-us-btn:hover {
+    background-color: #fff; /* Slightly darker blue on hover */
+}
+.section-1 .contact-us-btn .hover-content {
+    display: none;
+    transition: all 0.5s ease;
+}
+.section-1 .contact-us-btn .icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    vertical-align: middle;
+    transition: all 0.5s ease;
+}
+
+.section-1 .contact-us-btn:hover .default-text {
+    display: none;
+}
+
+.section-1 .contact-us-btn:hover .hover-content {
+    display: inline;
+}
+
+
+
+.section-1 .clients-section {
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    transition: all 0.5s ease;
+}
+
+.section-1 .clients-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #181818f1;
+    transition: all 0.5s ease;
+}
+
+.section-1 .clients-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 40px;
+    transition: all 0.5s ease;
+}
+
+.section-1 .clients-list li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #0d48a11f;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    transition: all 0.5s ease;
+}
+
+.section-1 .bullet {
+    font-size: 5em;
+    color: #0D47A1;
+    line-height: 0.5;
+    flex-shrink: 0;
+    margin-top: 5px;
+    transition: all 0.5s ease;
+}
+
+.section-1 .client-name {
+    font-size: 1.1rem;
+    color: #0D47A1;
+    text-align: left;
+    transition: all 0.5s ease;
+}
+
+.section-1 .client-name .highlight {
+    display: block;
+    font-size: 0.9em;
+    color: #0D47A1;
+    margin-top: 1px;
+    transition: all 0.5s ease;
+}
+
+/* 320px */
+@media screen and (min-width: 320px){
+    .section-1 h1 {
+        font-size: 3rem;
+    }
+
+    .section-1 .clients-list li {
+        padding: 5px 20px 5px 20px;
+        gap: 10px;
+    }
+}
+/* 375px */
+@media screen and (min-width: 375px){
+    .section-1 h1 {
+        font-size: 3.5rem;
+    }
+    
+}
+/* 425px */
+@media screen and (min-width: 425px){
+    .section-1 h1 {
+        font-size: 4rem;
+    }
+}
+/* 768px */
+@media screen and (min-width: 768px){
+    .section-1 h1 {
+        font-size: 4.5rem;
+    }
+
+    .section-1 .clients-list li {
+        padding: 10px 20px 10px 20px;
+    }
+}
+/* 1024px */
+@media screen and (min-width: 1024px){
+    .section-1 h1 {
+        font-size: 5rem;
+    }
+}
+/* 1440px */
+@media screen and (min-width: 1440px){
+    .section-1 h1 {
+        font-size: 6rem;
+    }
+}

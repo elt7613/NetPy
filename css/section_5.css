@@ -1,0 +1,304 @@
+
+.section-5{
+    position: relative;
+    overflow: hidden;
+    margin-top: 150px;
+    transition: all 0.5s ease;
+}
+
+.section-5 .container {
+    max-width: 992px;
+    margin: 0 auto;
+    background: #E3F2FD;
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.5s ease;
+}
+
+.section-5 .section {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    transition: all 0.5s ease;
+}
+
+@media (min-width: 768px) {
+    .section-5 .section {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.section-5 .section-reverse {
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .section-5 .section-reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+.section-5 .content {
+    flex: 1;
+    padding: 20px;
+    transition: all 0.5s ease;
+}
+
+.section-5 .image-container {
+    flex: 1;
+    min-width: 280px;
+    transition: all 0.5s ease;
+}
+
+.section-5 .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.5s ease;
+}
+
+.section-5 h2 {
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.5s ease;
+}
+
+.section-5 .content-1 h2,
+.section-5 .content-3 h2{
+    position: relative;
+    font-weight: 1000;
+    line-height: 32px;
+    text-align: right;
+    color: #0D47A1;
+    font-size: 2rem;
+}
+
+.section-5 .content-2 h2,
+.section-5 .content-4 h2{
+    position: relative;
+    width: 526px;
+    font-size: 4rem;
+}
+.section-5 .content-2 h2 span,
+.section-5 .content-4 h2 span{
+    color: #0D47A1;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.5s ease;
+}
+
+.section-5 p {
+    color: #181818;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.5s ease;
+}
+
+.section-5 .features-list {
+    position: relative;
+    margin-top: 30px;
+    list-style: none;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #181818;
+    line-height: 2.7rem;
+    transition: all 0.5s ease;
+}
+
+.section-5 .learn-more {
+    position: relative;
+    font-weight: 900;
+    width: 180px;
+    height: 40px;
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0052cc;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s;
+    transition: all 0.5s ease;
+}
+
+.section-5 .learn-more:hover {
+    background-color: #003d99;
+}
+
+.section-5 .content-1 .learn-more,
+.section-5 .content-3 .learn-more{
+    left: 60%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .section-5 h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-5 .content, .section-5 .image-container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-5 h2 {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+/* 320px */
+@media screen and (min-width: 320px) {
+    .section-5 .container{
+        padding: 10px;
+    }
+
+    .section-5 .content {
+        margin-top: -30px;
+    }
+
+    .section-5 .content-1 h2,
+    .section-5 .content-3 h2{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .section-5 .features-list {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 2.2rem;
+    }
+
+
+    .section-5 .content-1 .learn-more,
+    .section-5 .content-3 .learn-more{
+        position: relative;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        left: 0;
+    }
+
+    .section-5 .content-2 h2,
+    .section-5 .content-4 h2{
+        width: 275px;
+        font-size: 2rem;
+        text-align: left;
+    }
+}
+/* 425px */
+@media screen and (min-width: 425px) {
+    .section-5 .container{
+        padding: 12px;
+    }
+
+    .section-5 .content-1 h2,
+    .section-5 .content-3 h2{
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
+    .section-5 .features-list {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.2rem;
+    }
+
+
+    .section-5 .content-1 .learn-more,
+    .section-5 .content-3 .learn-more{
+        left: 0;
+    }
+
+    .section-5 .content-2 h2,
+    .section-5 .content-4 h2{
+        width: 390px;
+        font-size: 2.35rem;
+        text-align: left;
+    }
+}
+/* 768px */
+@media screen and (min-width: 768px) {
+    .section-5 .container{
+        padding: 20px;
+    }
+
+    .section-5 .content {
+        margin-top: 0px;
+    }
+
+    .section-5 .content-1 h2,
+    .section-5 .content-3 h2{
+        text-align: right;
+        font-size: 1.5rem;
+    }
+
+    .section-5 .features-list {
+        margin-top: 15px;
+        text-align: right;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.2rem;
+    }
+
+
+    .section-5 .content-1 .learn-more,
+    .section-5 .content-3 .learn-more{
+        left: 22%;
+    }
+
+    .section-5 .content-2 h2,
+    .section-5 .content-4 h2{
+        width: 360px;
+        font-size: 2.5rem;
+        text-align: none;
+    }
+}
+/* 1024px */
+@media screen and (min-width: 1024px) {
+    .section-5 .container{
+        padding: 22px;
+    }
+
+    .section-5 .content-1 h2,
+    .section-5 .content-3 h2{
+        text-align: right;
+        font-size: 2rem;
+    }
+
+    .section-5 .features-list {
+        margin-top: 15px;
+        text-align: right;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 2.5rem;
+    }
+
+    .section-5 .content-1 .learn-more,
+    .section-5 .content-3 .learn-more{
+        left: 30%;
+    }
+
+    .section-5 .content-2 h2,
+    .section-5 .content-4 h2{
+        width: 500px;
+        font-size: 3rem;
+        text-align: none;
+    }
+}

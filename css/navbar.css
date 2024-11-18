@@ -90,6 +90,115 @@
     fill: #0D47A1;
 }
 
+
+/* PopUp */
+.popup-trigger {
+    position: relative;
+    cursor: pointer;
+}
+
+.popup-content {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    margin-top: 1rem;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+/* Arrow styling */
+.popup-content::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.popup-trigger:hover .popup-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.popup-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.popup-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.popup-list-item {
+    display: flex;
+    align-items: start;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.popup-list-item::before {
+    content: '•';
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.popup-list-item:hover{
+    color: #2563eb;
+}
+
+/*  PopUp Responsive styles */
+@media (max-width: 768px) {
+    .popup-content {
+        width: 260px;
+        left: auto;
+        right: 0;
+        transform: translateX(0);
+    }
+
+    .popup-content::before {
+        left: 80%;
+    }
+
+    .popup-trigger:hover .popup-content {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .popup-content {
+        width: 220px;
+        right: -50px;
+    }
+}
+
+
 /* Mobile Menu Styles */
 @media (min-width: 969px) {
     .join-btn-small{

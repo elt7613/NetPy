@@ -1,20 +1,29 @@
 a{
     text-decoration: none;
 }
-
+.footer-container{
+    position: relative;
+    background-color: #F5F9FF;
+    max-width: 2000px;
+    margin: 0 auto;
+    width: 100%;
+    transition: all 0.5s ease;
+}
 .footer {
     position: relative;
     padding: 2rem;
-    background-color: #fff;
+    background-color: #F5F9FF;
     color: #333;
-    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
     font-family: 'Urbanist';
     transition: all 0.5s ease;
 }
 
+
 .footer-heading {
+    position: relative;
     font-size: 2.7rem;
     margin-bottom: 2rem;
     font-weight: 550;
@@ -22,6 +31,7 @@ a{
 }
 
 .footer-heading span{
+    position: relative;
     font-weight: 600;
     transition: all 0.5s ease;
 }
@@ -138,6 +148,7 @@ a{
     transition: all 0.5s ease;
 }
 .footer .office-location span{
+    text-align: center;
     color: #333232;
 }
 
@@ -172,9 +183,6 @@ a{
 
 /* 320px */
 @media screen and (min-width: 320px) {
-    .footer-heading {
-        text-align: center;
-    }
     .footer-content{
         text-align: center;
     }
@@ -186,6 +194,11 @@ a{
     }
 }
 /* 768px */
+@media screen and (max-width: 769px) {
+    .footer-heading {
+        text-align: center;
+    }
+}
 @media screen and (min-width: 769px) {
     .footer-content {
         gap: 20px;
@@ -193,9 +206,6 @@ a{
 }
 /* 854px */
 @media screen and (min-width: 854px) {
-    .footer-heading {
-        text-align: left;
-    }
     .footer-content{
         text-align: left;
     }

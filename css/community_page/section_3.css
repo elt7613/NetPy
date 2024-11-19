@@ -1,0 +1,241 @@
+.section-3{
+    position: relative;
+    background: #fff;
+    width: 100%;
+    max-width: 2000px;
+    margin: 0px auto;
+    font-family: "Roboto",sans-serif;
+    transition: all 0.5s ease;
+}
+
+.section-3 .container{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.section-3 .container h1{
+    position: relative;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #0D47A1;
+    transition: all 0.5s ease;
+}
+
+.section-3 .container p{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+    transition: all 0.5s ease;
+}
+
+.section-3 .buttons{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transition: all 0.5s ease;
+}
+.section-3 .buttons .learn-more-btn{
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 224px;
+    padding: 13px;
+    text-align: center;
+    border-radius: 12px;
+    color: #fff;
+    background: #0D47A1;
+    transition: all 0.5s ease;
+}
+.section-3 .buttons .learn-more-btn:hover{
+    background: transparent;
+    border: 1px solid #0D47A1;
+    color: #0D47A1;
+}
+.section-3 .buttons .join-community-btn{
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 224px;
+    padding: 13px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #0D47A1;
+    color: #0D47A1;
+    background: transparent;
+    transition: all 0.5s ease;
+}
+.section-3 .buttons .join-community-btn:hover{
+    background: #0D47A1;
+    border: none;
+    color: #fff;
+}
+
+/*320px */
+@media screen and (min-width: 320px){
+    .section-3{
+        margin-top: -120px;
+    }
+
+    .section-3 .container{
+        padding: 0;
+    }
+
+    .section-3 .container h1{
+        position: relative;
+        font-size: 2rem;
+        font-weight: 800;
+        color: #0D47A1;
+    }
+    .section-3 .container p{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 1rem;
+    }
+
+    .section-3 .buttons{
+        padding: 10px;
+        margin-bottom: 80px;
+    }
+    .section-3 .buttons .learn-more-btn{
+        width: 150px;
+        font-size: 1rem;
+    }
+    .section-3 .buttons .join-community-btn{
+        width: 180px;
+        font-size: 1rem;
+    }
+}
+/*375px */
+@media screen and (min-width: 375px){
+    .section-3{
+        margin-top: -180px;
+    }
+
+    .section-3 .container{
+        padding: 0;
+    }
+
+    .section-3 .container h1{
+        position: relative;
+        font-size: 2.3rem;
+        font-weight: 800;
+        color: #0D47A1;
+    }
+    .section-3 .container p{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 1.10rem;
+    }
+
+    .section-3 .buttons{
+        padding: 10px;
+        margin-bottom: 70px;
+    }
+    .section-3 .buttons .learn-more-btn{
+        width: 180px;
+        font-size: 1rem;
+    }
+    .section-3 .buttons .join-community-btn{
+        width: 200px;
+        font-size: 1rem;
+    }
+}
+/* 425px */
+@media screen and (min-width: 425px){
+    .section-3{
+        margin-top: -170px;
+    }
+
+    .section-3 .container{
+        padding: 0;
+    }
+
+    .section-3 .container h1{
+        font-size: 2.5rem;
+    }
+    .section-3 .container p{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 1.10rem;
+    }
+
+    .section-3 .buttons{
+        padding: 10px;
+        margin-bottom: 70px;
+    }
+    .section-3 .buttons .learn-more-btn{
+        width: 180px;
+        font-size: 1rem;
+    }
+    .section-3 .buttons .join-community-btn{
+        width: 200px;
+        font-size: 1rem;
+    }
+}
+/* 768px */
+@media screen and (min-width: 768px){
+    .section-3{
+        margin-top: -150px;
+    }
+
+    .section-3 .container{
+        padding: 0;
+    }
+
+    .section-3 .container h1{
+        font-size: 2.8rem;
+    }
+    .section-3 .container p{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 1.10rem;
+    }
+
+    .section-3 .buttons{
+        padding: 10px;
+        margin-bottom: 90px;
+    }
+    .section-3 .buttons .learn-more-btn{
+        width: 200px;
+        font-size: 1rem;
+    }
+    .section-3 .buttons .join-community-btn{
+        width: 220px;
+        font-size: 1rem;
+    }
+}
+/* 1024px */
+@media screen and (min-width: 1024px){
+    .section-3{
+        margin-top: -150px;
+    }
+
+    .section-3 .container h1{
+        font-size: 3.2rem;
+    }
+    .section-3 .container p{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 1.1rem;
+    }
+
+    .section-3 .buttons{
+        padding: 10px;
+        margin-bottom: 90px;
+    }
+    .section-3 .buttons .learn-more-btn{
+        width: 222px;
+        font-size: 1.1rem;
+    }
+    .section-3 .buttons .join-community-btn{
+        width: 222px;
+        font-size: 1.1rem;
+    }
+}

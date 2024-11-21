@@ -1,0 +1,412 @@
+.section-1{
+    position: relative;
+    background: #fff;
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    font-family: "Roboto",sans-serif;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.section-1 .container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 100px auto;
+    transition: all 0.5s ease;
+}
+
+.section-1 h1 {
+    color: #0D47A1;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.section-1 .hero-description {
+    color: #000;
+    font-size: 1.7rem;
+    margin: 30px auto 30px;
+    line-height: 1.7;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.section-1 .button-group {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 50px;
+    transition: all 0.5s ease;
+}
+
+.section-1 .btn {
+    display: inline-block;
+    width: 224px;
+    padding: 13px 40px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.section-1 .btn-primary {
+    background-color: #0D47A1;
+    color: white;
+    transition: all 0.5s ease;
+}
+.section-1 .btn-secondary {
+    background-color: white;
+    color: #0D47A1;
+    border: 1px solid #0D47A1;
+    transition: all 0.5s ease;
+}
+.section-1 .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.section-1 .hero-image {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+.section-1 .hero-image img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+
+.section-1 .service-intro {
+    position: relative;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0px;
+    transition: all 0.5s ease;
+}
+
+.section-1 .service-intro-title h2 {
+    width: 600px;
+    font-size: 3.5rem;
+    color: #0D47A1;
+    line-height: 1.1;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.section-1 .service-intro-content p {
+    font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.2;
+    color: #000;
+    transition: all 0.5s ease;
+}
+
+.section-1 .service-intro-content-wrapper .btn-container {
+    margin-top: 30px;
+    transition: all 0.5s ease;
+}
+
+.section-1 .service-intro-content-wrapper .btn {
+    width: 200px;
+    display: inline-block;
+    padding: 13px 30px;
+    background-color: #0D47A1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+.section-1 .service-intro-content-wrapper .btn:hover {
+    background-color: #0D47A1;
+}
+
+/* 320px */
+@media screen and (min-width: 320px){
+    .section-1 .container {
+        margin: 35px auto;
+        padding: 10px;
+    }
+
+    .section-1 h1 {
+        font-size: 2.9rem;
+        font-weight: 700;
+        margin-bottom: 0px;
+        line-height: 1.2;
+        text-align: left;
+    }
+
+    .section-1 .hero-description {
+        color: #000;
+        font-size: 1rem;
+        margin: 10px auto 20px;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+    .section-1 .button-group {
+        gap: 10px;
+    }
+    .section-1 .btn {
+        width: 222px;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+
+    .section-1 .service-intro {
+        margin-top: 30px;
+        display: grid;
+    }
+
+    .section-1 .service-intro-title h2 {
+        width: 300px;
+        font-size: 2.2rem;
+    }
+    .section-1 .service-intro-content p {
+        margin-top: 20px;
+        font-size: 1rem;
+        text-align: left;
+        line-height: 1.2;
+        color: #000;
+    }
+
+    .section-1 .service-intro-content-wrapper .btn-container {
+        margin-top: 17px;
+    }
+    .section-1 .service-intro-content-wrapper .btn {
+        width: 200px;
+        padding: 10px 20px;
+    }
+}
+/* 375px */
+@media screen and (min-width: 375px){
+    .section-1 .container {
+        margin: 40px auto;
+        padding: 10px;
+    }
+
+    .section-1 h1 {
+        font-size: 3.1rem;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .section-1 .hero-description {
+        font-size: 1rem;
+        margin: 10px auto 20px;
+        text-align: left;
+    }
+
+    .section-1 .button-group {
+        gap: 20px;
+    }
+    .section-1 .btn {
+        width: 222px;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+
+    .section-1 .service-intro {
+        margin-top: 30px;
+        display: grid;
+    }
+
+    .section-1 .service-intro-title h2 {
+        width: 350px;
+        font-size: 2.3rem;
+    }
+    .section-1 .service-intro-content p {
+        margin-top: 20px;
+        font-size: 1rem;
+        text-align: left;
+        line-height: 1.2;
+        color: #000;
+    }
+
+    .section-1 .service-intro-content-wrapper .btn-container {
+        margin-top: 20px;
+    }
+    .section-1 .service-intro-content-wrapper .btn {
+        width: 200px;
+        padding: 10px 20px;
+    }
+}
+/* 425px */
+@media screen and (min-width: 425px){
+    .section-1 .container {
+        margin: 40px auto;
+        padding: 10px;
+    }
+
+    .section-1 h1 {
+        font-size: 3.7rem;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    .section-1 .hero-description {
+        font-size: 1rem;
+        margin: 15px auto 25px;
+        text-align: left;
+    }
+
+    .section-1 .button-group {
+        gap: 20px;
+    }
+    .section-1 .btn {
+        width: 222px;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+
+    .section-1 .service-intro {
+        margin-top: 30px;
+        display: grid;
+    }
+
+    .section-1 .service-intro-title h2 {
+        width: 400px;
+        font-size: 2.7rem;
+    }
+    .section-1 .service-intro-content p {
+        margin-top: 20px;
+        font-size: 1rem;
+        text-align: left;
+        line-height: 1.2;
+        color: #000;
+    }
+
+    .section-1 .service-intro-content-wrapper .btn-container {
+        margin-top: 20px;
+    }
+    .section-1 .service-intro-content-wrapper .btn {
+        width: 200px;
+        padding: 10px 20px;
+    }
+}
+/* 768px */
+@media screen and (min-width: 768px){
+    .section-1 .container {
+        margin: 40px auto;
+        padding: 10px;
+    }
+
+    .section-1 h1 {
+        font-size: 3.7rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .section-1 .hero-description {
+        font-size: 1rem;
+        margin: 15px auto 30px;
+        text-align: center;
+    }
+
+    .section-1 .button-group {
+        gap: 20px;
+    }
+    .section-1 .btn {
+        width: 222px;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+
+    .section-1 .service-intro {
+        margin-top: 50px;
+        display: flex;
+    }
+
+    .section-1 .service-intro-title h2 {
+        width: 350px;
+        font-size: 2.4rem;
+    }
+    .section-1 .service-intro-content p {
+        margin-top: 0px;
+        font-size: 1rem;
+        text-align: c;
+        line-height: 1.2;
+        color: #000;
+    }
+
+    .section-1 .service-intro-content-wrapper .btn-container {
+        margin-top: 20px;
+    }
+    .section-1 .service-intro-content-wrapper .btn {
+        width: 200px;
+        padding: 10px 20px;
+    }
+}
+/* 1024px */
+@media screen and (min-width: 1024px){
+    .section-1 .container {
+        margin: 70px auto;
+        padding: 0px;
+    }
+
+    .section-1 h1 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .section-1 .hero-description {
+        font-size: 1.10rem;
+        margin: 15px auto 30px;
+        text-align: center;
+    }
+
+    .section-1 .button-group {
+        gap: 20px;
+    }
+    .section-1 .btn {
+        width: 222px;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+
+    .section-1 .service-intro {
+        margin-top: 60px;
+        display: flex;
+    }
+
+    .section-1 .service-intro-title h2 {
+        width: 600px;
+        font-size: 3rem;
+    }
+    .section-1 .service-intro-content p {
+        margin-top: 0px;
+        font-size: 1rem;
+        text-align: c;
+        line-height: 1.2;
+        color: #000;
+    }
+
+    .section-1 .service-intro-content-wrapper .btn-container {
+        margin-top: 20px;
+    }
+    .section-1 .service-intro-content-wrapper .btn {
+        width: 200px;
+        padding: 10px 20px;
+    }
+}

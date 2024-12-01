@@ -7,7 +7,7 @@
     justify-content: center;
     width: 100%;
     max-width: 2000px;
-    min-height: 80vh;
+    padding: 100px 20px;
     text-align: center;
     margin: 0 auto;
     font-family: "Roboto",sans-serif;
@@ -15,12 +15,18 @@
     overflow: hidden;
 }
 
+.section-1:hover .floating-animation{
+    display: block;
+    transition: all 0.5s ease;
+}
+
 .section-1 h1 {
     font-size: 5em;
     font-weight: 800;
     color: #000;
     margin-bottom: 0.5em;
-    font-family: "Roboto",sans-serif;
+    letter-spacing: 2px;
+    font-family: "Monserrat",sans-serif;
     transition: all 0.5s ease;
 }
 
@@ -34,7 +40,7 @@
     color: #0d47a1;
     margin-bottom: 2.5em;
     line-height: 1.4;
-    font-weight: 900;
+    font-weight: 400;
     font-family: "Montserrat",sans-serif;
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
@@ -47,46 +53,377 @@
     position: relative;
     margin-right: auto;
     margin-left: auto;
-    width: 230px;
-    padding: 15px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+  
+.section-1 .contact-us-btn span {
+    z-index: 1;
     display: inline-block;
-    background-color: #0D47A1;
+    background-color: #0d47a1;
+    height: 3em;
+    width: 14em;
+    text-align: center;
+    border-radius: 8px;
     color: #fff;
-    text-decoration: none;
-    font-size: 1.3em;
-    border-radius: 5px;
+    line-height: 55px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+}
+  
+.section-1 .contact-us-btn .container {
+    z-index: -1;
+    width: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-80px);
+    transition: all 0.4s;
+}
+  
+.section-1 .contact-us-btn .container svg {
+    padding: 0 10px;
+}
+  
+.section-1 .contact-us-btn:hover span {
+    width: 0;
+}
+  
+.section-1 .contact-us-btn:hover .container {
+    z-index: 2;
+    width: 100%;
+}
+
+/* Floating Animation */
+.section-1 .floating-animation {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
     overflow: hidden;
-    transition: background-color 0.3s ease;
+    pointer-events: none;
 }
 
-.section-1 .contact-us-btn:hover {
-    background-color: #fff; /* Slightly darker blue on hover */
+.section-1:hover .floating-animation {
+    opacity: 1;
 }
-.section-1 .contact-us-btn .hover-content {
-    display: none;
+
+.section-1 .floating-animation img {
+    position: relative;
+    width: 207px;
+    object-fit: cover;
+    opacity: 0;
+    transform: translateX(-100px);
     transition: all 0.5s ease;
 }
-.section-1 .contact-us-btn .icon {
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    vertical-align: middle;
+
+.section-1:hover .floating-animation img {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Add different delays for each image */
+.section-1:hover .floating-animation .uiux {
+    top: 20px;
+    left: 40px;
+    transition-delay: 0s;
+}
+
+.section-1:hover .floating-animation .app-dev {
+    top: 240px;
+    left: -50px;
+    transition-delay: 0.1s;
+}
+
+.section-1:hover .floating-animation .mentorship {
+    top: 400px;
+    left: -350px;
+    transition-delay: 0.2s;
+}
+
+.section-1:hover .floating-animation .software-dev {
+    top: 430px;
+    left: -130px;
+    transition-delay: 0.3s;
+}
+
+.section-1:hover .floating-animation .ai-robotics-iot {
+    top: 20px;
+    left: 200px;
+    transition-delay: 0.4s;
+}
+
+.section-1:hover .floating-animation .devops {
+    top: 250px;
+    left: 100px;
+    transition-delay: 0.5s;
+}
+
+.section-1:hover .floating-animation .cloud-solutions {
+    top: 400px;
+    left: -200px;
+    transition-delay: 0.6s;
+}
+
+/* Add exit animations */
+.section-1 .floating-animation .uiux,
+.section-1 .floating-animation .app-dev,
+.section-1 .floating-animation .mentorship,
+.section-1 .floating-animation .software-dev,
+.section-1 .floating-animation .ai-robotics-iot,
+.section-1 .floating-animation .devops,
+.section-1 .floating-animation .cloud-solutions {
+    transform: translateX(100px);
+    opacity: 0;
     transition: all 0.5s ease;
 }
 
-.section-1 .contact-us-btn:hover .default-text {
-    display: none;
+/* 320px */
+@media  screen and (min-width: 320px){
+    .section-1 .floating-animation img {
+        width: 150px;
+    }
+
+    .section-1:hover .floating-animation .uiux {
+        top: 10px;
+        left: 0px;
+    }
+    .section-1:hover .floating-animation .app-dev {
+        top: 50px;
+        left: 0px;
+    }
+    .section-1:hover .floating-animation .mentorship {
+        top: 150px;
+        left: 0px;
+    }
+    .section-1:hover .floating-animation .software-dev {
+        top: 280px;
+        left: 0px;
+    }
+    .section-1:hover .floating-animation .ai-robotics-iot {
+        top: 350px;
+        left: 0px;
+    }
+    .section-1:hover .floating-animation .devops {
+        top: 170px;
+        left: -140px;
+    }
+    
+    .section-1:hover .floating-animation .cloud-solutions {
+        top: 350px;
+        left: 80px;
+    }
+}
+/* 375px */
+@media  screen and (min-width: 375px){
+    .section-1 .floating-animation img {
+        width: 170px;
+    }
+
+    .section-1:hover .floating-animation .uiux {
+        top: 10px;
+        left: 0px;
+    }
+    .section-1:hover .floating-animation .app-dev {
+        top: 50px;
+        left: 0px;
+    }
+    .section-1:hover .floating-animation .mentorship {
+        top: 150px;
+        left: 0px;
+    }
+    .section-1:hover .floating-animation .software-dev {
+        top: 280px;
+        left: 0px;
+    }
+    .section-1:hover .floating-animation .ai-robotics-iot {
+        top: 350px;
+        left: 0px;
+    }
+    .section-1:hover .floating-animation .devops {
+        top: 170px;
+        left: -100px;
+    }
+    
+    .section-1:hover .floating-animation .cloud-solutions {
+        top: 350px;
+        left: 80px;
+    }
+}
+/* 425px */
+@media  screen and (min-width: 425px){
+    .section-1 .floating-animation img {
+        width: 170px;
+    }
+
+    .section-1:hover .floating-animation .uiux {
+        top: 10px;
+        left: -20px;
+    }
+    .section-1:hover .floating-animation .app-dev {
+        top: 50px;
+        left: 0px;
+    }
+    .section-1:hover .floating-animation .mentorship {
+        top: 180px;
+        left: -20px;
+    }
+    .section-1:hover .floating-animation .software-dev {
+        top: 320px;
+        left: -100px;
+    }
+    .section-1:hover .floating-animation .ai-robotics-iot {
+        top: 370px;
+        left: 0px;
+    }
+    .section-1:hover .floating-animation .devops {
+        top: 180px;
+        left: 0px;
+    }
+    
+    .section-1:hover .floating-animation .cloud-solutions {
+        top: 370px;
+        left: 100px;
+    }
+}
+/* 768px */
+@media  screen and (min-width: 768px){
+    .section-1 .floating-animation img {
+        width: 200px;
+    }
+
+    .section-1:hover .floating-animation .uiux {
+        top: 20px;
+        left: 40px;
+    }
+    
+    .section-1:hover .floating-animation .app-dev {
+        top: 240px;
+        left: -220px;
+        transition-delay: 0.1s;
+    }
+    
+    .section-1:hover .floating-animation .mentorship {
+        top: 450px;
+        left: -400px;
+        transition-delay: 0.2s;
+    }
+    
+    .section-1:hover .floating-animation .software-dev {
+        top: 400px;
+        left: 300px;
+        transition-delay: 0.3s;
+    }
+    
+    .section-1:hover .floating-animation .ai-robotics-iot {
+        top: -20px;
+        left: 200px;
+        transition-delay: 0.4s;
+    }
+    
+    .section-1:hover .floating-animation .devops {
+        top: 180px;
+        left: 50px;
+        transition-delay: 0.5s;
+    }
+    
+    .section-1:hover .floating-animation .cloud-solutions {
+        top: 250px;
+        left: 230px;
+        transition-delay: 0.6s;
+    }
+}
+/* 1024px */
+@media  screen and (min-width: 1024px){
+    .section-1:hover .floating-animation .uiux {
+        top: 20px;
+        left: 40px;
+    }
+
+    .section-1:hover .floating-animation .app-dev {
+        top: 240px;
+        left: -180px;
+    }
+
+    .section-1:hover .floating-animation .mentorship {
+        top: 400px;
+        left: -330px;
+    }
+
+    .section-1:hover .floating-animation .software-dev {
+        top: 390px;
+        left: 50px;
+    }
+
+    .section-1:hover .floating-animation .ai-robotics-iot {
+        top: 20px;
+        left: -50px;
+    }
+
+    .section-1:hover .floating-animation .devops {
+        top: 180px;
+        left: 450px;
+    }
+
+    .section-1:hover .floating-animation .cloud-solutions {
+        top: 340px;
+        left: -150px;
+    }
+}
+/* 1440px */
+@media  screen and (min-width: 1440px){
+    .section-1:hover .floating-animation .uiux {
+        top: 20px;
+        left: 40px;
+        transition-delay: 0s;
+    }
+    
+    .section-1:hover .floating-animation .app-dev {
+        top: 240px;
+        left: -50px;
+        transition-delay: 0.1s;
+    }
+    
+    .section-1:hover .floating-animation .mentorship {
+        top: 400px;
+        left: -350px;
+        transition-delay: 0.2s;
+    }
+    
+    .section-1:hover .floating-animation .software-dev {
+        top: 430px;
+        left: -130px;
+        transition-delay: 0.3s;
+    }
+    
+    .section-1:hover .floating-animation .ai-robotics-iot {
+        top: 20px;
+        left: 200px;
+        transition-delay: 0.4s;
+    }
+    
+    .section-1:hover .floating-animation .devops {
+        top: 250px;
+        left: 100px;
+        transition-delay: 0.5s;
+    }
+    
+    .section-1:hover .floating-animation .cloud-solutions {
+        top: 400px;
+        left: -200px;
+        transition-delay: 0.6s;
+    }
 }
 
-.section-1 .contact-us-btn:hover .hover-content {
-    display: inline;
-}
-
-
-
+/*== Client Section ===*/
 .section-1 .clients-section {
     position: relative;
-    margin-top: 30px;
+    margin-top: 100px;
     text-align: center;
     padding: 40px 20px;
     background-color: #fff;

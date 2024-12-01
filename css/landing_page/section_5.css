@@ -63,6 +63,7 @@
 
 .section-5 h2 {
     margin-bottom: 15px;
+    font-weight: 580;
     font-family: 'Montserrat', sans-serif;
     transition: all 0.5s ease;
 }
@@ -75,6 +76,9 @@
     text-align: right;
     color: #0D47A1;
     font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.5s ease;
 }
 
 .section-5 .content-2 h2,
@@ -86,6 +90,7 @@
 .section-5 .content-2 h2 span,
 .section-5 .content-4 h2 span{
     color: #0D47A1;
+    font-weight: 580;
     font-family: 'Montserrat', sans-serif;
     transition: all 0.5s ease;
 }

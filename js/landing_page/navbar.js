@@ -23,3 +23,20 @@ window.addEventListener('resize', function() {
         document.querySelector('.join-btn').classList.remove('active');
     }
 });
+
+
+
+
+// Services Toggling
+document.querySelectorAll('.dropdown-trigger').forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent default link behavior if any
+        const dropdown = trigger.closest('.dropdown');
+        dropdown.classList.toggle('active');
+
+        // Close other dropdowns if necessary
+        document.querySelectorAll('.dropdown').forEach(d => {
+            if (d !== dropdown) d.classList.remove('active');
+        });
+    });
+});

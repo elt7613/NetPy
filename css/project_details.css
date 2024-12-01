@@ -1,0 +1,247 @@
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto 30px;
+    padding: 20px;
+    font-family: "Roboto",sans-serif;
+}
+.hero {
+    color: white;
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    height: 30em;
+    background-image: url('../images/project_details_page/project1.png');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.logo-text {
+    font-size: 1.3em;
+    margin-bottom: 9em;
+    margin-top: 1.5em;
+    margin-left: 4em;
+    opacity: 0.9;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 1000;
+}
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.3em;
+   margin-left: 1.6em;
+    font-weight: 700;
+}
+.hero p {
+    font-size: 0.9em;
+    opacity: 0.9;
+    max-width: 600px;
+    line-height: 1.3;
+    margin-left: 5.5em;
+    font-weight: 100;
+}
+.hero-image {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+}
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8em;
+    background: #0D47A1;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+.info-item {
+    padding: 15px;
+    margin: 0 4em;
+}
+.info-item h3 {
+    font-size:1.3em;
+    margin-bottom: 8px;
+    opacity: 0.8;
+}
+.info-item p {
+    font-size: 1em;
+    font-weight: 500;
+}
+.project-details {
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.project-details h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #000;
+}
+.project-details p {
+    color: #181818;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.cta-button {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    background: #0D47A1;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+    background: #003380;
+}
+
+
+   /* Desktop and Larger Screens */
+@media (min-width: 1024px) {
+    .hero {
+        height: 30em;
+    }
+    .logo-text {
+        font-size: 1.3em;
+        margin: 1.5em 0 9em 4em;
+    }
+    .hero h1 {
+        font-size: 3em;
+        margin-left: 1.6em;
+    }
+    .hero p {
+        font-size: 0.9em;
+        margin-left: 5.5em;
+        max-width: 600px;
+    }
+    .info-grid {
+        gap: 8em;
+    }
+    .info-item {
+        margin: 0 4em;
+    }
+}
+
+    /* Tablet Screens */
+@media (max-width: 1023px) {
+    .hero {
+        height: 25em;
+    }
+    .logo-text {
+        font-size: 1.2em;
+        margin: 1.5em 0 6em 3em;
+    }
+    .hero h1 {
+        font-size: 2.5em;
+        margin-left: 1.4em;
+    }
+    .hero p {
+        margin-left: 4em;
+        max-width: 80%;
+    }
+    .info-grid {
+        gap: 4em;
+    }
+    .info-item {
+        margin: 0 2em;
+    }
+}
+/* Mobile Landscape */
+@media (max-width: 768px) {
+    .hero {
+        height: 22em;
+    }
+    .logo-text {
+        font-size: 1.1em;
+        margin: 1.5em 0 4em 2em;
+    }
+    .hero h1 {
+        font-size: 2em;
+        margin-left: 1.2em;
+        margin-right: 1.2em;
+    }
+    .hero p {
+        margin-left: 2.5em;
+        margin-right: 2.5em;
+        max-width: 90%;
+    }
+    .info-grid {
+        gap: 2em;
+    }
+    .info-item {
+        margin: 0 1em;
+    }
+    .project-details h2 {
+        font-size: 2.5em;
+    }
+}
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    .hero {
+        height: auto;
+        min-height: 20em;
+        padding: 15px;
+    }
+    .logo-text {
+        font-size: 1em;
+        margin: 1.5em 0 4em 1em;
+       
+    }
+    .hero h1 {
+        font-size: 1.8em;
+        margin-left: 0.8em;
+        margin-right: 0.8em;
+        
+        
+    }
+    .hero p {
+        font-size: 0.85em;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+       
+        max-width: 95%;
+    }
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+    .info-item {
+        margin: 0;
+        text-align: center;
+    }
+    .project-details h2 {
+        font-size: 2em;
+    }
+}
+/* Small Mobile Devices */
+@media (max-width: 320px) {
+    .hero {
+        min-height: 18em;
+    }
+    .logo-text {
+        margin: 1em 0 2em 1em;
+    }
+    .hero h1 {
+        font-size: 1.5em;
+    }
+    .hero p {
+        font-size: 0.8em;
+    }
+    .project-details h2 {
+        font-size: 1.8em;
+    }
+    .info-item h3 {
+        font-size: 1.1em;
+    }
+}

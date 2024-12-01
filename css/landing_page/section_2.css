@@ -52,6 +52,10 @@
     transition: all 0.5s ease;
 }
 
+.section-2 .service-card .arrow-white{
+    display: none;
+}
+
 .section-2 .service-card:hover {
     background-color: #0D47A1;
     color: #fff;
@@ -64,6 +68,14 @@
 }
 .section-2 .service-card:hover .service-description{
     color: #fff;
+}
+.section-2 .service-card:hover .arrow-black{
+    display: none;
+}
+.section-2 .service-card:hover .arrow-white{
+    display: block;
+    width: 40x;
+    height: 40px;
 }
 
 .section-2 .icon {

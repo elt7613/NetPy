@@ -43,6 +43,11 @@
     color: #000;
     text-decoration: none;
 }
+.navbar-brand img {
+    position: relative;
+    width: 130px;
+    object-fit: contain;
+}
 
 .navbar-menu {
     display: flex;

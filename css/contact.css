@@ -23,7 +23,7 @@
     transition: all 0.5s ease;
 }
 
-.contact-page .header h1 {
+/* .contact-page .header h1 {
     color: #0D47A1;
     font-size: 6rem;
     margin-bottom: 10px;
@@ -31,13 +31,14 @@
     font-weight: 550;
     letter-spacing: 2px;
     transition: all 0.5s ease;
-}
+} */
 
 .contact-page .header h2 {
     color: #0047AB;
     font-size: 7rem;
     font-weight: 700;
     margin-bottom: 30px;
+    font-size: "urbanist",sans-serif;
     letter-spacing: 2px;
     transition: all 0.5s ease;
 }

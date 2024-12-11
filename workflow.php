@@ -82,10 +82,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <a href="">
             <span>Cloud Solutions</span>
         </a>
-        <a href="">
+        <a href="https://robo.netpy.in/" target="_blank">
             <span>Robotics</span>
         </a>
-        <a href="">
+        <a href="https://robo.netpy.in/schools.php" target="_blank">
             <span>School <sub style="font-size: 1rem; color:#ff6f00;">New</sub></span>
         </a>
         <!-- <a href="IT-enterprise.php">

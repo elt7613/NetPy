@@ -32,51 +32,71 @@
     transition: all 0.5s ease;
 }
 
-.section-6 .contact-us-btn {
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
-    border: none;
-    background-color: #fff;
-    cursor: pointer;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.section-6 .contact-main_div {
+  position: relative;
+  margin: 0 auto;
+  height: 65px;
+  width: 250px;
+  background: #0d47a1;
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.1);
 }
-  
-.section-6 .contact-us-btn span {
-    z-index: 1;
-    display: inline-block;
-    background-color: #0d47a1;
-    height: 3em;
-    width: 14em;
-    text-align: center;
-    border-radius: 8px;
-    color: #fff;
-    line-height: 55px;
-    font-size: 18px;
-    letter-spacing: 1px;
-    transition: all 0.5s;
+
+.section-6 .contact-main_div::before {
+  content: "Contact Us";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  font-family: "Segoe UI", sans-serif;
+  color: #fff;
+  font-size: 27px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  transition: all 0.4s linear;
 }
-  
-.section-6 .contact-us-btn .container {
-    z-index: -1;
-    width: 0;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    transform: translateY(-110px);
-    transition: all 0.4s;
+
+.section-6 .contact-main_div:hover::before {
+  left: -250px;
 }
-  
-.section-6 .contact-us-btn .container svg {
-    padding: 0 10px;
+
+.section-6 .contact-main_div .social_media {
+  position: absolute;
+  top: 0;
+  right: -250px;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  transition: all 0.4s ease-in-out;
 }
-  
-.section-6 .contact-us-btn:hover span {
-    width: 0;
+
+.section-6 .contact-main_div:hover .social_media {
+  right: 0;
 }
-  
-.section-6 .contact-us-btn:hover .container {
-    z-index: 2;
-    width: 100%;
+
+.section-6 .social_media i {
+  font-size: 2rem;
+  color: #fff;
+  transition: all 0.3s linear;
+}
+
+.section-6 .social_media i:hover {
+  transform: scale(1.1);
 }
 
 .section-6 .icons {
@@ -130,18 +150,19 @@
 /* 320px */
 @media screen and (min-width: 320px) {
     .section-6 {
+        margin-top: 30px;
         margin-bottom: 30px;
     }
 
     .section-6 h1 {
         font-size: 1.7em;
     }
-    .section-6 .contact-us-btn {
-        margin-top: 170px;
+    .section-6 .contact-main_div {
+        margin-top: 100px;
     }
 
     .section-6 .icon-1{
-        margin-top: -350px;
+        margin-top: -220px;
         left: -40px;
         width: 130px;
         height: 130px;
@@ -153,19 +174,19 @@
         height: 100px;
     }
     .section-6 .icon-3{
-        margin-top: -100px;
+        margin-top: 30px;
         left: 20px;
         width: 70px;
         height: 70px;
     }
     .section-6 .icon-4{
-        margin-top: -420px;
+        margin-top: -320px;
         left: 110px;
         width: 110px;
         height: 110px;
     }
     .section-6 .icon-5{
-        margin-top: -200px;
+        margin-top: -280px;
         left: -100px;
         width: 70px;
         height: 70px;
@@ -192,30 +213,30 @@
     .section-6 h1 {
         font-size: 2em;
     }
-    .section-6 .contact-us-btn {
-        margin-top: 170px;
+    .section-6 .contact-main_div {
+        margin-top: 120px;
     }
 
     .section-6 .icon-1{
-        margin-top: -350px;
+        margin-top: -230px;
         left: -70px;
         width: 130px;
         height: 130px;
     }
     .section-6 .icon-2{
-        margin-top: -100px;
+        margin-top: -0px;
         left: -120px;
         width: 100px;
         height: 100px;
     }
     .section-6 .icon-3{
-        margin-top: -120px;
+        margin-top: -0px;
         left: 50px;
         width: 70px;
         height: 70px;
     }
     .section-6 .icon-4{
-        margin-top: -370px;
+        margin-top: -330px;
         left: 200px;
         width: 110px;
         height: 110px;
@@ -227,13 +248,13 @@
         height: 70px;
     }
     .section-6 .icon-6{
-        margin-top: -100px;
+        margin-top: -50px;
         left: -10px;
         width: 100px;
         height: 100px;
     }
     .section-6 .icon-7{
-        margin-top: -170px;
+        margin-top: -200px;
         left: 0px;
         width: 130px;
         height: 130px;
@@ -248,49 +269,49 @@
     .section-6 h1 {
         font-size: 2.3em;
     }
-    .section-6 .contact-us-btn {
+    .section-6 .contact-main_div {
         margin-top: 100px;
     }
 
     .section-6 .icon-1{
-        margin-top: -300px;
-        left: -30px;
+        margin-top: -210px;
+        left: 0px;
         width: 130px;
         height: 130px;
     }
     .section-6 .icon-2{
-        margin-top: -100px;
-        left: -50px;
+        margin-top: -0px;
+        left: -70px;
         width: 100px;
         height: 100px;
     }
     .section-6 .icon-3{
-        margin-top: -280px;
-        left: -30px;
+        margin-top: -50px;
+        left: 150px;
         width: 70px;
         height: 70px;
     }
     .section-6 .icon-4{
-        margin-top: -280px;
-        left: 0px;
+        margin-top: -330px;
+        left: 200px;
         width: 110px;
         height: 110px;
     }
     .section-6 .icon-5{
-        margin-top: -180px;
-        left: -30px;
+        margin-top: -300px;
+        left: 200px;
         width: 70px;
         height: 70px;
     }
     .section-6 .icon-6{
-        margin-top: -100px;
-        left: 50px;
-        width: 120px;
-        height: 120px;
+        margin-top: -50px;
+        left: -10px;
+        width: 100px;
+        height: 100px;
     }
     .section-6 .icon-7{
-        margin-top: -180px;
-        left: 38px;
+        margin-top: -100px;
+        left: 0px;
         width: 130px;
         height: 130px;
     }
@@ -304,7 +325,7 @@
     .section-6 h1 {
         font-size: 2.3em;
     }
-    .section-6 .contact-us-btn {
+    .section-6 .contact-main_div {
         margin-top: 100px;
     }
 
@@ -360,7 +381,7 @@
     .section-6 h1 {
         font-size: 3em;
     }
-    .section-6 .contact-us-btn {
+    .section-6 .contact-main_div {
         margin-top: 70px;
     }
     .section-6 .icon-1{
@@ -423,7 +444,7 @@
     .section-6 h1 {
         font-size: 4em;
     }
-    .section-6 .contact-us-btn {
+    .section-6 .contact-main_div{
         margin-top: 70px;
     }
     .section-6 .icon-1{

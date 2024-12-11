@@ -115,6 +115,7 @@
 
 
 .contact-page .social-icons {
+    position: relative;
     display: flex;
     gap: 30px;
     margin-top: 15px;

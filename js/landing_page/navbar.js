@@ -40,3 +40,48 @@ document.querySelectorAll('.dropdown-trigger').forEach(trigger => {
         });
     });
 });
+
+
+
+
+///=========== Drop Down ===============
+document.addEventListener('DOMContentLoaded', () => {
+    const topics = document.querySelectorAll('.topic');
+    const contents = document.querySelectorAll('.content');
+    
+    // Set first topic and content as active by default
+    if (topics.length > 0 && contents.length > 0) {
+        topics[0].classList.add('active');
+        contents[0].classList.add('active');
+    }
+
+    // Handle topic hover/click
+    topics.forEach((topic) => {
+        topic.addEventListener('mouseenter', () => {
+            // Remove active class from all topics
+            topics.forEach((t) => t.classList.remove('active'));
+            // Add active class to the current topic
+            topic.classList.add('active');
+
+            // Display the corresponding content
+            const targetContentId = topic.getAttribute('data-content');
+            contents.forEach((content) => {
+                content.classList.toggle('active', content.id === targetContentId);
+            });
+        });
+
+        // Optional: Handle click events for mobile
+        topic.addEventListener('click', (e) => {
+            const nestedContent = topic.querySelector('.nested-dropdown-content');
+            if (nestedContent) {
+                e.stopPropagation();
+                // Toggle nested dropdown visibility
+                const isVisible = nestedContent.style.display === 'block';
+                document.querySelectorAll('.nested-dropdown-content').forEach(content => {
+                    content.style.display = 'none';
+                });
+                nestedContent.style.display = isVisible ? 'none' : 'block';
+            }
+        });
+    });
+});

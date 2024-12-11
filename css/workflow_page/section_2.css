@@ -128,13 +128,15 @@
     justify-content: center;
     width: 51px;
     height: 51px;
+    padding: 10px;
     border-radius: 50px;
     background-color: #0D47A1;
     transition: all 0.5s ease;
   }
   .section-2 .stat .icon img{
     position: relative;
-    object-fit: contain;
+    width: 100%;
+    object-fit: cover;
     transition: all 0.5s ease;
   }
   

@@ -104,6 +104,11 @@
     transition: all 0.5s ease;
 }
 
+.section-5 .content-1 p,
+.section-5 .content-3 p{
+    text-align: right;
+}
+
 .section-5 .features-list {
     position: relative;
     margin-top: 30px;
@@ -122,7 +127,7 @@
     position: relative;
     font-weight: 900;
     width: 180px;
-    height: 40px;
+    height: 45px;
     display: inline-block;
     padding: 12px 24px;
     background-color: #0052cc;

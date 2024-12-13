@@ -77,6 +77,19 @@
     transition: all 0.5s ease;
 }
 
+.contact-page .contact-box .info-email{
+    position: relative;
+    font-size: 1.5rem;
+    color: #0D47A1;
+    margin-bottom: 20px;
+    font-family: 'Urbanist', sans-serif;
+    transition: all 0.5s ease;
+}
+.contact-page .contact-box .info-email svg{
+    position: relative;
+    top: 5px;
+}
+
 .contact-page .buttons {
     display: flex;
     gap: 10px;
@@ -93,6 +106,15 @@
     font-size: 0.9rem;
     font-family: 'Urbanist', sans-serif;
     transition: all 0.5s ease;
+}
+
+.contact-page .contact-box .address{
+    position: relative;
+    margin-top: 10px;
+    max-width: 230px;
+    margin-left: 10px;
+    color: #0D47A1;
+    font-family: 'Urbanist', sans-serif;
 }
 
 .contact-page .btn-primary,

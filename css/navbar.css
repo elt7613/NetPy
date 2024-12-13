@@ -1,7 +1,7 @@
 /* Info Bar Styles */
 .info-bar {
     position: relative;
-    height: 70px;
+    height: 60px;
     background-color: #0D47A1;
     color: #fff;
     padding: 0.5rem;
@@ -16,7 +16,7 @@
 
 .info-bar a {
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-decoration: none;
     transition: all 0.5s ease;
 }
@@ -25,9 +25,14 @@
     padding: 0.25rem 0;
     transition: all 0.5s ease;
 }
+
+.info-bar a .school{
+    position: relative;
+    top: -2px;
+}
 @media screen and (max-width: 401px){
     .info-bar {
-        height: 65px;
+        height: 70px;
     }
     .info-bar a {
         font-size: 0.9rem;
@@ -63,7 +68,7 @@
 }
 .navbar-brand img {
     position: relative;
-    width: 110px;
+    width: 115px;
     object-fit: contain;
     transition: all 0.5s ease;
 }
@@ -79,7 +84,7 @@
 .navbar-menu li a{
     color: #0D47A1;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -340,7 +345,7 @@
 .navbar .dropdown-conatiner{
     position: relative;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 25px;
     color: #0d47a1;
     font-family: "montserrat", sans-serif;
     transition: all 0.5s ease;
@@ -1130,4 +1135,142 @@
         font-size: 1.1rem;
     }
 }
+
+
+/*=============== Learn NetPy Popu =======================*/
+.learn-popup-trigger {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.learn-popup-trigger .popup-content {
+    position: absolute;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 5rem;
+    top: 100%;
+    left: 0%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%);
+    background: #F5F9FF;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 50px 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    z-index: 100;
+    margin-top: 1rem;
+}
+
+.learn-popup-trigger:hover .popup-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+    transition: all 0.5s ease;
+}
+
+.learn-popup-trigger .popup-content .list{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.learn-popup-trigger .popup-content .list{
+    position: relative;
+    color: #000;
+    font-family:  "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.learn-popup-trigger .popup-content .list a{
+    color: #181818;
+}
+.learn-popup-trigger .popup-content .list a:hover{
+    color: #0D47A1;
+    text-decoration: underline;
+}
+
+.learn-popup-trigger .popup-content .list a svg{
+    position: relative;
+    top: 5px;
+}
+.learn-popup-trigger .popup-content .list a span{
+    position: relative;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+    .learn-popup-trigger .popup-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        padding: 30px 30px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* 320px */
+@media screen and (min-width: 320px) {
+    .learn-popup-trigger .popup-content {
+        width: 300px;
+        gap: 1rem;
+        left: 50%;
+        padding: 30px 30px;
+        transform: translateX(-50%);
+    }
+
+    .learn-popup-trigger .popup-content .list a{
+        font-size: 1rem;
+        margin-left: 0px;
+        width: 250px;
+    }
+}
+/* 375px */
+@media screen and (min-width: 375px) {
+    .learn-popup-trigger .popup-content {
+        width: 350px;
+        gap: 2rem;
+    }
+
+    .learn-popup-trigger .popup-content .list a{
+        font-size: 1.1rem;
+        width: 300px;
+    }
+}
+/* 425px */
+@media screen and (min-width: 425px) {
+    .learn-popup-trigger .popup-content {
+        width: 380px;
+        gap: 3rem;
+    }
+
+    .learn-popup-trigger .popup-content .list a{
+        font-size: 1rem;
+    }
+}
+/* 768px */
+@media screen and (min-width: 768px) {
+    .learn-popup-trigger .popup-content {
+        width: 400px;
+        gap: 3rem;
+        left: 50px;
+    }
+
+    .learn-popup-trigger .popup-content .list a{
+        font-size: 1.1rem;
+        margin-left: 0px;
+        width: 400px;
+    }
+
+}
+
+
 

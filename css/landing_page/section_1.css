@@ -119,6 +119,7 @@
 /* Floating Animation */
 .section-1 .floating-animation {
   position: absolute;
+  display: none;
   opacity: 0;
   top: 0;
   left: 0%;
@@ -152,42 +153,49 @@
   top: 20px;
   left: 40px;
   transition-delay: 0s;
+  display: none;
 }
 
 .section-1:hover .floating-animation .app-dev {
   top: 240px;
   left: -50px;
   transition-delay: 0.1s;
+  display: none;
 }
 
 .section-1:hover .floating-animation .mentorship {
   top: 400px;
   left: -350px;
   transition-delay: 0.2s;
+  display: none;
 }
 
 .section-1:hover .floating-animation .software-dev {
   top: 430px;
   left: -130px;
   transition-delay: 0.3s;
+  display: none;
 }
 
 .section-1:hover .floating-animation .ai-robotics-iot {
   top: 20px;
   left: 200px;
   transition-delay: 0.4s;
+  display: none;
 }
 
 .section-1:hover .floating-animation .devops {
   top: 250px;
   left: 100px;
   transition-delay: 0.5s;
+  display: none;
 }
 
 .section-1:hover .floating-animation .cloud-solutions {
   top: 400px;
   left: -200px;
   transition-delay: 0.6s;
+  display: none;
 }
 
 /* Add exit animations */

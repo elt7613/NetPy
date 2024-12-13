@@ -372,8 +372,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <section class="contact-page">
         <div class="container">
             <div class="header">
-                <h2>Get in Touch - We're</h2>
-                <h2>Ready to Assist</h2>
+                <h2>how can we assist<br/> you !</h2>
             </div>
 
             <!-- Header fo Conatct Info -->
@@ -382,7 +381,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <h3>Chat <span>with us</span></h3>
                     <p class="info">Speak To our friendly team via live chat</p>
                     <div class="buttons">
-                        <a href="https://discord.gg/jZEQG4yv" target="_blank">
+                        <a href="https://wa.me/9036187196" target="_blank">
                             <button class="btn btn-primary">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
                                     <g fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -405,7 +404,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         </a>
 
                         <!-- Email -->
-                        <a href="mailto:info@netpy.com?subject=Inquiry%20for%20NetPy">
+                        <a href="mailto:info@netpy.in?subject=Inquiry%20for%20NetPy">
                             <button class="btn btn-secondary">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
                                     <path fill="white" fill-opacity="0" d="M12 13l-8 -5v10h16v-10l-8 5Z">
@@ -423,6 +422,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <span>Shoot Us An Email</span>
                             </button>
                         </a>
+
+                        <p class="address">
+                            #2, near Air Force Gate, Ganesha Layout, Vidyaranyapura, Bengaluru, Karnataka 560097
+                        </p>
                     </div>
                 </div>
 
@@ -453,14 +456,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <br /><br />
 
                     <!--==== Social Media ====-->
-                    <p class="info">Social Media</p>
+                    <!-- Email -->
+                    <a href="mailto:info@netpy.in?subject=Inquiry%20for%20NetPy">
+                        <p class="info-email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24">
+                            	<rect width="24" height="24" fill="none" />
+                            	<path fill="#0e47a1" d="m16.484 11.976l6.151-5.344v10.627zm-7.926.905l2.16 1.875c.339.288.781.462 1.264.462h.017h-.001h.014c.484 0 .926-.175 1.269-.465l-.003.002l2.16-1.875l6.566 5.639H1.995zM1.986 5.365h20.03l-9.621 8.356a.6.6 0 0 1-.38.132h-.014h.001h-.014a.6.6 0 0 1-.381-.133l.001.001zm-.621 1.266l6.15 5.344l-6.15 5.28zm21.6-2.441c-.24-.12-.522-.19-.821-.19H1.859a1.9 1.9 0 0 0-.835.197l.011-.005A1.86 1.86 0 0 0 0 5.855v12.172a1.86 1.86 0 0 0 1.858 1.858h20.283a1.86 1.86 0 0 0 1.858-1.858V5.855c0-.727-.419-1.357-1.029-1.66l-.011-.005z" />
+                            </svg>
+                            info@netpy.in
+                        </p>
+                    </a>
                     <div class="social-icons">
                         <!-- Whatsapp -->
-                        <a href="https://wa.me/9036187196" target="_blank">
+                        <a href="https://whatsapp.com/channel/0029VazDKGL6xCSNuKAtnp18" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24">
                                 <path fill="#0e47a1" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
                             </svg>
                         </a>
+
+                        
+
                         <!-- Youtube -->
                         <a href="https://www.youtube.com/@netpytech" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
@@ -613,7 +628,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             </svg>
                         </a>
                         <!-- Whatsapp -->
-                        <a href="https://wa.me/9036187196?text=Hi%20I'm%20interested%20in%20your%20services" target="_blank">
+                        <a href="https://whatsapp.com/channel/0029VazDKGL6xCSNuKAtnp18" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 24 24">
                                 <path fill="#0e47a1" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
                             </svg>
@@ -637,10 +652,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="footer-bottom">
                 <div class="container">
-                    <div class="copyright">© 2024 NetPy. All Rights Reserved</div>
-                    <div class="office-location"><span>Office Location:</span>
-                        <br /> #2, near Air Force Gate, Ganesha Layout, Vidyaranyapura, Bengaluru, Karnataka 560097
-                    </div>
+                    <div class="copyright">© 2024 NetPy Technologies. All Rights Reserved</div>
                 </div>
             </div>
         </footer>

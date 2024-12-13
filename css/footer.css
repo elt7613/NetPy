@@ -161,7 +161,7 @@ a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    text-align: left;
+    text-align: center;
     gap: 30rem;
     max-width: 1200px;
     margin: 30px auto;
@@ -170,26 +170,13 @@ a{
 .footer .copyright {
     position: relative;
     top: 30px;
-    left: -100px;
+    left: 0;
     color: #7C7C7C;
     font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
     transition: all 0.5s ease;
-}
-
-.footer .office-location {
-    position: relative;
-    left: 130px;
-    text-align: right; /* Changed to right alignment */
-    color: #7C7C7C;
-    font-size: 1.2rem;
-    transition: all 0.5s ease;
-    max-width: 400px; /* Added max-width for better control */
-}
-
-.footer .office-location span {
-    text-align: right; /* Changed to right alignment */
-    color: #181818;
-    display: block; /* Added to ensure span takes full width */
 }
 
 @media (max-width: 768px) {
@@ -368,13 +355,13 @@ a{
 @media screen and (min-width: 768px) {
     .footer-content {
         flex-direction: row;
-        text-align: left;
+        text-align: center;
         gap: 0rem;
     }
 
     .footer-content .footer-link-container{
         flex-direction: row;
-        text-align: left;
+        text-align: center;
         gap: 2rem;
     }
 
@@ -398,6 +385,7 @@ a{
     }
 
     .footer .footer-bottom  .container{
+        text-align: center;
         margin: 30px auto;
     }
     .footer .footer-bottom  .container{
@@ -405,20 +393,11 @@ a{
         gap: 5rem;
     }
     .footer .copyright {
-        top: 30px;
+        top: 20px;
         left: 0;
-        text-align: left;
+        text-align: center;
         margin-bottom: 30px;
         font-size: 1rem;
-    }
-    .footer .office-location {
-        left: 0px;
-        text-align: right;
-        font-size: 1.1rem;
-    }
-    .footer .office-location span {
-        text-align: right;
-        font-size: 1.1rem;
     }
 }
 /* 1024px */
@@ -458,19 +437,6 @@ a{
         flex-direction: row;
         gap: 22rem;
     }
-    .footer .copyright {
-        text-align: left;
-        margin-bottom: 30px;
-        font-size: 1rem;
-    }
-    .footer .office-location {
-        text-align: right;
-        font-size: 1.1rem;
-    }
-    .footer .office-location span {
-        text-align: right;
-        font-size: 1.1rem;
-    }
 }
 /* 1440px */
 @media screen and (min-width: 1440px) {
@@ -507,20 +473,5 @@ a{
     .footer .footer-bottom  .container{
         flex-direction: row;
         gap: 30rem;
-    }
-    .footer .copyright {
-        left: -70px;
-        text-align: left;
-        margin-bottom: 30px;
-        font-size: 1rem;
-    }
-    .footer .office-location {
-        left: 130px;
-        text-align: right;
-        font-size: 1.1rem;
-    }
-    .footer .office-location span {
-        text-align: right;
-        font-size: 1.1rem;
     }
 }

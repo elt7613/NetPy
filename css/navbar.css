@@ -39,8 +39,49 @@
     }
 }
 
+/*==== Top page scroller ====*/
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border: 2px solid #0d3d8a;
+    color: #0d3d8a;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    transition: opacity 0.3s, transform 0.3s;
+}
 
-/* Navbar styles */
+#scrollToTopBtn:hover {
+    background-color: #0d3d8a;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+#scrollToTopBtn svg {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 768px) {
+    #scrollToTopBtn{
+        right: 10px;
+    }
+}
+
+/*===== Navbar styles =====*/
 .navbar {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -1199,6 +1240,7 @@
 .learn-popup-trigger .popup-content .list a svg{
     position: relative;
     top: 5px;
+    margin-right: 5px;
 }
 .learn-popup-trigger .popup-content .list a span{
     position: relative;

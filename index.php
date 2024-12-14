@@ -76,6 +76,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <?php echo $message; ?>
         </div>
     <?php endif; ?>
+    
+    <!--===================== SCROLL TO TOP BUTTON ======================-->
+    <button id="scrollToTopBtn" aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor" d="m12 4l-8 8h16z"/>
+        </svg>
+    </button>
 
     <!--================ Top Info Bar ======================-->
     <div class="info-bar">
@@ -449,54 +456,47 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="services">
                 <div class="service-card">
-                    <a href="IT-enterprise.php">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 14 14">
-                            <g fill="none" stroke="#0e47a1" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M13 2H1a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h12a.5.5 0 0 0 .5-.5v-8A.5.5 0 0 0 13 2m-7 9l-1 2.5M8 11l1 2.5m-5 0h6" />
-                                <path d="m4.5 5.25l-1.75 1.5L4.25 8m5.5-2.5l1.5 1.25l-1.75 1.5m-3.25.5l1.5-4.5" />
-                            </g>
-                        </svg>
-                        <h2 class="service-title">IT Solutions & <br>Services</h2>
-                        <p class="service-description">We offer enterprise-level IT solutions and services,delivering high-quality technology solutions to meet the evolving needs of businesses across various industries.</p>
-                        <br/>
-                        <a class="service-link">
-                            <img src="images/landing_page/section-2/arrow-black.png" class="arrow-black" alt="Arrow">
-                            <img src="images/landing_page/section-2/arrow-white.png" class="arrow-white" alt="Arrow">
-                        </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 14 14">
+                        <g fill="none" stroke="#0e47a1" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M13 2H1a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h12a.5.5 0 0 0 .5-.5v-8A.5.5 0 0 0 13 2m-7 9l-1 2.5M8 11l1 2.5m-5 0h6" />
+                            <path d="m4.5 5.25l-1.75 1.5L4.25 8m5.5-2.5l1.5 1.25l-1.75 1.5m-3.25.5l1.5-4.5" />
+                        </g>
+                    </svg>
+                    <h2 class="service-title">IT Solutions & <br>Services</h2>
+                    <p class="service-description">From Custom Software Development, Cloud Solutions to Infrastructure Management, we help businesses optimize their technology and stay ahead in an ever-changing digital landscape.</p>
+                    <a class="service-link" href="IT-enterprise.php">
+                        <img src="images/landing_page/section-2/arrow-black.png" class="arrow-black" alt="Arrow">
+                        <img src="images/landing_page/section-2/arrow-white.png" class="arrow-white" alt="Arrow">
                     </a>
                 </div>
 
                 <div class="service-card">
-                    <a href="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
-                            <path fill="none" stroke="#0e47a1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.50" d="m12 22l-2-6H2l2 6zm0 0h4m-4-9v-.5c0-1.886 0-2.828-.586-3.414S9.886 8.5 8 8.5s-2.828 0-3.414.586S4 10.614 4 12.5v.5m15 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0m-9-9a2 2 0 1 1-4 0a2 2 0 0 1 4 0m4 13.5h6a2 2 0 0 1 2 2v.5a2 2 0 0 1-2 2h-1" color="#0e47a1" />
-                        </svg>
-                        <h2 class="service-title">Mentorship to Internship Program</h2>
-                        <p class="service-description">We offer IT-based internship that provide real-world experience, helping students and professionals develop practical skills and industry knowledge for their career growth.</p>
-                        <a href="#" class="service-link">
-                            <img src="images/landing_page/section-2/arrow-black.png" class="arrow-black" alt="Arrow">
-                            <img src="images/landing_page/section-2/arrow-white.png" class="arrow-white" alt="Arrow">
-                        </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                        <path fill="none" stroke="#0e47a1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.50" d="m12 22l-2-6H2l2 6zm0 0h4m-4-9v-.5c0-1.886 0-2.828-.586-3.414S9.886 8.5 8 8.5s-2.828 0-3.414.586S4 10.614 4 12.5v.5m15 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0m-9-9a2 2 0 1 1-4 0a2 2 0 0 1 4 0m4 13.5h6a2 2 0 0 1 2 2v.5a2 2 0 0 1-2 2h-1" color="#0e47a1" />
+                    </svg>
+                    <h2 class="service-title">Mentorship to Internship Program</h2>
+                    <p class="service-description">Guiding aspiring minds through tailored mentorship programs that bridge the gap between academics and industry, preparing them for successful careers.</p>
+                    <a href="#" class="service-link">
+                        <img src="images/landing_page/section-2/arrow-black.png" class="arrow-black" alt="Arrow">
+                        <img src="images/landing_page/section-2/arrow-white.png" class="arrow-white" alt="Arrow">
                     </a>
                 </div>
 
                 <div class="service-card">
-                    <a href="https://robo.netpy.in/" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
-                            <g fill="none" stroke="#0e47a1" stroke-width="1.50">
-                                <path d="M14.706 4.313H9.294a4.98 4.98 0 0 0-4.982 4.981v5.412a4.98 4.98 0 0 0 4.982 4.982h5.412a4.98 4.98 0 0 0 4.982-4.982V9.294a4.98 4.98 0 0 0-4.982-4.982Z" />
-                                <path d="M19.606 15.588h1.619a1.025 1.025 0 0 0 1.025-1.025V9.438a1.025 1.025 0 0 0-1.025-1.025h-1.62m-15.21 7.175h-1.62a1.025 1.025 0 0 1-1.025-1.025V9.438a1.025 1.025 0 0 1 1.025-1.025h1.62" />
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.765 8.413v-4.1m18.46 4.1l-.01-4.1M9.94 15.588h4.1m-6.16-4.613L8.903 9.95l1.025 1.025m4.102 0l1.025-1.025l1.024 1.025" />
-                            </g>
-                        </svg>
-                        <h2 class="service-title">AI | Robotics<br />Coding | IOT</h2>
-                        <p class="service-description">
-                            We provide comprehensive education in Robotics, AI, IOT and Automation, empowerig lerners with hands-on skills to excel in the rapidly growing fields of advanced technology.
-                        </p>
-                        <a href="#" class="service-link">
-                            <img src="images/landing_page/section-2/arrow-black.png" class="arrow-black" alt="Arrow">
-                            <img src="images/landing_page/section-2/arrow-white.png" class="arrow-white" alt="Arrow">
-                        </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                        <g fill="none" stroke="#0e47a1" stroke-width="1.50">
+                            <path d="M14.706 4.313H9.294a4.98 4.98 0 0 0-4.982 4.981v5.412a4.98 4.98 0 0 0 4.982 4.982h5.412a4.98 4.98 0 0 0 4.982-4.982V9.294a4.98 4.98 0 0 0-4.982-4.982Z" />
+                            <path d="M19.606 15.588h1.619a1.025 1.025 0 0 0 1.025-1.025V9.438a1.025 1.025 0 0 0-1.025-1.025h-1.62m-15.21 7.175h-1.62a1.025 1.025 0 0 1-1.025-1.025V9.438a1.025 1.025 0 0 1 1.025-1.025h1.62" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.765 8.413v-4.1m18.46 4.1l-.01-4.1M9.94 15.588h4.1m-6.16-4.613L8.903 9.95l1.025 1.025m4.102 0l1.025-1.025l1.024 1.025" />
+                        </g>
+                    </svg>
+                    <h2 class="service-title">Empowering Kids</h2>
+                    <p class="service-description">
+                    Introducing young learners to the exciting world of Robotics, IoT, and Artificial Intelligence in collaboration with Avishkar and STEM.org
+                    </p>
+                    <a href="https://robo.netpy.in/" target="_blank" class="service-link">
+                        <img src="images/landing_page/section-2/arrow-black.png" class="arrow-black" alt="Arrow">
+                        <img src="images/landing_page/section-2/arrow-white.png" class="arrow-white" alt="Arrow">
                     </a>
                 </div>
             </div>
@@ -522,33 +522,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="slider-container">
             <div class="slider">
                 <div class="slide">
-                    <img src="images/landing_page/section-3/section_2_slider_img1.png" alt="FinStack Logo" class="logo">
+                    <img src="images/landing_page/section-3/crafts_councile.png" alt="FinStack Logo" class="logo">
                     <div class="content">
-                        <h2>FinStack Brand Logo Design</h2>
-                        <p>This embodies financial innovation, blending modern elegance with sleek lines, symbolizing growth, stability, and digital transformation.</p>
-                        <a href="projects/project-1.php" class="know-more">
+                        <h2>Craft Council</h2>
+                        <p>The Crafts Council is a UK charity that promotes contemporary craft by supporting makers, enhancing public engagement, and providing resources like a National Register of Makers and business development advice.</p>
+                        <a href="https://www.craftscouncil.org.uk/topics/craft-innovation" target="_blank" class="know-more">
                             Know more
                             <img src="images/landing_page/section-3/arrow.png" />
                         </a>
                     </div>
                 </div>
                 <div class="slide">
-                    <img src="images/landing_page/section-3/section_2_slider_img2.png" alt="Hotel Forest Avenue" class="logo">
+                    <img src="images/landing_page/section-3/data_iku.png" alt="Hotel Forest Avenue" class="logo">
                     <div class="content">
-                        <h2>Hotel Forest Avenue</h2>
-                        <p>The primary goal of the project was to provide an online platform that captures the essence of Hotel Forest Avenue while facilitating a smooth booking process.</p>
-                        <a href="projects/project-2.php" class="know-more">
+                        <h2>Data IKU</h2>
+                        <p>Dataiku is a leading platform for data science and machine learning that enables organizations to build, deploy, and manage AI projects efficiently. It offers a comprehensive suite of tools for data preparation, machine learning, and AI governance, facilitating collaboration across teams and driving innovation in various industries.</p>
+                        <a href="https://www.dataiku.com/" target="_blank" class="know-more">
                             Know more
                             <img src="images/landing_page/section-3/arrow.png" />
                         </a>
                     </div>
                 </div>
                 <div class="slide">
-                    <img src="images/landing_page/section-3/section_2_slider_img3.png" alt="Mobile Application Case Study" class="logo">
+                    <img src="images/landing_page/section-3/teac_toast_co.png" alt="Mobile Application Case Study" class="logo">
                     <div class="content">
-                        <h2>Mobile Application Case Study</h2>
-                        <p>This is a UX Case study for a mobile application which deals with event booking and event hosting.</p>
-                        <a href="projects/project-3.php" class="know-more">
+                        <h2>Tea Toast Co.</h2>
+                        <p>The Tea Toast Co. is a vibrant tea café chain based in Belgaum, Karnataka, dedicated to connecting people with the diverse world of tea through a unique culinary experience. Founded by a group of enthusiastic individuals, the company aims to establish a nationwide presence while offering a welcoming atmosphere, quality food, and exceptional service.</p>
+                        <a href="https://theteatoastco.in/" target="_blank" class="know-more">
                             Know more
                             <img src="images/landing_page/section-3/arrow.png" />
                         </a>
@@ -673,7 +673,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <li>Flexibility</li>
                     </ul> -->
                     <p>We understand that every business is unique. Our solutions are customized to address your specific needs, ensuring that we provide maximum value.</p>
-                    <a href="workflow.php" class="learn-more">Learn more</a>
+                    <a href="IT-enterprise.php" class="learn-more">Learn more</a>
                 </div>
             </div>
 
@@ -685,7 +685,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="content content-2">
                     <h2>Customer-Centric Approach <span>With NetPy</span></h2>
                     <p>Our clients are at the heart of everything we do. We prioritize open communication, collaboration, and a deep understanding of your objectives to ensure your success.</p>
-                    <a href="workflow.php" class="learn-more">Learn more</a>
+                    <a href="contact.php" class="learn-more">Contact us</a>
                 </div>
             </div>
 
@@ -702,14 +702,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <li>Build the Trust</li>
                     </ul> -->
                     <p>With years of industry experience, we have the technical expertise and practical know-how to deliver results that matter.</p>
-                    <a href="workflow.php" class="learn-more">Learn more</a>
+                    <a href="contact.php" class="learn-more">Talk to Experts</a>
                 </div>
             </div>
 
             <!-- Innovation Section -->
             <div class="section section-reverse">
                 <div class="image-container">
-                    <img src="images/landing_page/section-5/section5_1_img.png" alt="Innovation Workshop">
+                    <img src="images/landing_page/section-5/section5_4_img.png" alt="Innovation Workshop">
                 </div>
                 <div class="content content-4">
                     <h2>Innovative Approach <span>With NetPy</span></h2>
@@ -765,8 +765,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <a href="#">About Us</a>
                         <a href="contact.php">Contact Us</a>
                         <a href="services.php">Services</a>
-                        <a href="#">Location</a>
-                        <a href="#">Sitemap</a>
+                        <a href="https://maps.app.goo.gl/mh4Ljehq9DZdy7wj9" target="_blank">Location</a>
                     </div>
 
                     <div class="footer-links">
@@ -834,6 +833,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <script src="js/navbar_dropdown.js"></script>
     <script src="js/landing_page/navbar.js"></script>
+    <script src="js/top-scroller.js"></script>
 
 
     <script src="js/landing_page/section_3.js"></script>

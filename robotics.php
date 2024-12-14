@@ -73,6 +73,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     <?php endif; ?>
 
+    <!--===================== SCROLL TO TOP BUTTON ======================-->
+    <button id="scrollToTopBtn" aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor" d="m12 4l-8 8h16z"/>
+        </svg>
+    </button>
+
     <!--================ Top Info Bar ======================-->
     <div class="info-bar">
         <a href="IT-enterprise.php">
@@ -738,6 +745,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <script src="js/navbar_dropdown.js"></script>
     <script src="js/landing_page/navbar.js"></script>
+    <script src="js/top-scroller.js"></script>
+    
     <script src="js/landing_page/section_3.js"></script>
 </body>
 

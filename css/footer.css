@@ -111,7 +111,7 @@ a{
     flex: 1;
     border: none;
     width: 479px;
-    height: 50px;
+    height: 40px;
     padding: 0.5rem;
     outline: none;
     font-size: 1rem;
@@ -121,7 +121,7 @@ a{
 
 .footer .submit-btn {
     position: relative;
-    top: 8px;
+    top: 2.5px;
     background-color: #0047AB;
     color: white;
     border: none;
@@ -381,7 +381,7 @@ a{
         flex: 1;
         border: none;
         width: 309px;
-        height: 50px;
+        height: 40px;
     }
 
     .footer .footer-bottom  .container{
@@ -430,7 +430,7 @@ a{
         flex: 1;
         border: none;
         width: 400px;
-        height: 50px;
+        height: 40px;
     }
 
     .footer .footer-bottom  .container{
@@ -464,7 +464,7 @@ a{
         flex: 1;
         border: none;
         width: 400px;
-        height: 50px;
+        height: 40px;
     }
 
     .footer .footer-bottom  .container{

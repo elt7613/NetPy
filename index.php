@@ -438,60 +438,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         </div>
-
-        <!-- <div class="services">
-        <div class="service-card">
-            <a href="IT-enterprise.php">
-            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 14 14">
-                <g fill="none" stroke="#0e47a1" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M13 2H1a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h12a.5.5 0 0 0 .5-.5v-8A.5.5 0 0 0 13 2m-7 9l-1 2.5M8 11l1 2.5m-5 0h6" />
-                    <path d="m4.5 5.25l-1.75 1.5L4.25 8m5.5-2.5l1.5 1.25l-1.75 1.5m-3.25.5l1.5-4.5" />
-                </g>
-            </svg>
-            <h2 class="service-title">IT Solutions & Services</h2>
-            <p class="service-description">We offer enterprise-level IT solutions and services, delivering high-quality technology solutions to meet the evolving needs of businesses across various industries.</p>
-            <a class="service-link">
-                <img src="images/landing_page/section-2/arrow-black.png" class="arrow-black" alt="Arrow">
-                <img src="images/landing_page/section-2/arrow-white.png" class="arrow-white" alt="Arrow">
-            </a>
-        </a>
-        </div>
-
-        <div class="service-card">
-            <a href="">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
-                <path fill="none" stroke="#0e47a1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.50" d="m12 22l-2-6H2l2 6zm0 0h4m-4-9v-.5c0-1.886 0-2.828-.586-3.414S9.886 8.5 8 8.5s-2.828 0-3.414.586S4 10.614 4 12.5v.5m15 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0m-9-9a2 2 0 1 1-4 0a2 2 0 0 1 4 0m4 13.5h6a2 2 0 0 1 2 2v.5a2 2 0 0 1-2 2h-1" color="#0e47a1" />
-            </svg>
-            <h2 class="service-title">Mentorship to Internship Program</h2>
-            <p class="service-description">We offer IT-based internships that provide real-world experience, helping students and professionals develop practical skills and industry knowledge for their career growth.</p>
-            <a href="#" class="service-link">
-                <img src="images/landing_page/section-2/arrow-black.png" class="arrow-black" alt="Arrow">
-                <img src="images/landing_page/section-2/arrow-white.png" class="arrow-white" alt="Arrow">
-            </a>
-        </a>
-        </div>
-
-        <div class="service-card">
-            <a href="https://robo.netpy.in/" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
-                <g fill="none" stroke="#0e47a1" stroke-width="1.50">
-                    <path d="M14.706 4.313H9.294a4.98 4.98 0 0 0-4.982 4.981v5.412a4.98 4.98 0 0 0 4.982 4.982h5.412a4.98 4.98 0 0 0 4.982-4.982V9.294a4.98 4.98 0 0 0-4.982-4.982Z" />
-                    <path d="M19.606 15.588h1.619a1.025 1.025 0 0 0 1.025-1.025V9.438a1.025 1.025 0 0 0-1.025-1.025h-1.62m-15.21 7.175h-1.62a1.025 1.025 0 0 1-1.025-1.025V9.438a1.025 1.025 0 0 1 1.025-1.025h1.62" />
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.765 8.413v-4.1m18.46 4.1l-.01-4.1M9.94 15.588h4.1m-6.16-4.613L8.903 9.95l1.025 1.025m4.102 0l1.025-1.025l1.024 1.025" />
-                </g>
-            </svg>
-            <h2 class="service-title">AI | Robotics<br/>Coding | IOT</h2>
-            <p class="service-description">We provide comprehensive education in robotics and automation, empowering learners with hands-on skills to excel in the rapidly growing fields of advanced technology.</p>
-            <a href="#" class="service-link">
-                <img src="images/landing_page/section-2/arrow-black.png" class="arrow-black" alt="Arrow">
-                <img src="images/landing_page/section-2/arrow-white.png" class="arrow-white" alt="Arrow">
-            </a>
-            </a>
-        </div>
-
-        
-    </div> -->
-
     </section>
 
     <!--================== SECTION 2 ==================-->
@@ -510,8 +456,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <path d="m4.5 5.25l-1.75 1.5L4.25 8m5.5-2.5l1.5 1.25l-1.75 1.5m-3.25.5l1.5-4.5" />
                             </g>
                         </svg>
-                        <h2 class="service-title">IT Solutions & Services</h2>
-                        <p class="service-description">We provide comprehensive, enterprise-level IT solutions designed to meet the evolving needs of businesses. From custom software development and cloud services to cybersecurity and infrastructure management, we help businesses optimize their technology and stay ahead in an ever-changing digital landscape.</p>
+                        <h2 class="service-title">IT Solutions & <br>Services</h2>
+                        <p class="service-description">We offer enterprise-level IT solutions and services,delivering high-quality technology solutions to meet the evolving needs of businesses across various industries.</p>
+                        <br/>
                         <a class="service-link">
                             <img src="images/landing_page/section-2/arrow-black.png" class="arrow-black" alt="Arrow">
                             <img src="images/landing_page/section-2/arrow-white.png" class="arrow-white" alt="Arrow">
@@ -525,7 +472,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <path fill="none" stroke="#0e47a1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.50" d="m12 22l-2-6H2l2 6zm0 0h4m-4-9v-.5c0-1.886 0-2.828-.586-3.414S9.886 8.5 8 8.5s-2.828 0-3.414.586S4 10.614 4 12.5v.5m15 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0m-9-9a2 2 0 1 1-4 0a2 2 0 0 1 4 0m4 13.5h6a2 2 0 0 1 2 2v.5a2 2 0 0 1-2 2h-1" color="#0e47a1" />
                         </svg>
                         <h2 class="service-title">Mentorship to Internship Program</h2>
-                        <p class="service-description">We offer IT-based internships that provide real-world experience, helping students and professionals develop practical skills and industry knowledge for their career growth.</p>
+                        <p class="service-description">We offer IT-based internship that provide real-world experience, helping students and professionals develop practical skills and industry knowledge for their career growth.</p>
                         <a href="#" class="service-link">
                             <img src="images/landing_page/section-2/arrow-black.png" class="arrow-black" alt="Arrow">
                             <img src="images/landing_page/section-2/arrow-white.png" class="arrow-white" alt="Arrow">
@@ -543,8 +490,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             </g>
                         </svg>
                         <h2 class="service-title">AI | Robotics<br />Coding | IOT</h2>
-                        <p class="service-description">Our hands-on robotics and automation training programs empower learners with the skills needed to excel in advanced technology fields. Through practical, real-world projects, we prepare students for careers in robotics, automation, and other emerging tech industries.
-                            Let me know if you'd like further customization or additional services to be described!</p>
+                        <p class="service-description">
+                            We provide comprehensive education in Robotics, AI, IOT and Automation, empowerig lerners with hands-on skills to excel in the rapidly growing fields of advanced technology.
+                        </p>
                         <a href="#" class="service-link">
                             <img src="images/landing_page/section-2/arrow-black.png" class="arrow-black" alt="Arrow">
                             <img src="images/landing_page/section-2/arrow-white.png" class="arrow-white" alt="Arrow">
@@ -796,11 +744,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="icons">
                 <img src="images/landing_page/section-6/figma.png" alt="Figma Icon" class="icon icon-1">
                 <img src="images/landing_page/section-6/selenium.png" alt="Selenium Icon" class="icon icon-2">
-                <img src="images/landing_page/section-6/vscode.png" alt="VS Code Icon" class="icon icon-3">
-                <img src="images/landing_page/section-6/notion.png" alt="Notion Icon" class="icon icon-4">
+                <img src="images/landing_page/section-6/react.png" alt="React Icon" class="icon icon-3">
+                <img src="images/landing_page/section-6/jenkins.png" alt="Jenkins Icon" class="icon icon-4">
                 <img src="images/landing_page/section-6/jira.png" alt="Jira Icon" class="icon icon-5">
-                <img src="images/landing_page/section-6/meet.png" alt="Meet Icon" class="icon icon-6">
-                <img src="images/landing_page/section-6/miro.png" alt="Miro Icon" class="icon icon-7">
+                <img src="images/landing_page/section-6/nginx.png" alt="Nginx Icon" class="icon icon-6">
+                <img src="images/landing_page/section-6/django.png" alt="Django Icon" class="icon icon-7" style="position: relative; width:100px; height:100px;">
             </div>
         </div>
     </section>

@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finstack Company</title>
+    <title>Netpy | Finstack Company</title>
     <link rel="stylesheet" href="css/project_details.css">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">

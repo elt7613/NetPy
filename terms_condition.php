@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NetPy - Terms and Conditions</title>
+    <title>NetPy | Terms and Conditions</title>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>

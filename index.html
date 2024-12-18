@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover Navbar with Content</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .hidden {
+        display: none;
+      }
+      .column {
+        float: left;
+        width: 33%;
+        padding: 10px;
+      }
+      .active {
+        font-weight: bold;
+        cursor: pointer;
+      }
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      li {
+        margin: 10px 0;
+        cursor: pointer;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 9px;
+      }
+      .hover-item {
+        transition: color 0.3s;
+      }
+      .hover-item.default-active {
+        color: blue;
+        font-weight: bold;
+      }
+      .subcategory-hover {
+        transition: color 0.3s;
+      }
+      .subcategory-hover.active {
+        color: blue;
+        font-weight: bold;
+      }
+
+      /* For small devices */
+      @media (max-width: 768px) {
+        .hover-item {
+          position: relative;
+        }
+
+        .hover-item::after {
+          content: "";
+          display: block;
+          height: 2px;
+          background-color: blue;
+          box-shadow: 0 0 10px blue;
+          margin-top: 10px;
+          width: 100%;
+        }
+        /* Hide netpy-subcontent by default */
+        .netpy-subcontent {
+          display: none;
+        }
+
+        /* Show netpy-subcontent when hovering over the item */
+        .hover-item:hover .netpy-subcontent {
+          display: block;
+        }
+
+        /* Adjust column layout for smaller devices */
+        .columns-container {
+          display: block;
+        }
+
+        .column {
+          width: 100%;
+        }
+
+        .netpy-subcontent .netpy-sub-subcontent {
+          display: none;
+        }
+
+        .netpy-subcontent li:hover .netpy-sub-subcontent {
+          display: block;
+          margin-top: 1rem;
+          margin-left: 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="navbar-brand">
+            <a href="index.php">
+              <!--NetPy Technologies-->
+              <img src="" />
+            </a>
+          </div>
+
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <svg viewBox="0 0 24 24">
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+            </svg>
+          </button>
+
+          <ul class="navbar-menu">
+
+            <li class="dropdown-conatiner">
+              <span
+                >What we do?
+
+                <!-- Columns Container -->
+                <div class="columns-container">
+                  <!-- First Column -->
+                  <div class="column" id="firstColumn">
+                    <ul>
+                      <li
+                        class="hover-item default-active"
+                        data-type="netpyTech"
+                      > 
+                        NetPy Tech
+                        <ul class="netpy-subcontent">
+                          <li>
+                            Software Development
+                            <!-- <ul class="netpy-sub-subcontent">
+                              <h4>Mobile App Development</h4>
+                              <p>Native IOS | Native Android | Hybrid</p>
+                            </ul> -->
+                          </li>
+                          <li>
+                            UI/UX Design
+                            <ul class="netpy-sub-subcontent">
+                              <h4>Mobile App Development</h4>
+                              <p>Native IOS | Native Android | Hybrid</p>
+                            </ul>
+                          </li>
+                          <li>
+                            Quality Analysis
+                            <ul class="netpy-sub-subcontent">
+                              <h4>Mobile App Development</h4>
+                              <p>Native IOS | Native Android | Hybrid</p>
+                            </ul>
+                          </li>
+                          <li>
+                            Cloud & Computing
+                            <ul class="netpy-sub-subcontent">
+                              <h4>Mobile App Development</h4>
+                              <p>Native IOS | Native Android | Hybrid</p>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="hover-item" data-type="netpyAcademy">
+                        NetPy Academy
+                        <ul class="netpy-subcontent">
+                          <li>
+                            Software Development Academy
+                            <ul class="netpy-sub-subcontent">
+                              <h4>Mobile App Development</h4>
+                              <p>Native IOS | Native Android | Hybrid</p>
+                            </ul>
+                          </li>
+                          <li>
+                            UI/UX Design Academy
+                            <ul class="netpy-sub-subcontent">
+                              <h4>Mobile App Development</h4>
+                              <p>Native IOS | Native Android | Hybrid</p>
+                            </ul>
+                          </li>
+                          <li>
+                            Quality Analysis Academy
+                            <ul class="netpy-sub-subcontent">
+                              <h4>Mobile App Development</h4>
+                              <p>Native IOS | Native Android | Hybrid</p>
+                            </ul>
+                          </li>
+                          <li>
+                            Cloud & Computing Academy
+                            <ul class="netpy-sub-subcontent">
+                              <h4>Mobile App Development</h4>
+                              <p>Native IOS | Native Android | Hybrid</p>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="hover-item" data-type="netpyKidz">
+                        NetPy Kidz
+                        <ul class="netpy-subcontent">
+                          <li>
+                            Software Development Kidz
+                            <ul class="netpy-sub-subcontent">
+                              <h4>Mobile App Development</h4>
+                              <p>Native IOS | Native Android | Hybrid</p>
+                            </ul>
+                          </li>
+                          <li>
+                            UI/UX Design Kidz
+                            <ul class="netpy-sub-subcontent">
+                              <h4>Mobile App Development</h4>
+                              <p>Native IOS | Native Android | Hybrid</p>
+                            </ul>
+                          </li>
+                          <li>
+                            Quality Analysis Kidz
+                            <ul class="netpy-sub-subcontent">
+                              <h4>Mobile App Development</h4>
+                              <p>Native IOS | Native Android | Hybrid</p>
+                            </ul>
+                          </li>
+                          <li>
+                            Cloud & Computing Kidz
+                            <ul class="netpy-sub-subcontent">
+                              <h4>Mobile App Development</h4>
+                              <p>Native IOS | Native Android | Hybrid</p>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Vertical Line Separator -->
+                  <div class="vertical-separator"></div>
+                  <!-- Second Column -->
+                  <div class="column" id="secondColumn">
+                    <p>Select a category to see details</p>
+                  </div>
+                  <!-- Vertical Line Separator -->
+                  <div class="vertical-separator"></div>
+                  <!-- Third Column -->
+                  <div class="column" id="thirdColumn">
+                    <p>
+                      Hover over a category in the second column for details
+                    </p>
+                  </div>
+                </div>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <script>
+      const secondColumnContent = {
+        netpyTech: [
+          "Software Development",
+          "UI/UX Design",
+          "Quality Analysis",
+          "Cloud & Computing",
+        ],
+        netpyAcademy: [
+          "Software Development Academy",
+          "UI/UX Design Academy",
+          "Quality Analysis Academy",
+          "Cloud & Computing Academy",
+        ],
+        netpyKidz: [
+          "Software Development Kidz",
+          "UI/UX Design Kidz",
+          "Quality Analysis Kidz",
+          "Cloud & Computing Kidz",
+        ],
+      };
+
+      const thirdColumnContent = {
+        "Software Development":
+          "<h3>Mobile App Development</h3><p>Native IOS | Native Android | Hybrid</p>",
+        "UI/UX Design":
+          "<h3>UI/UX Design</h3><p>Wireframing | Prototyping | Usability Testing</p>",
+        "Quality Analysis":
+          "<h3>Quality Analysis</h3><p>Manual Testing | Automation Testing | Performance Testing</p>",
+        "Cloud & Computing":
+          "<h3>Cloud Computing</h3><p>AWS | Azure | Google Cloud | DevOps</p>",
+        "Software Development Academy":
+          "<h3>Software Development Academy</h3><p>We teach software development concepts.</p>",
+        "UI/UX Design Academy":
+          "<h3>UI/UX Design Academy</h3><p>Learn UI/UX design principles here.</p>",
+        "Quality Analysis Academy":
+          "<h3>Quality Analysis Academy</h3><p>We specialize in software testing techniques.</p>",
+        "Cloud & Computing Academy":
+          "<h3>Cloud & Computing Academy</h3><p>Learn cloud infrastructure and computing skills.</p>",
+        "Software Development Kidz":
+          "<h3>Software Development Kidz</h3><p>Fun programming classes for kids!</p>",
+        "UI/UX Design Kidz":
+          "<h3>UI/UX Design Kidz</h3><p>Teach kids about design and creativity!</p>",
+        "Quality Analysis Kidz":
+          "<h3>Quality Analysis Kidz</h3><p>Kids learn software testing techniques!</p>",
+        "Cloud & Computing Kidz":
+          "<h3>Cloud & Computing Kidz</h3><p>Explore cloud technologies in a fun way!</p>",
+      };
+
+      function updateSecondColumn(type) {
+        const secondColumn = document.getElementById("secondColumn");
+        const subcategories = secondColumnContent[type];
+
+        // Clear second column
+        secondColumn.innerHTML = "";
+
+        // Add subcategories
+        subcategories.forEach((subcategory, index) => {
+          const subcategoryItem = document.createElement("h3");
+          subcategoryItem.textContent = subcategory;
+          subcategoryItem.classList.add("subcategory-hover");
+          if (index === 0) subcategoryItem.classList.add("active");
+
+          secondColumn.appendChild(subcategoryItem);
+
+          // Hover or click event for updating third column (based on device type)
+          subcategoryItem.addEventListener("mouseover", () => {
+            if (window.innerWidth > 768) {
+              // Desktop: Hover behavior
+              document
+                .querySelectorAll(".subcategory-hover")
+                .forEach((item) => item.classList.remove("active"));
+              subcategoryItem.classList.add("active");
+              updateThirdColumn(subcategory);
+            }
+          });
+
+          // Click behavior for small devices (as hover won't work well)
+          subcategoryItem.addEventListener("click", () => {
+            document
+              .querySelectorAll(".subcategory-hover")
+              .forEach((item) => item.classList.remove("active"));
+            subcategoryItem.classList.add("active");
+            updateThirdColumn(subcategory);
+          });
+        });
+
+        // Update third column with the first subcategory content
+        updateThirdColumn(subcategories[0]);
+      }
+
+      function updateThirdColumn(title) {
+        const thirdColumn = document.getElementById("thirdColumn");
+        thirdColumn.innerHTML =
+          thirdColumnContent[title] || "<p>No content available</p>";
+      }
+
+      document.querySelectorAll("#firstColumn .hover-item").forEach((item) => {
+        item.addEventListener("mouseover", () => {
+          document
+            .querySelectorAll("#firstColumn .hover-item")
+            .forEach((i) => i.classList.remove("default-active"));
+          item.classList.add("default-active");
+
+          const type = item.getAttribute("data-type");
+          updateSecondColumn(type);
+        });
+
+        // Click behavior for mobile or tablet devices
+        item.addEventListener("click", () => {
+          document
+            .querySelectorAll("#firstColumn .hover-item")
+            .forEach((i) => i.classList.remove("default-active"));
+          item.classList.add("default-active");
+
+          const type = item.getAttribute("data-type");
+          updateSecondColumn(type);
+        });
+      });
+
+      // Default load
+      document.addEventListener("DOMContentLoaded", () => {
+        updateSecondColumn("netpyTech");
+      });
+    </script>
+  </body>
+</html>

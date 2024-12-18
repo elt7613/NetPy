@@ -383,618 +383,177 @@
 
 
 /*=============================================== What we do? Dropwod =====================================*/
-.navbar .dropdown-conatiner{
-    position: relative;
-    text-align: center;
-    font-size: 25px;
-    color: #0d47a1;
-    font-family: "montserrat", sans-serif;
-    transition: all 0.5s ease;
-    z-index: 200;
-}
-
-.navbar .dropdown-conatiner .main-toggle-arrow {
-    position: relative;
-    width: 20px;
-    height: 20px;
-    transition: all 0.5s ease;
-}
-
-.navbar .dropdown-conatiner .dropdowns{
+.netpy-subcontent {
+    display: none;
+  }
+.navbar .columns-container {
     position: absolute;
-    display: flex;
-    width: 2000px;
-    padding: 0px 300px;
-    left: -800px;
-    justify-content: space-between;
+    display: none;
+    justify-content: center;
     align-items: center;
-    gap: 2rem;
-    border-radius: 18px;
-    background: #F5F9FF;
+    margin: 0px auto;
+    padding: 40px 0px;
+    background-color: #f0f8ff;
+    gap: 0px;
+    border-radius: 20px;
+    max-width: 2000px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+}
+
+.navbar .dropdown-conatiner:hover .columns-container{
+    display: flex;
     transition: all 0.5s ease;
 }
 
-.navbar .netpy-academy,
-.navbar .netpy-kidz{
+  /* Column Styles */
+  .column {
     position: relative;
-    margin-top: 0rem;
-    padding-top:1rem;
-    /*border-top: 1px solid #1F1F1F; */
-    transition: all 0.5s ease;
-}
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .column h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
 
-/*================== 1st dropdwon content ==============================*/
-.navbar .dropdown-conatiner:hover .first-dropdown-content{
+  /* Hover and Active Item Styles */
+  .hover-item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+  }
+  .hover-item:hover {
+    color: blue;
+  }
+  
+  .hover-item.active {
+    color: blue;
+  }
+  
+  .vertical-separator {
+    position: relative;
+    width: 200px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 5px;
+    z-index: 55;
+  }
+  
+  /* Increase width for small screens */
+  @media (max-width: 768px) {
+    .columns-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px; 
+      max-width: 100%; 
+      /* height: 100vh; */
+    }
+    .column li {
+      font-size: 1.2rem;
+    }
+    .netpy-subcontent {
+      display: block; 
+      padding-left: 20px; 
+    }
+    
+    .netpy-section h3 {
+      font-size: 1.2rem; 
+    }
+    
+    .netpy-main-list > li {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .netpy-subcontent li {
+      font-size: 1.2rem;
+          font-weight: normal;
+          color: #000;
+    }
+  
+    /* Hide second and third columns */
+    #secondColumn, #thirdColumn {
+      display: none;
+    }
+  
+   
+    #firstColumn {
+      display: block;
+      width: 100%; 
+    }
+  }
+  
+
+
+  .dropdown-conatiner .hidden { display: none; }
+  .dropdown-conatiner .column { float: left; width: 33%; padding: 10px; }
+  .dropdown-conatiner .active { font-weight: bold; cursor: pointer; }
+  .dropdown-conatiner ul { list-style-type: none; padding-left: 0; }
+   .dropdown-conatiner li { margin: 10px 0; cursor: pointer; font-size: 1.5rem; font-weight: bold; padding: 9px; }
+   .dropdown-conatiner .hover-item { transition: color 0.3s; }
+   .dropdown-conatiner .hover-item.default-active { color: blue; font-weight: bold; } 
+   .dropdown-conatiner .subcategory-hover { transition: color 0.3s; }
+   .dropdown-conatiner .subcategory-hover.active { color: blue; font-weight: bold; }
+    
+
+   /* For small devices */
+@media (max-width: 768px) {
+  .hover-item {
+    position: relative;
+  }
+
+  .hover-item::after {
+    content: '';
     display: block;
-    transition: all 0.5s ease;
-}
-.navbar .dropdown-container:hover .main-toggle-arrow {
-    transform: rotate(360deg);
-    transition: all 0.5s ease;
-}
-
-.navbar .first-dropdown-content{
-    position: relative;
-    max-width: 1200px;
+    height: 2px; 
+    background-color: blue; 
+    box-shadow: 0 0 10px blue; 
+    margin-top: 10px; 
+    width: 100%;
+  }
+  /* Hide netpy-subcontent by default */
+  .netpy-subcontent {
     display: none;
-    padding: 50px;
-    text-align: left;
-    font-size: 1.5rem;
-    font-weight: 560;
-    font-family: "montserrat", sans-serif;
-    transition: all 0.5s ease;
-}
-.navbar .first-dropdown-content .topic-arrow {
-    position: relative;
-    background: #0d47a1;
-    width: 20px;
-    height: 20px;
-    transition: all 0.5s ease;
-}
+  }
 
-/*----------- Netpy Tech dropdown -----------------*/
-.navbar .first-dropdown-content .netpy-tech{
-    position: relative;
-    font-size: 1.5rem;
-    color: #000;
-    cursor: pointer;
-    transition: all 0.5s ease;
-}
-.navbar .first-dropdown-content .netpy-tech span:hover {
-    color: #0d47a1;
-    padding: 10px;
-    border: 1px solid #000; 
-    border-radius: 12px;
-    transition: all 0.5s ease;
-}
-.navbar .first-dropdown-content .netpy-tech:hover .topic-arrow {
-    transform: rotate(90deg);
-    transition: all 0.5s ease;
-}
-
-/* 1st Dropdown */
-.navbar .first-dropdown-content .netpy-tech .netpy-tech-list{
-    position: relative;
-    margin-left: 25rem;
-    display: none;
-    transition: all 0.5s ease;
-}
-.navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list{
-    position: relative;
-    margin-top: 30px;
-    color: #000;
-    transition: all 0.5s ease;
-}
-.navbar .first-dropdown-content .netpy-tech:hover .netpy-tech-list{
+  /* Show netpy-subcontent when hovering over the item */
+  .hover-item:hover .netpy-subcontent {
     display: block;
-    transition: all 0.5s ease;
+  }
+
+  /* Adjust column layout for smaller devices */
+  .columns-container {
+    display: block;
+  }
+
+  
+  .column {
+    width: 100%; 
+  }
+
+ 
+  .netpy-subcontent .netpy-sub-subcontent {
+    display: none; 
+  }
+
+ 
+  .netpy-subcontent li:hover .netpy-sub-subcontent {
+    display: block;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+  }
 }
-
-/* 2nd Dropdown */
-.navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-1{
-    position: relative;
-    display: none;
-    width: 500px;
-    color: #181818;
-    margin-left: 100%;
-    border: 1px solid #0d47a1;
-    border-radius: 12px; 
-    transition: all 0.5s ease;
-}
-.navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-1 p{
-    position: relative;
-    margin-top: 10px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.5s ease;
-}
-
-.navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-1 h3{
-    font-size: 1.3rem;
-    transition: all 0.5s ease;
-}
-.navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list-1:hover .netpy-tech-list-content-1{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    transition: all 0.5s ease;
-}
-.navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list-1:hover,
-.navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list-2:hover{
-    color: #0d47a1;
-    transition: all 0.5s ease;
-}
-
-/* 3rd Dropdown */
-.navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-3{
-    position: relative;
-    display: none;
-    width: 500px;
-    color: #181818;
-    margin-left: 100%;
-    border: 1px solid #0d47a1;
-    border-radius: 12px;
-    transition: all 0.5s ease; 
-}
-.navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-3 p{
-    position: relative;
-    margin-top: 0px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.5s ease;
-}
-
-.navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list-3:hover .netpy-tech-list-content-3{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    transition: all 0.5s ease;
-}
-.navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list-3:hover{
-    color: #0d47a1;
-    transition: all 0.5s ease;
-}
-
-/* 4th Dropdown */
-.navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-4{
-    position: relative;
-    display: none;
-    width: 500px;
-    color: #181818;
-    margin-left: 100%;
-    border: 1px solid #0d47a1;
-    border-radius: 12px; 
-    transition: all 0.5s ease;
-}
-.navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-4 p{
-    position: relative;
-    margin-top: 10px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.5s ease;
-}
-
-.navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list-4:hover .netpy-tech-list-content-4{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    transition: all 0.5s ease;
-}
-.navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list-4:hover{
-    color: #0d47a1;
-    transition: all 0.5s ease;
-}
-
-
-
-/*----------------- NetPy Academy Dropdown ------------------*/
-.navbar .first-dropdown-content .netpy-academy{
-    position: relative;
-    margin-top: 30px;
-    font-size: 1.5rem;
-    color: #000;
-    cursor: pointer;
-    transition: all 0.5s ease;
-}
-.navbar .first-dropdown-content .netpy-academy span:hover {
-    color: #0d47a1;
-    padding: 10px;
-    border: 1px solid #000;
-    border-radius: 12px;
-    transition: all 0.5s ease;
-}
-.navbar .first-dropdown-content .netpy-academy span:hover .topic-arrow {
-    transform: rotate(90deg);
-    transition: all 0.5s ease;
-}
-
-/* 1st Dropdown */
-.navbar .first-dropdown-content .netpy-academy .netpy-academy-list{
-    position: relative;
-    left: 60%;
-    display: none;
-    margin-top: 30px;
-    color: #000;
-    border: 1px solid #0d47a1;
-    padding: 15px;
-    border-radius: 12px;
-    transition: all 0.5s ease;
-}
-.navbar .first-dropdown-content .netpy-academy:hover .netpy-academy-list{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    transition: all 0.5s ease;
-}
-
-.navbar .first-dropdown-content .netpy-academy .netpy-academy-list h3{
-    position: relative;
-    font-size: 1.3rem;
-    transition: all 0.5s ease;
-}
-
-.navbar .first-dropdown-content .netpy-academy .netpy-academy-list h3:hover{
-    color: #0d47a1;
-    transition: all 0.5s ease;
-}
-
-/*-------------- NetPy Kidz Dropdown ----------------------*/
-.navbar .first-dropdown-content .netpy-kidz{
-    position: relative;
-    margin-top: 30px;
-    font-size: 1.5rem;
-    color: #000;
-    cursor: pointer;
-    transition: all 0.5s ease;
-}
-.navbar .first-dropdown-content .netpy-kidz span:hover {
-    color: #0d47a1;
-    padding: 10px;
-    border: 1px solid #000;
-    border-radius: 12px;
-    transition: all 0.5s ease;
-}
-.navbar .first-dropdown-content .netpy-kidz span:hover .topic-arrow {
-    transform: rotate(90deg);
-    transition: all 0.5s ease;
-}
-
-/* 1st Dropdown */
-.navbar .first-dropdown-content .netpy-kidz .netpy-kidz-list{
-    position: relative;
-    margin-left: 25rem;
-    display: none;
-    transition: all 0.5s ease;
-}
-.navbar .first-dropdown-content .netpy-kidz .netpy-kidz-list{
-    position: relative;
-    left: 0%;
-    display: none;
-    margin-top: 30px;
-    color: #000;
-    border: 1px solid #0d47a1;
-    padding: 15px;
-    border-radius: 12px;
-    transition: all 0.5s ease;
-}
-.navbar .first-dropdown-content .netpy-kidz:hover .netpy-kidz-list{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    transition: all 0.5s ease;
-}
-
-.navbar .first-dropdown-content .netpy-kidz .netpy-kidz-list h3{
-    font-size: 1.3rem;
-    transition: all 0.5s ease;
-}
-.navbar .first-dropdown-content .netpy-kidz .netpy-kidz-list h3:hover{
-    color: #0d47a1;
-    transition: all 0.5s ease;
-}
-
-
-/* 320px */
-@media screen and (min-width: 320px){
-    .navbar .dropdown-conatiner .dropdowns{
-        position: absolute;
-        display: flex;
-        width: 300px;
-        padding: 0px 0px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .navbar .first-dropdown-content .topic-arrow {
-        width: 15px;
-        height: 15px;
-    }
-
-    .navbar .first-dropdown-content .netpy-tech span,
-    .navbar .first-dropdown-content .netpy-academy span,
-    .navbar .first-dropdown-content .netpy-kidz span{
-        position: relative;
-        font-size: 1.2rem;
-        font-weight: 900;
-    }
-
-    /* Netpy Tech*/
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list{
-        margin-left: 0rem;
-        font-size: 1.1rem;
-        font-weight: 700;
-    }
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-1 h3{
-        position: relative;
-        margin-top: 10px;
-        font-size: 1rem;
-    }
-
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-1,
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-3,
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-4{
-        margin-left: 0%;
-        padding: 15px;
-        width: 250px;
-        margin-top: 10px;
-    }
-
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-1 p,
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-3 p,
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-4 p{
-        font-size: 1rem;
-    }
-    
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-1 h3,
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-3 h3,
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-4 h3{
-        font-size: 1rem;
-    }
-
-    /* Netpy Academy */
-    .navbar .first-dropdown-content .netpy-academy .netpy-academy-list{
-        font-size: 1rem;
-        font-weight: 600;
-        left: 0;
-        margin-left: 0px;
-        padding: 15px;
-        width: 250px;
-        text-align: left;
-    } 
-    .navbar .first-dropdown-content .netpy-academy .netpy-academy-list h3{
-        font-size: 1rem;
-    }
-
-    /* Netpy Kidz */
-    .navbar .first-dropdown-content .netpy-kidz .netpy-kidz-list{
-        margin-left: 0px;
-        font-size: 1rem;
-        font-weight: 600;
-        padding: 15px;
-        width: 250px;
-        text-align: left;
-    }  
-    .navbar .first-dropdown-content .netpy-kidz .netpy-kidz-list h3{
-        font-size: 1rem;
-    } 
-}
-/* 375px */
-@media screen and (min-width: 320px){
-    .navbar .dropdown-conatiner .dropdowns{
-        width: 360px;
-    }   
-}
-/* 425px */
-@media screen and (min-width: 425px){
-    .navbar .dropdown-conatiner .dropdowns{
-        width: 400px;
-    } 
-    
-    /* Netpy Tech*/
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list{
-        margin-left: 50px;
-    }
-    
-    /* Netpy Academy */
-    .navbar .first-dropdown-content .netpy-academy .netpy-academy-list{
-        margin-left: 50px;
-    } 
-
-    /* Netpy Kidz */
-    .navbar .first-dropdown-content .netpy-kidz .netpy-kidz-list{
-        margin-left: 50px;
-    }
-}
-/* 768px */
-@media screen and (min-width: 768px){
-    .navbar .dropdown-conatiner .dropdowns{
-        width: 700px;
-    } 
-
-    .navbar .first-dropdown-content .topic-arrow {
-        width: 17.5px;
-        height: 17.5px;
-    }
-
-    .navbar .first-dropdown-content .netpy-tech span,
-    .navbar .first-dropdown-content .netpy-academy span,
-    .navbar .first-dropdown-content .netpy-kidz span{
-        position: relative;
-        font-size: 1.4rem;
-        font-weight: 900;
-    }
-
-    /* Netpy Tech*/
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list{
-       /* margin-left: 12rem; */
-        font-size: 1.2rem;
-        font-weight: 700;
-    }
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-1 h3{
-        position: relative;
-        margin-top: 10px;
-        font-size: 1.2rem;
-    }
-
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-1,
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-3,
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-4{
-     /*   margin-left: 30%; */
-        padding: 15px;
-        width: 300px;
-    }
-
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-1 p,
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-3 p
-   {
-        font-size: 1.1rem;
-        margin: 10px;
-    }
-    
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-1 h3,
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-3 h3,
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-4 h3{
-        font-size: 1rem;
-        margin-top: 16px;
-    }
-
-    /* Netpy Academy */
-    .navbar .first-dropdown-content .netpy-academy .netpy-academy-list{
-        font-size: 0.4rem;
-        font-weight: 600;
-        left: 0;
-       /* margin-left: 12rem; */
-        padding: 15px;
-        width: 300px;
-        text-align: left;
-    } 
-    .navbar .first-dropdown-content .netpy-academy .netpy-academy-list h3{
-        font-size: 1.2rem;
-    }
-
-    /* Netpy Kidz */
-    .navbar .first-dropdown-content .netpy-kidz .netpy-kidz-list{
-      /*  margin-left: 12rem; */
-        font-size: 1.1rem;
-        font-weight: 600;
-        padding: 15px;
-        width: 300px;
-        text-align: center;
-    }
-    .navbar .first-dropdown-content .netpy-kidz .netpy-kidz-list h3{
-        font-size: 1.2rem;
-    }
-}
-
-/* 1024px */
-@media screen and (min-width: 1024px){
-    .navbar .dropdown-conatiner .dropdowns{
-        position: absolute;
-        display: flex;
-        width: 100vw;
-        padding: 0px 40px;
-        transform: translateX(-50%);
-    }
-
-    /* Netpy Tech*/
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list{
-        margin-left: 15rem;
-        position: fixed;
-        margin-top: -4rem;
-       
-    }
-
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-1{
-        margin-left: 120%;
-        width: 400px;
-        position: absolute;
-        margin-top: -2rem;
-    }
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-3{
-        margin-left: 120%;
-        width: 400px;
-        position: absolute;
-        margin-top: -7rem;
-    }
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-4{
-        margin-left: 120%;
-        width: 400px;
-        position: absolute;
-        margin-top: -13rem;
-    }
-
-    /* Netpy Academy */
-    .navbar .first-dropdown-content .netpy-academy .netpy-academy-list{
-        margin-left: 20rem;
-        width: 400px;
-        position: fixed;
-        margin-top: -4rem;
-    } 
-    .navbar .first-dropdown-content .netpy-academy .netpy-academy-list h3{
-        margin-bottom: 10px;
-    }
-
-    /* Netpy Kidz */
-    .navbar .first-dropdown-content .netpy-kidz .netpy-kidz-list{
-        margin-left: 20rem;
-        margin-top: -7rem;
-        width: 400px;
-    }
-}
-/* 1440px */
-@media screen and (min-width: 1440px){
-    .navbar .dropdown-conatiner .dropdowns{
-        position: absolute;
-        display: flex;
-        width: 100vw;
-        padding: 0px 250px;
-        transform: translateX(-50%);
-    }
-
-    /* Netpy Tech*/
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list{
-        margin-left: 25rem;
-        position: fixed;
-        margin-top: -4rem;
-       
-    }
-
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-1{
-        margin-left: 140%;
-        width: 500px;
-        position: absolute;
-        margin-top: -2rem;
-    }
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-3{
-        margin-left: 140%;
-        width: 500px;
-        position: absolute;
-        margin-top: -7rem;
-    }
-    .navbar .first-dropdown-content .netpy-tech .netpy-tech-list .list .netpy-tech-list-content-4{
-        margin-left: 140%;
-        width: 500px;
-        position: absolute;
-        margin-top: -13rem;
-    }
-
-    /* Netpy Academy */
-    .navbar .first-dropdown-content .netpy-academy .netpy-academy-list{
-        margin-left: 38rem;
-        width: 500px;
-        position: fixed;
-        margin-top: -4rem;
-    } 
-
-    /* Netpy Kidz */
-    .navbar .first-dropdown-content .netpy-kidz .netpy-kidz-list{
-        margin-left: 24rem;
-        margin-top: -7rem;
-        width: 500px;
-    }
-}
-
-
 
 
 /*=============== Explore NetPy Popu =======================*/

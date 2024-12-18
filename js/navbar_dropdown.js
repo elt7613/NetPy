@@ -1,113 +1,101 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // State management
-    let activeMainDropdown = null;
-    let activeTechList = null;
-    let activeContent = null;
-
-    // Elements
-    const mainDropdown = document.querySelector('.first-dropdown-content');
-    const allTechSections = document.querySelectorAll('.netpy-tech, .netpy-academy, .netpy-kidz');
-    const allTechLists = document.querySelectorAll('.list-1, .list-3, .list-4');
-    const allContents = document.querySelectorAll('.netpy-tech-list-content-1, .netpy-tech-list-content-3, .netpy-tech-list-content-4');
-
-    // Helper functions
-    const closeAllSections = () => {
-        allTechSections.forEach(section => {
-            const list = section.querySelector('.netpy-tech-list, .netpy-academy-list, .netpy-kidz-list');
-            if (list) list.style.display = 'none';
-        });
-    };
-
-    const closeAllTechLists = () => {
-        allTechLists.forEach(list => {
-            list.classList.remove('active');
-        });
-        allContents.forEach(content => {
-            content.style.display = 'none';
-        });
-    };
-
-    // Main dropdown handler
-    document.querySelector('.dropdown-conatiner').addEventListener('click', (e) => {
-        e.stopPropagation();
-        mainDropdown.style.display = mainDropdown.style.display === 'block' ? 'none' : 'block';
-        if (mainDropdown.style.display === 'none') {
-            closeAllSections();
-            closeAllTechLists();
+const secondColumnContent = {
+    netpyTech: [
+      "Software Development",
+      "UI/UX Design",
+      "Quality Analysis",
+      "Cloud & Computing"
+    ],
+    netpyAcademy: [
+      "Software Development Academy",
+      "UI/UX Design Academy",
+      "Quality Analysis Academy",
+      "Cloud & Computing Academy"
+    ],
+    netpyKidz: [
+      "Software Development Kidz",
+      "UI/UX Design Kidz",
+      "Quality Analysis Kidz",
+      "Cloud & Computing Kidz"
+    ]
+  };
+  
+  const thirdColumnContent = {
+    "Software Development": "<h3>Mobile App Development</h3><p>Native IOS | Native Android | Hybrid</p>",
+    "UI/UX Design": "<h3>UI/UX Design</h3><p>Wireframing | Prototyping | Usability Testing</p>",
+    "Quality Analysis": "<h3>Quality Analysis</h3><p>Manual Testing | Automation Testing | Performance Testing</p>",
+    "Cloud & Computing": "<h3>Cloud Computing</h3><p>AWS | Azure | Google Cloud | DevOps</p>",
+    "Software Development Academy": "<h3>Software Development Academy</h3><p>We teach software development concepts.</p>",
+    "UI/UX Design Academy": "<h3>UI/UX Design Academy</h3><p>Learn UI/UX design principles here.</p>",
+    "Quality Analysis Academy": "<h3>Quality Analysis Academy</h3><p>We specialize in software testing techniques.</p>",
+    "Cloud & Computing Academy": "<h3>Cloud & Computing Academy</h3><p>Learn cloud infrastructure and computing skills.</p>",
+    "Software Development Kidz": "<h3>Software Development Kidz</h3><p>Fun programming classes for kids!</p>",
+    "UI/UX Design Kidz": "<h3>UI/UX Design Kidz</h3><p>Teach kids about design and creativity!</p>",
+    "Quality Analysis Kidz": "<h3>Quality Analysis Kidz</h3><p>Kids learn software testing techniques!</p>",
+    "Cloud & Computing Kidz": "<h3>Cloud & Computing Kidz</h3><p>Explore cloud technologies in a fun way!</p>"
+  };
+  
+  function updateSecondColumn(type) {
+    const secondColumn = document.getElementById("secondColumn");
+    const subcategories = secondColumnContent[type];
+  
+    // Clear second column
+    secondColumn.innerHTML = "";
+  
+    // Add subcategories
+    subcategories.forEach((subcategory, index) => {
+      const subcategoryItem = document.createElement("h3");
+      subcategoryItem.textContent = subcategory;
+      subcategoryItem.classList.add("subcategory-hover");
+      if (index === 0) subcategoryItem.classList.add("active"); 
+  
+      secondColumn.appendChild(subcategoryItem);
+  
+      // Hover or click event for updating third column (based on device type)
+      subcategoryItem.addEventListener("mouseover", () => {
+        if (window.innerWidth > 768) { // Desktop: Hover behavior
+          document.querySelectorAll(".subcategory-hover").forEach(item => item.classList.remove("active"));
+          subcategoryItem.classList.add("active");
+          updateThirdColumn(subcategory);
         }
+      });
+  
+      // Click behavior for small devices (as hover won't work well)
+      subcategoryItem.addEventListener("click", () => {
+        document.querySelectorAll(".subcategory-hover").forEach(item => item.classList.remove("active"));
+        subcategoryItem.classList.add("active");
+        updateThirdColumn(subcategory);
+      });
     });
-
-    // Tech sections handlers
-    allTechSections.forEach(section => {
-        section.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const list = section.querySelector('.netpy-tech-list, .netpy-academy-list, .netpy-kidz-list');
-            
-            if (activeMainDropdown === section) {
-                list.style.display = 'none';
-                activeMainDropdown = null;
-            } else {
-                closeAllSections();
-                closeAllTechLists();
-                list.style.display = 'block';
-                activeMainDropdown = section;
-            }
-        });
+  
+    // Update third column with the first subcategory content
+    updateThirdColumn(subcategories[0]);
+  }
+  
+  function updateThirdColumn(title) {
+    const thirdColumn = document.getElementById("thirdColumn");
+    thirdColumn.innerHTML = thirdColumnContent[title] || "<p>No content available</p>";
+  }
+  
+  document.querySelectorAll("#firstColumn .hover-item").forEach((item) => {
+    item.addEventListener("mouseover", () => {
+      document.querySelectorAll("#firstColumn .hover-item").forEach(i => i.classList.remove("default-active"));
+      item.classList.add("default-active");
+  
+      const type = item.getAttribute("data-type");
+      updateSecondColumn(type);
     });
-
-    // Tech lists handlers
-    allTechLists.forEach(list => {
-        list.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const content = list.querySelector('.netpy-tech-list-content-1, .netpy-tech-list-content-3, .netpy-tech-list-content-4');
-            
-            if (activeTechList === list) {
-                content.style.display = 'none';
-                list.classList.remove('active');
-                activeTechList = null;
-            } else {
-                closeAllTechLists();
-                list.classList.add('active');
-                content.style.display = 'block';
-                activeTechList = list;
-            }
-        });
+  
+    // Click behavior for mobile or tablet devices
+    item.addEventListener("click", () => {
+      document.querySelectorAll("#firstColumn .hover-item").forEach(i => i.classList.remove("default-active"));
+      item.classList.add("default-active");
+  
+      const type = item.getAttribute("data-type");
+      updateSecondColumn(type);
     });
-
-    // Close everything when clicking outside
-    document.addEventListener('click', () => {
-        mainDropdown.style.display = 'none';
-        closeAllSections();
-        closeAllTechLists();
-        activeMainDropdown = null;
-        activeTechList = null;
-    });
-
-    // Hover functionality
-    const handleHover = (element, content) => {
-        element.addEventListener('mouseenter', () => {
-            if (!activeMainDropdown && !activeTechList) {
-                content.style.display = 'block';
-            }
-        });
-
-        element.addEventListener('mouseleave', () => {
-            if (!activeMainDropdown && !activeTechList) {
-                setTimeout(() => {
-                    content.style.display = 'none';
-                }, 100);
-            }
-        });
-    };
-
-    // Apply hover handlers
-    allTechSections.forEach(section => {
-        const list = section.querySelector('.netpy-tech-list, .netpy-academy-list, .netpy-kidz-list');
-        if (list) handleHover(section, list);
-    });
-
-    allTechLists.forEach(list => {
-        const content = list.querySelector('.netpy-tech-list-content-1, .netpy-tech-list-content-3, .netpy-tech-list-content-4');
-        if (content) handleHover(list, content);
-    });
-});
+  });
+  
+  // Default load
+  document.addEventListener("DOMContentLoaded", () => {
+    updateSecondColumn("netpyTech");
+  });

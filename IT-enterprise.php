@@ -550,21 +550,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <h3>Email</h3>
                             <p>
                                 <span>Reach us anytime at:</span><br /><br />
-                                <span>info@yourcompany.com</span>
+                                <span>info@netpy.in</span>
                             </p>
                         </div>
                         <div class="contact-item">
                             <h3>Phone</h3>
                             <p>
                                 <span>Call us at:</span><br /><br />
-                                <span>+123 456 7890</span>
+                                <span>+91 9036187196</span>
                             </p>
                         </div>
                         <div class="contact-item">
                             <h3>Office</h3>
                             <p>
                                 <span>Visit us at:</span><br /><br />
-                                <span>123 Business St., City, Country</span>
+                                <span>#2, near Air Force Gate, <br> Ganesha Layout, Vidyaranyapura, <br> Bengaluru, Karnataka 560097</span>
                             </p>
                         </div>
                     </div>

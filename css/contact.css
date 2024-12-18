@@ -33,6 +33,7 @@
     transition: all 0.5s ease;
 } */
 
+
 .contact-page .header h2 {
     color: #0047AB;
     font-size: 7rem;
@@ -79,7 +80,7 @@
 
 .contact-page .contact-box .info-email{
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #0D47A1;
     margin-bottom: 20px;
     font-family: 'Urbanist', sans-serif;
@@ -146,68 +147,103 @@
 
 /* Conatct form */
 .contact-page .form-container {
-    margin-top: 100px;
-    transition: all 0.5s ease;
+    margin-top: 50px;
+    width: 100vw; 
+    max-width: none; 
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-sizing: border-box; 
 }
 
-.contact-page .form-container h3 {
-    color: #000;
+.contact-page h3 {
+    text-align: left;
+    font-size: 1.8rem;
     margin-bottom: 20px;
-    text-align: center;
-    font-family: "Montserrat",sans-serif;
-    font-size: 2rem;
-    letter-spacing: 2px;
-    font-weight: 700;
-    transition: all 0.5s ease;
 }
 
 .contact-page .form-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    transition: all 0.5s ease;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 20px 30px; 
+    align-items: start;
+    
 }
 
+/* Form Group Styling */
 .contact-page .form-group {
-    margin-bottom: 20px;
-    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    
 }
 
-.contact-page .form-group label{
-    font-size: 1rem;
-    font-family: 'Urbanist', sans-serif;
-    transition: all 0.5s ease;
+.contact-page .form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
 }
 
-.contact-page .form-group input, 
-.contact-page .form-group textarea {
-    margin-top: 10px;
-    width: 100%;
-    padding: 12px;
-    border: none;
+.contact-page .form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
-    background: #E3F2FD;
-    color: #181818;
-    transition: all 0.5s ease;
+    box-shadow: none;
+    outline: none;
+    width: 100%;
+    height: 40px; /* Same height for inputs */
 }
 
 .contact-page .form-group textarea {
-    height: 120px;
-    resize: vertical;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: none;
+    outline: none;
+    width: 100%;
+    height: 130px; /* Fixed height */
+    resize: none;
 }
 
+/* Position Email and Phone */
+.contact-page .email-group {
+    grid-column: 1; /* First column */
+    grid-row: 2; /* Start from row 2 */
+}
+
+.contact-page .phone-group {
+    grid-column: 1; /* First column */
+    grid-row: 3; /* Below Email */
+}
+
+/* Position the Message */
 .contact-page .message-group {
-    grid-column: 1 / -1;
-    transition: all 0.5s ease;
+    grid-column: 2 / span 1; /* Second column */
+    grid-row: 2 / span 2; /* Spans 2 rows */
 }
 
+/* Submit Button in Third Column */
 .contact-page .submit-btn {
-    grid-column: 2;
-    justify-self: end;
-    text-align: center;
-    width: 180px;
-    transition: all 0.5s ease;
+    grid-column: 3; /* Third column */
+    grid-row: 3; /* Place at the bottom */
+    align-self: end; /* Align vertically at the bottom */
+    justify-self: center; /* Center horizontally */
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    background-color: #0D47A1; /* Blue background */
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-right: 15em;
+  
+}
+
+.contact-page .submit-btn:hover {
+    background-color: #08367a; /* Darker blue on hover */
 }
 
 
@@ -239,6 +275,7 @@
 
     .contact-page .form-container {
         margin-top: 30px;
+        
     }
     .contact-page .form-container h3 {
         margin-bottom: 40px;
@@ -246,6 +283,18 @@
     }
     .contact-page .form-grid {
         display: block;
+        margin-right: 60px;
+       
+    }
+    .contact-page .form-group input{
+        margin-bottom: 20px;
+    }
+    .contact-page .form-group textarea{
+        margin-bottom: 20px;  
+    }
+    .contact-page .submit-btn{
+    padding: 10px 15px;
+   width: 100%;
     }
 }
 /* 375px */
@@ -279,14 +328,17 @@
     }
     .contact-page .form-container h3 {
         margin-bottom: 40px;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
+        margin-right: 60px;
     }
     .contact-page .form-grid {
         display: block;
+        margin-right: 60px;
     }
 }
 /* 425px */
 @media screen and (min-width: 425px){
+   
     .contact-page .header h1 {
         font-size: 4.2rem;
         font-weight: 700;
@@ -302,6 +354,7 @@
 
     .contact-page .contact-options {
         display: block;
+        margin-right:40px;
     }
     .contact-page .contact-box {
         margin-bottom: 30px;
@@ -319,6 +372,10 @@
     }
     .contact-page .form-grid {
         display: block;
+        margin-right: 80px;
+    }
+    .footer{
+        margin-right: 50px;   
     }
 }
 /* 768px */
@@ -334,11 +391,13 @@
         font-size: 3.5rem;
         margin-bottom: 30px;
         letter-spacing: 2px;
+       
     }
 
     .contact-page .contact-options {
         display: grid;
         gap: 10em;
+       
     }
     .contact-page .contact-box {
         margin-bottom: 30px;
@@ -348,14 +407,28 @@
     }
 
     .contact-page .form-container {
-        margin-top: 80px;
+        margin-top: 50px;
+      
     }
     .contact-page .form-container h3 {
         margin-bottom: 40px;
         font-size: 1.9rem;
     }
+    .contact-page .form-group input{
+        margin-bottom: 5px;
+    }
     .contact-page .form-grid {
         display: grid;
+        width: 100vb;
+    }
+
+    .contact-page .form-group textarea{
+    height: 130px;
+    }
+    .contact-page .submit-btn{
+        padding: 5px 15px;
+        width: 60%;
+        margin-right:100px; 
     }
 }
 /* 1024px */
@@ -386,12 +459,205 @@
 
     .contact-page .form-container {
         margin-top: 80px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 20px;
     }
+
     .contact-page .form-container h3 {
         margin-bottom: 40px;
         font-size: 2.2rem;
+        text-align: left;
+        color: #0D47A1;
+        font-weight: 600;
     }
+
     .contact-page .form-grid {
         display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        width: 100%;
+    }
+
+    .contact-page .form-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-page .form-group label {
+        margin-bottom: 10px;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #333;
+    }
+
+    .contact-page .form-group input,
+    .contact-page .form-group textarea {
+        padding: 15px;
+        font-size: 1.1rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        transition: border-color 0.3s ease;
+    }
+
+    .contact-page .form-group input:focus,
+    .contact-page .form-group textarea:focus {
+        outline: none;
+        border-color: #0D47A1;
+        box-shadow: 0 0 0 2px rgba(13, 71, 161, 0.2);
+    }
+
+    .contact-page .form-group textarea {
+        height: 140px;
+        resize: vertical;
+        line-height: 1.5;
+    }
+
+    .contact-page .submit-btn {
+        grid-column: span 3;
+        padding: 15px 15px;
+        width: 60%;
+        max-width: 350px;
+        font-size: 1.2rem;
+        margin-top: 20px;
+        background-color: #0D47A1;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        justify-self: center;
+    }
+
+    .contact-page .submit-btn:hover {
+        background-color: #08367a;
+        transform: translateY(-3px);
     }
 }
+/* Large Screens (1440px and above) Responsive Styles */
+@media screen and (min-width: 1440px) {
+    .contact-page .container {
+        max-width: 1600px;
+        margin: 40px auto;
+    }
+
+    .contact-page .form-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        max-width: 1600px;
+        margin: 0 ;
+    }
+
+    .contact-page .form-group {
+        width: 100%;
+    }
+
+    .contact-page .form-group input,
+    .contact-page .form-group textarea {
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+
+    .contact-page .form-group textarea {
+        height: 180px;
+        resize: vertical;
+    }
+
+    .contact-page .submit-btn {
+        padding: 15px 25px;
+        width: 60%;
+        max-width: 350px;
+        font-size: 1.2rem;
+        margin-top: 20px;
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+/* Ultra-Wide and 4K Screens (1920px and above) */
+@media screen and (min-width: 1920px) {
+    .contact-page .container {
+        max-width: 2000px;
+        padding: 50px;
+    }
+
+    .contact-page .header h2 {
+        font-size: 6rem;
+        margin-bottom: 50px;
+    }
+
+    .contact-page .contact-options {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+        padding: 50px;
+    }
+
+    .contact-page .form-grid {
+        max-width: 1800px;
+        gap: 50px;
+    }
+
+    .contact-page .form-group input,
+    .contact-page .form-group textarea {
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+
+    .contact-page .form-group textarea {
+        height: 250px;
+    }
+
+    .contact-page .submit-btn {
+        padding: 20px 30px;
+        width: 50%;
+        max-width: 400px;
+        font-size: 1.3rem;
+        margin-top: 30px;
+    }
+}
+
+/* 4K and Beyond (2560px and above) */
+@media screen and (min-width: 2560px) {
+    .contact-page .container {
+        max-width: 2800px;
+        padding: 70px;
+    }
+
+    .contact-page .header h2 {
+        font-size: 7rem;
+        margin-bottom: 60px;
+    }
+
+    .contact-page .contact-options {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 4rem;
+        padding: 70px;
+    }
+
+    .contact-page .form-grid {
+        max-width: 2400px;
+        gap: 60px;
+    }
+
+    .contact-page .form-group input,
+    .contact-page .form-group textarea {
+        padding: 25px;
+        font-size: 1.3rem;
+    }
+
+    .contact-page .form-group textarea {
+        height: 300px;
+    }
+
+    .contact-page .submit-btn {
+        padding: 25px 40px;
+        width: 40%;
+        max-width: 500px;
+        font-size: 1.4rem;
+        margin-top: 40px;
+    }
+}
+

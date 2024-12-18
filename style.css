@@ -1,0 +1,187 @@
+/* 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #003366;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+.netpy-subcontent {
+  display: none;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+} */
+
+/*===== Navbar styles =====*/
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+  font-family: "Roboto",sans-serif;
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.navbar-brand a {
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.navbar-brand img {
+  position: relative;
+  width: 115px;
+  object-fit: contain;
+  transition: all 0.5s ease;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.navbar-menu li a{
+  color: #0D47A1;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+
+.dropdown-conatiner{
+  position: relative;
+}
+
+.dropdown-conatiner:hover .columns-container{
+  display: flex;
+}
+
+
+
+/* Columns Container */
+.netpy-subcontent {
+  display: none;
+}
+.columns-container {
+  position: relative;
+  display: none;
+  justify-content: center;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #f0f8ff;
+  gap: 10px;
+  border-radius: 20px;
+  max-width: 1500px;
+}
+
+/* Column Styles */
+.column {
+  position: relative;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.column h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Hover and Active Item Styles */
+.hover-item:hover {
+  color: blue;
+}
+
+.hover-item.active {
+  color: blue;
+}
+
+.vertical-separator {
+  position: relative;
+  width: 2px;
+  background-color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 0 5px;
+}
+
+/* Increase width for small screens */
+@media (max-width: 768px) {
+  .columns-container {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; 
+    max-width: 100%; 
+    /* height: 100vh; */
+  }
+  .column li {
+    font-size: 1.2rem;
+  }
+  .netpy-subcontent {
+    display: block; 
+    padding-left: 20px; 
+  }
+  
+  .netpy-section h3 {
+    font-size: 1.2rem; 
+  }
+  
+  .netpy-main-list > li {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .netpy-subcontent li {
+    font-size: 1.2rem;
+        font-weight: normal;
+        color: #000;
+  }
+
+  /* Hide second and third columns */
+  #secondColumn, #thirdColumn {
+    display: none;
+  }
+
+ 
+  #firstColumn {
+    display: block;
+    width: 100%; 
+  }
+}

@@ -20,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
+
 // Contact Form
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $userData = [
@@ -516,7 +517,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <!-- Email -->
                     <a href="mailto:info@netpy.in?subject=Inquiry%20for%20NetPy">
                         <p class="info-email">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24">
                             	<rect width="24" height="24" fill="none" />
                             	<path fill="#0e47a1" d="m16.484 11.976l6.151-5.344v10.627zm-7.926.905l2.16 1.875c.339.288.781.462 1.264.462h.017h-.001h.014c.484 0 .926-.175 1.269-.465l-.003.002l2.16-1.875l6.566 5.639H1.995zM1.986 5.365h20.03l-9.621 8.356a.6.6 0 0 1-.38.132h-.014h.001h-.014a.6.6 0 0 1-.381-.133l.001.001zm-.621 1.266l6.15 5.344l-6.15 5.28zm21.6-2.441c-.24-.12-.522-.19-.821-.19H1.859a1.9 1.9 0 0 0-.835.197l.011-.005A1.86 1.86 0 0 0 0 5.855v12.172a1.86 1.86 0 0 0 1.858 1.858h20.283a1.86 1.86 0 0 0 1.858-1.858V5.855c0-.727-.419-1.357-1.029-1.66l-.011-.005z" />
                             </svg>
@@ -606,33 +607,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
             </div>
 
-            <!--==== Contact Form =====-->
-            <div class="form-container">
-                <h3>Tell Us More About Yourself And How We Can Help</h3>
-                <form class="form-grid" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-                    <div class="form-group">
-                        <label>First Name</label>
-                        <input type="text" name="firstName" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Last Name</label>
-                        <input type="text" name="lastName" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Email Id</label>
-                        <input type="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Phone Number</label>
-                        <input type="tel" name="phone" required>
-                    </div>
-                    <div class="form-group message-group">
-                        <label>Message</label>
-                        <textarea name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
-                </form>
+                    <!--==== Contact Form =====-->
+                    <div class="form-container">
+        <h3>Tell Us How We Can Help You</h3>
+        <form class="form-grid" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+        <div class="form-group">
+                <label>First Name</label>
+                <input type="text" name="firstName" required>
             </div>
+            <!-- Last Name -->
+            <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" name="lastName" required>
+            </div>
+            <!-- Email ID -->
+            <div class="form-group email-group">
+                <label>Email Id</label>
+                <input type="email" name="email" required>
+            </div>
+            <!-- Message -->
+            <div class="form-group message-group">
+                <label>Message</label>
+                <textarea name="message" required></textarea>
+            </div>
+            <!-- Phone Number -->
+            <div class="form-group phone-group">
+                <label>Phone Number</label>
+                <input type="tel" name="phone" required>
+            </div>
+            
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Send Message</button> </form>
+    </div>
         </div>
     </section>
 

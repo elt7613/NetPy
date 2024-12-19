@@ -400,7 +400,6 @@
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
-    transform-origin: top;
     z-index: 50;
 }
 
@@ -428,12 +427,21 @@
     align-items: center;
     justify-content: center;
   }
+  #thirdColumn{
+    align-items: flex-start;
+    margin-top: -8rem;
+    margin-left: 0.5rem;
+  }
+  #thirdColumn h3{
+    align-items: flex-start;
+     padding: 5px;
+  }
   
   .column h3 {
     cursor: pointer; 
     font-size: 1.3rem; 
     font-weight: bold; 
-    padding: 12px; ;
+    padding: 12px; 
    
    
   }
@@ -493,6 +501,9 @@
           font-weight: normal;
           color: #000;
     }
+    .netpy-subcontent li:hover{
+        color: blue;
+    }
     .navbar .dropdown-conatiner .vertical-separator {
         display: none; 
     }
@@ -512,7 +523,7 @@
 
 
   .dropdown-conatiner .hidden { display: none; }
-  .dropdown-conatiner .column { float: left; width: 33%; padding: 10px; }
+  .dropdown-conatiner .column { float: left; width: 35%; }
   .dropdown-conatiner .active { font-weight: bold; cursor: pointer; }
   .dropdown-conatiner ul { list-style-type: none; padding-left: 0; }
    .dropdown-conatiner li { margin: 10px 0; cursor: pointer; font-size: 1.3rem; font-weight: bold; padding: 9px; }
@@ -520,13 +531,20 @@
    .dropdown-conatiner .hover-item.default-active { color: blue; font-weight: bold; } 
    .dropdown-conatiner .subcategory-hover { transition: color 0.3s; }
    .dropdown-conatiner .subcategory-hover.active { color: blue; font-weight: bold; }
+
    .netpy-sub-subcontent h4{
     font-size: 1.3rem;
+    text-align: left;
+    color: black;
   }
+  
   .netpy-sub-subcontent p{
     font-size: 1rem;
     font-weight: lighter;
+    text-align: left;
+    color: black;
   }
+ 
 
    /* For small devices */
 @media (max-width: 768px) {

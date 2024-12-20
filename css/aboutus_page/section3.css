@@ -1,0 +1,190 @@
+/* Section 3 - Ecosystem of Growth */
+.section3-ecosystem {
+    position: relative;
+    max-width: 2000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #eaeff3;
+}
+
+.section3-ecosystem .container{
+    position: relative;
+}
+
+.section3-ecosystem h2 {
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.section3-ecosystem p {
+    max-width: 80vb;
+    line-height: 1.5;
+    margin: 0 auto 40px;
+    font-size: 0.9rem;
+    font-family: "Roboto", sans-serif;
+    color: #333;
+}
+
+.section3-ecosystem h1{
+    position: relative;
+    font-size: 1.8rem;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #000;
+    margin-top: 50px;
+}
+
+.section3-ecosystem .efforts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section3-ecosystem .effort {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(27.333% - 20px);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+}
+
+.section3-ecosystem .effort h3 {
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    color: #0D47A1;
+    margin-bottom: 10px;
+}
+
+.section3-ecosystem .effort p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Responsive Design */
+
+/* For mobile screens */
+@media (max-width: 600px) {
+    .section3-ecosystem h2 {
+        font-size: 1.5rem;
+    }
+    .section3-ecosystem h1 {
+        font-size: 1.2rem;
+       width: 50vb;
+       margin-left: 0rem;
+       text-align: left;
+    }
+    .section3-ecosystem p {
+        font-size: 0.85rem;
+    }
+
+    .section3-ecosystem .efforts {
+        flex-direction: column; /* Stack items vertically */
+        gap: 5px;
+    }
+
+    .section3-ecosystem .effort {
+        flex: 1 1 100%; /* Full width */
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .section3-ecosystem .effort h3 {
+        font-size: 1rem;
+    }
+
+    .section3-ecosystem .effort p {
+        font-size: 0.85rem;
+    }
+}
+
+/* For tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .section3-ecosystem h2 {
+        font-size: 1.8rem;
+    }
+    .section3-ecosystem h1 {
+        font-size: 1.2rem;
+       width: 50vb;
+       margin-left: -2rem;
+    }
+
+    .section3-ecosystem p {
+        font-size: 0.9rem;
+    }
+
+    .section3-ecosystem .effort {
+        flex: 1 1 calc(50% - 20px); /* Two columns */
+        max-width: calc(45% - 20px);
+        padding: 20px;
+    }
+
+    .section3-ecosystem .effort h3 {
+        font-size: 1.1rem;
+    }
+
+    .section3-ecosystem .effort p {
+        font-size: 0.9rem;
+    }
+}
+
+/* For desktops and larger screens */
+@media (min-width: 1025px) {
+    .section3-ecosystem h2 {
+        font-size: 2rem;
+    }
+
+    .section3-ecosystem p {
+        font-size: 1rem;
+    }
+
+    .section3-ecosystem .effort {
+        flex: 1 1 calc(33.333% - 20px); /* Three columns */
+        max-width: calc(27.333% - 20px);
+    }
+
+    .section3-ecosystem .effort h3 {
+        font-size: 1.2rem;
+    }
+
+    .section3-ecosystem .effort p {
+        font-size: 0.9rem;
+    }
+}
+@media (min-width: 2560px) {
+    .section3-ecosystem h2 {
+        font-size: 2.5rem;
+    }
+    .section3-ecosystem h1 {
+        font-size: 2.2rem;
+        margin-left: -1rem;
+    }
+    .section3-ecosystem p {
+        font-size: 1.5rem;
+        width: 50vb;
+    }
+
+    .section3-ecosystem .effort {
+        flex: 1 1 calc(33.333% - 20px); /* Three columns */
+        max-width: calc(15.333% - 10px);
+        box-sizing: border-box; /* Include padding in width */
+     
+    }
+
+    .section3-ecosystem .effort h3 {
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+    }
+
+    .section3-ecosystem .effort p {
+        font-size: 1.5rem;
+        max-width: 80%; /* Prevent content shrinking */
+        word-wrap: break-word; /* Wrap long words */
+        margin-right:10rem ;
+        text-align: justify;
+    }
+}

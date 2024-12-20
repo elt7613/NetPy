@@ -773,7 +773,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="footer-link-container">
                     <div class="footer-links">
                         <a href="#">Careers</a>
-                        <a href="#">About Us</a>
+                        <a href="aboutus.php">About Us</a>
                         <a href="contact.php">Contact Us</a>
                         <a href="services.php">Services</a>
                         <a href="https://maps.app.goo.gl/mh4Ljehq9DZdy7wj9" target="_blank">Location</a>

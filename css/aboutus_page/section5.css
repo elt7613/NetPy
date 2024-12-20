@@ -1,0 +1,39 @@
+.section5-whats-next{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section5-whats-next .content{
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section5-whats-next .content h2{
+    font-size: 3rem;
+    font-family: "monserrat", sans-serif;
+}
+
+.section5-whats-next .content p{
+    font-size: 1.1rem;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+@media screen  and (max-width: 425px){
+    .section5-whats-next .content{
+        padding: 15px;
+    }
+
+    .section5-whats-next .content h2{
+        font-size: 2.2rem;
+    }
+
+    .section5-whats-next .content p{
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,118 @@
+/* Section 2 - Who We Are */
+.section2-who-we-are {
+    position: relative;
+    max-width: 1300px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: left;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.section2-who-we-are h2 {
+    font-size: 3rem;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 2rem;
+    margin-left: 10rem;
+    color: #0D47A1;
+    flex: 1;
+    transition: all 0.5s ease;
+}
+
+.section2-who-we-are p {
+    max-width: 70vb;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    flex: 2;
+    margin-right: 10rem;
+    transition: all 0.5s ease;
+}
+
+/* Responsive Design */
+
+/* For mobile screens */
+@media (max-width: 600px) {
+    .section2-who-we-are {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        text-align: left; /* Center-align for smaller screens */
+        padding: 20px;
+    }
+
+    .section2-who-we-are h2 {
+        font-size: 2rem;
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .section2-who-we-are p {
+        max-width: 100%;
+        margin-right: 0;
+        font-size: 0.9rem;
+    }
+}
+
+/* For tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .section2-who-we-are {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: left; /* Center-align text */
+        padding: 30px 20px;
+    }
+
+    .section2-who-we-are h2 {
+        font-size: 2.5rem;
+        margin-left: 0;
+    }
+
+    .section2-who-we-are p {
+        max-width: 90%;
+        margin-right: 0;
+        font-size: 1rem;
+    }
+}
+
+/* For desktops and larger screens */
+@media (min-width: 1025px) {
+    .section2-who-we-are {
+        flex-direction: row; /* Keep elements side-by-side */
+        align-items: flex-start;
+        padding: 50px 20px;
+    }
+
+    .section2-who-we-are h2 {
+        font-size: 3rem;
+        margin-left: 10rem;
+    }
+
+    .section2-who-we-are p {
+        max-width: 60vb;
+        margin-right: 10rem;
+        font-size: 0.9rem;
+    }
+}
+@media (min-width: 2560px){
+    .section2-who-we-are {
+        flex-direction: row; /* Keep elements side-by-side */
+        align-items: flex-start;
+        padding: 50px 20px;
+        margin-top: -60rem;
+    }
+
+    .section2-who-we-are h2 {
+        font-size: 3rem;
+        margin-left: 43rem;
+    }
+
+    .section2-who-we-are p {
+        max-width: 40vb;
+        margin-right: 40rem;
+        font-size: 1.5rem;
+    }
+}

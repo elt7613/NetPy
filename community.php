@@ -128,104 +128,115 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </li>
 
                     <li class="dropdown-conatiner">
-                        <span>What we do?
-                            <span class="main-toggle-arrow">&#x25BC;</span>
+                        <span>What we do? </span>
 
-                            <div class="dropdowns">
-                                <!-- Dropdown for what we do? -->
-                                <div class="first-dropdown-content">
-
-                                    <!-- Netpy Tech Dropdown-->
-                                    <div class="netpy-tech">
-                                        <span>
+                            <div class="columns-container">
+                                <!-- First Column -->
+                                <div class="column" id="firstColumn">
+                                    <ul>
+                                        <li class="hover-item default-active" data-type="netpyTech">
                                             NetPy Tech
-                                            <svg class="topic-arrow" xmlns="http://www.w3.org/2000/svg" width="15" height="30" viewBox="0 0 12 24">
-                                                <path fill="#fff" fill-rule="evenodd" d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414" />
-                                            </svg>
-                                        </span>
-
-                                        <div class="netpy-tech-list">
-                                            <div class="list list-1">
-                                                Software Development
-                                                <svg class="topic-arrow" xmlns="http://www.w3.org/2000/svg" width="15" height="30" viewBox="0 0 12 24">
-                                                    <path fill="#fff" fill-rule="evenodd" d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414" />
-                                                </svg>
-                                                <div class="netpy-tech-list-content-1">
-                                                    <div>
-                                                        <h3>Mobile App Development</h3>
+                                            <ul class="netpy-subcontent">
+                                                <li>Software Development
+                                                    <ul class="netpy-sub-subcontent">
+                                                        <h4>Mobile App Development</h4>
                                                         <p>Native IOS | Native Android | Hybrid</p>
-                                                    </div>
-                                                    <div>
-                                                        <h3>Web Development</h3>
-                                                        <p>Enterprise | E-Commerce | API & Backend | CMS | Custom Development</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="list list-2">UI/UX Design</div>
-                                            <div class="list list-3">
-                                                Quality Analysis
-                                                <svg class="topic-arrow" xmlns="http://www.w3.org/2000/svg" width="15" height="30" viewBox="0 0 12 24">
-                                                    <path fill="#fff" fill-rule="evenodd" d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414" />
-                                                </svg>
-                                                <div class="netpy-tech-list-content-3">
-                                                    <div>
-                                                        <p>Mannual QA Testing | Web Testing Automation | Mobile Testing | Perfomance Testing | API Testing</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="list list-4">
-                                                Cloud & Computing
-                                                <svg class="topic-arrow" xmlns="http://www.w3.org/2000/svg" width="15" height="30" viewBox="0 0 12 24">
-                                                    <path fill="#fff" fill-rule="evenodd" d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414" />
-                                                </svg>
-                                                <div class="netpy-tech-list-content-4">
-                                                    <div>
-                                                        <h3>Cloud Services</h3>
-                                                        <p>Tally on cloud | Tallt on AWS | Tally Prime | Busy on Cloud | Marg on Cloud | Cloud for SAP B-One | Cloud Migration</p>
-                                                    </div>
-                                                    <div>
-                                                        <h3>Web Hosting</h3>
-                                                        <p>Linux hosting | Windows hosting</p>
-                                                    </div>
-                                                    <div>
-                                                        <h3>VPS Server</h3>
-                                                        <p>VPS Linux | VPS Windows</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- NetPy Academy Dropdown-->
-                                    <div class="netpy-academy">
-                                        <span>
+                                                    </ul>
+                                                </li>
+                                                <li>UI/UX Design
+                                                    <ul class="netpy-sub-subcontent">
+                                                        <h4>Mobile App Development</h4>
+                                                        <p>Native IOS | Native Android | Hybrid</p>
+                                                    </ul>
+                                                </li>
+                                                <li>Quality Analysis
+                                                    <ul class="netpy-sub-subcontent">
+                                                        <h4>Mobile App Development</h4>
+                                                        <p>Native IOS | Native Android | Hybrid</p>
+                                                    </ul>
+                                                </li>
+                                                <li>Cloud & Computing
+                                                    <ul class="netpy-sub-subcontent">
+                                                        <h4>Mobile App Development</h4>
+                                                        <p>Native IOS | Native Android | Hybrid</p>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="hover-item" data-type="netpyAcademy">
                                             NetPy Academy
-                                            <svg class="topic-arrow" xmlns="http://www.w3.org/2000/svg" width="15" height="30" viewBox="0 0 12 24">
-                                                <path fill="#fff" fill-rule="evenodd" d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414" />
-                                            </svg>
-                                        </span>
-                                        <div class="netpy-academy-list">
-                                            <h3>Mentorship to Internship Program</h3><br />
-                                            <h3>Training & Certifications</h3><br />
-                                            <!---<h3>Robotics | IOT | AI | Coding - For 8+ years</h3><br/> -->
-                                        </div>
-                                    </div>
-
-                                    <!-- NetPy Kidz Dropdown-->
-                                    <div class="netpy-kidz">
-                                        <span>
+                                            <ul class="netpy-subcontent">
+                                                <li>Software Development Academy
+                                                    <ul class="netpy-sub-subcontent">
+                                                        <h4>Mobile App Development</h4>
+                                                        <p>Native IOS | Native Android | Hybrid</p>
+                                                    </ul>
+                                                </li>
+                                                <li>UI/UX Design Academy
+                                                    <ul class="netpy-sub-subcontent">
+                                                        <h4>Mobile App Development</h4>
+                                                        <p>Native IOS | Native Android | Hybrid</p>
+                                                    </ul>
+                                                </li>
+                                                <li>Quality Analysis Academy
+                                                    <ul class="netpy-sub-subcontent">
+                                                        <h4>Mobile App Development</h4>
+                                                        <p>Native IOS | Native Android | Hybrid</p>
+                                                    </ul>
+                                                </li>
+                                                <li>Cloud & Computing Academy
+                                                    <ul class="netpy-sub-subcontent">
+                                                        <h4>Mobile App Development</h4>
+                                                        <p>Native IOS | Native Android | Hybrid</p>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="hover-item" data-type="netpyKidz">
                                             NetPy Kidz
-                                            <svg class="topic-arrow" xmlns="http://www.w3.org/2000/svg" width="15" height="30" viewBox="0 0 12 24">
-                                                <path fill="#fff" fill-rule="evenodd" d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414" />
-                                            </svg>
-                                        </span>
-                                        <div class="netpy-kidz-list">
-                                            <h3>Robotics | IOT | AI | Coding | Learnings</h3>
-                                        </div>
-                                    </div>
+                                            <ul class="netpy-subcontent">
+                                                <li>Software Development Kidz
+                                                    <ul class="netpy-sub-subcontent">
+                                                        <h4>Mobile App Development</h4>
+                                                        <p>Native IOS | Native Android | Hybrid</p>
+                                                    </ul>
+                                                </li>
+                                                <li>UI/UX Design Kidz
+                                                    <ul class="netpy-sub-subcontent">
+                                                        <h4>Mobile App Development</h4>
+                                                        <p>Native IOS | Native Android | Hybrid</p>
+                                                    </ul>
+                                                </li>
+                                                <li>Quality Analysis Kidz
+                                                    <ul class="netpy-sub-subcontent">
+                                                        <h4>Mobile App Development</h4>
+                                                        <p>Native IOS | Native Android | Hybrid</p>
+                                                    </ul>
+                                                </li>
+                                                <li>Cloud & Computing Kidz
+                                                    <ul class="netpy-sub-subcontent">
+                                                        <h4>Mobile App Development</h4>
+                                                        <p>Native IOS | Native Android | Hybrid</p>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Vertical Line Separator -->
+                                <div class="vertical-separator"></div>
+                                <!-- Second Column -->
+                                <div class="column" id="secondColumn">
+                                    <p>Select a category to see details</p>
+                                </div>
+                                <!-- Vertical Line Separator -->
+                                <div class="vertical-separator"></div>
+                                <!-- Third Column -->
+                                <div class="column" id="thirdColumn">
+                                    <p>Hover over a category in the second column for details</p>
                                 </div>
                             </div>
-                        </span>
                     </li>
 
                     <!-- Lerarn dropdown -->
@@ -459,7 +470,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="footer-link-container">
                     <div class="footer-links">
                         <a href="#">Careers</a>
-                        <a href="#">About Us</a>
+                        <a href="aboutus.php">About Us</a>
                         <a href="contact.php">Contact Us</a>
                         <a href="services.php">Services</a>
                         <a href="https://maps.app.goo.gl/mh4Ljehq9DZdy7wj9" target="_blank">Location</a>
@@ -527,7 +538,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </footer>
     </section>
-
 
     <script src="js/navbar_dropdown.js"></script>
     <script src="js/landing_page/navbar.js"></script>

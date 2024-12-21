@@ -1,87 +1,158 @@
-.section6-welcome{
+.section6-welcome {
     position: relative;
     max-width: 1200px;
-    margin: 70px auto;
+    margin: 40px auto;
+    padding: 0 20px;
+    transition: all 0.5s ease;
 }
 
-.section6-welcome .welcome-content{
+.section6-welcome .welcome-content {
     position: relative;
-    display: flex;   
-    justify-content: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
+    transition: all 0.5s ease;
 }
 
-.section6-welcome .welcome-content h2{
-    font-size: 3rem;
+.section6-welcome .welcome-content .text {
+    text-align: center;
+    max-width: 100%;
+}
+
+.section6-welcome .welcome-content h2 {
+    font-size: 2rem;
     font-family: "monserrat", sans-serif;
     color: #0D47A1;
+    transition: all 0.5s ease;
 }
 
-.section6-welcome .welcome-content p{
-    font-size: 1.1rem;
+.section6-welcome .welcome-content p {
+    font-size: 1rem;
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
     letter-spacing: 1px;
     color: #0D47A1;
+    transition: all 0.5s ease;
 }
-.section6-welcome .welcome-content p span{
-    font-size: 3rem;
+
+.section6-welcome .welcome-content p span {
+    font-size: 2rem;
     color: #0D47A1;
+    transition: all 0.5s ease;
 }
 
-.section6-welcome .welcome-content img{
-    position: relative;
-    width: 444px;
-    height: 325px;
+.section6-welcome .welcome-content .image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.section6-welcome .welcome-content img {
+    width: 100%;
+    max-width: 444px;
+    height: auto;
     object-fit: contain;
+    transition: all 0.5s ease;
 }
 
-
-@media screen and (max-width: 425px){
-    .section6-welcome .welcome-content{
-        flex-direction: column;
-        padding: 15px;
+/* Small phones (320px and up) */
+@media screen and (min-width: 320px) {
+    .section6-welcome {
+        margin: 30px auto;
     }
 
-    .section6-welcome .welcome-content h2{
-        font-size: 2.2rem;
+    .section6-welcome .welcome-content h2 {
+        font-size: 1.8rem;
     }
 
-    .section6-welcome .welcome-content p{
-        font-size: 1rem;
+    .section6-welcome .welcome-content p {
+        font-size: 0.9rem;
     }
-    .section6-welcome .welcome-content p span{
+
+    .section6-welcome .welcome-content p span {
+        font-size: 1.8rem;
+    }
+}
+
+/* Larger phones (425px and up) */
+@media screen and (min-width: 425px) {
+    .section6-welcome .welcome-content h2 {
         font-size: 2rem;
     }
 
-    .section6-welcome .welcome-content img{
-        width: 100%;
-        height: 100%;
+    .section6-welcome .welcome-content p {
+        font-size: 1rem;
     }
-    
+
+    .section6-welcome .welcome-content p span {
+        font-size: 2rem;
+    }
 }
 
-@media screen and (max-width: 768px){
-    .section6-welcome .welcome-content{
+/* Tablets (768px and up) */
+@media screen and (min-width: 768px) {
+    .section6-welcome {
+        margin: 50px auto;
+    }
+
+    .section6-welcome .welcome-content {
         flex-direction: row;
-        padding: 15px;
         justify-content: center;
-        justify-items: center;
         align-items: center;
-        align-content: center;
     }
 
-    .section6-welcome .welcome-content h2{
+    .section6-welcome .welcome-content .text {
+        text-align: left;
+        flex: 1;
+        max-width: 50%;
+    }
+
+    .section6-welcome .welcome-content h2 {
         font-size: 2.2rem;
     }
 
-    .section6-welcome .welcome-content p{
-        font-size: 1rem;
+    .section6-welcome .welcome-content .image {
+        flex: 1;
+        justify-content: flex-end;
     }
-    .section6-welcome .welcome-content p span{
-        font-size: 2rem;
+
+    .section6-welcome .welcome-content img {
+        max-width: 100%;
     }
-    
-    
+}
+
+/* Desktops (1024px and up) */
+@media screen and (min-width: 1024px) {
+    .section6-welcome {
+        margin: 70px auto;
+    }
+
+    .section6-welcome .welcome-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .section6-welcome .welcome-content p {
+        font-size: 1.1rem;
+    }
+
+    .section6-welcome .welcome-content p span {
+        font-size: 2.5rem;
+    }
+
+    .section6-welcome .welcome-content img {
+        max-width: 444px;
+    }
+}
+
+/* Large desktops (1200px and up) */
+@media screen and (min-width: 1200px) {
+    .section6-welcome .welcome-content h2 {
+        font-size: 3rem;
+    }
+
+    .section6-welcome .welcome-content p span {
+        font-size: 3rem;
+    }
 }

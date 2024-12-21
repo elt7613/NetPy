@@ -6,10 +6,12 @@
     text-align: center;
     padding: 60px 20px;
     background-color: #eaeff3;
+    transition: all 0.5s ease;
 }
 
 .section3-ecosystem .container{
     position: relative;
+    transition: all 0.5s ease;
 }
 
 .section3-ecosystem h2 {
@@ -17,6 +19,7 @@
     font-family: "Roboto", sans-serif;
     margin-bottom: 1rem;
     color: #000;
+    transition: all 0.5s ease;
 }
 
 .section3-ecosystem p {
@@ -26,6 +29,7 @@
     font-size: 0.9rem;
     font-family: "Roboto", sans-serif;
     color: #333;
+    transition: all 0.5s ease;
 }
 
 .section3-ecosystem h1{
@@ -36,6 +40,7 @@
     text-align: center;
     color: #000;
     margin-top: 50px;
+    transition: all 0.5s ease;
 }
 
 .section3-ecosystem .efforts {
@@ -43,6 +48,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    transition: all 0.5s ease;
 }
 
 .section3-ecosystem .effort {
@@ -51,6 +57,7 @@
     border-radius: 10px;
     padding: 20px;
     text-align: left;
+    transition: all 0.5s ease;
 }
 
 .section3-ecosystem .effort h3 {
@@ -58,11 +65,13 @@
     font-family: "Roboto", sans-serif;
     color: #0D47A1;
     margin-bottom: 10px;
+    transition: all 0.5s ease;
 }
 
 .section3-ecosystem .effort p {
     font-size: 0.9rem;
     color: #555;
+    transition: all 0.5s ease;
 }
 
 /* Responsive Design */

@@ -541,22 +541,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </section>
 
 <!--===================== aboutus section 6 =======================-->
-<section class="section6-welcome">
-    <div class="welcome-content">
-        <div class="text">
-            <h2>Welcome to<br>NetPy Technologies</h2>
-            <p>
-                <span>—</span> a partner in innovation, skill <br> education, and success.
-            </p>
-        </div>
-        <div class="image">
-            <img src="images/aboutus/section-6/welcome.png" alt="Team Image">
-        </div>
-    </div>
-</section>
-    
-    <!--===================== FOOTER =======================-->
-    <section class="footer-container">
+<section class="footer-container">
         <footer class="footer">
             <p class="footer-heading">Let there be <span>INNOVATION</span></p>
 
@@ -564,7 +549,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="footer-link-container">
                     <div class="footer-links">
                         <a href="#">Careers</a>
-                        <a href="#">About Us</a>
+                        <a href="aboutus.php">About Us</a>
                         <a href="contact.php">Contact Us</a>
                         <a href="services.php">Services</a>
                         <a href="https://maps.app.goo.gl/mh4Ljehq9DZdy7wj9" target="_blank">Location</a>
@@ -632,7 +617,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </footer>
     </section>
-
 
     <script src="js/navbar_dropdown.js"></script>
     <script src="js/landing_page/navbar.js"></script>

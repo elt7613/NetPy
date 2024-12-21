@@ -2,18 +2,21 @@
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
+    transition: all 0.5s ease;
 }
 
 .section5-whats-next .content{
     position: relative;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    transition: all 0.5s ease;
 }
 
 .section5-whats-next .content h2{
     font-size: 3rem;
     font-family: "monserrat", sans-serif;
+    transition: all 0.5s ease;
 }
 
 .section5-whats-next .content p{
@@ -22,6 +25,7 @@
     line-height: 1.5;
     letter-spacing: 1px;
     margin-top: 20px;
+    transition: all 0.5s ease;
 }
 
 @media screen  and (max-width: 425px){

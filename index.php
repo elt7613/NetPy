@@ -307,15 +307,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     </svg>
                                     Blogs
                                 </a>
-                                <!-- Careers -->
-                                <a href="">
+                                <!-- Workflow -->
+                                <a href="workflow.php">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
                                         <g fill="none" stroke="#181818" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="#181818">
                                             <path d="M11.007 21H9.605c-3.585 0-5.377 0-6.491-1.135S2 16.903 2 13.25s0-5.48 1.114-6.615S6.02 5.5 9.605 5.5h3.803c3.585 0 5.378 0 6.492 1.135c.857.873 1.054 2.156 1.1 4.365" />
                                             <path d="M17.111 13.255c.185-.17.277-.255.389-.255s.204.085.389.255l.713.657c.086.079.129.119.182.138c.054.02.112.018.23.013l.962-.038c.248-.01.372-.014.457.057s.102.194.135.44l.132.986c.016.114.023.17.051.22c.028.048.073.083.163.154l.776.61c.192.152.288.227.307.335s-.046.212-.174.42l-.526.847c-.06.097-.09.146-.1.2s.002.111.026.223l.209.978c.05.24.076.36.021.456s-.172.134-.405.21l-.926.301c-.11.036-.166.054-.209.09c-.043.037-.07.089-.123.192l-.452.871c-.115.223-.173.334-.278.372s-.22-.01-.452-.106l-.888-.368c-.109-.045-.163-.068-.22-.068s-.111.023-.22.068l-.888.368c-.232.096-.347.144-.452.106s-.163-.15-.278-.372l-.452-.871c-.054-.103-.08-.155-.123-.191s-.099-.055-.209-.09l-.926-.302c-.233-.076-.35-.114-.405-.21s-.03-.215.021-.456l.21-.978c.023-.112.035-.168.025-.222a.6.6 0 0 0-.1-.2l-.525-.848c-.13-.208-.194-.312-.175-.42s.115-.183.307-.334l.776-.61c.09-.072.135-.107.163-.156s.035-.105.05-.22l.133-.985c.033-.245.05-.369.135-.44s.209-.067.457-.057l.963.038c.117.005.175.007.229-.013c.053-.02.096-.059.182-.138zM16 5.5l-.1-.31c-.495-1.54-.742-2.31-1.331-2.75C13.979 2 13.197 2 11.63 2h-.263c-1.565 0-2.348 0-2.937.44c-.59.44-.837 1.21-1.332 2.75L7 5.5" />
                                         </g>
                                     </svg>
-                                    Careers
+                                    WorkFlow
                                 </a>
                                 <!-- Netpy Academy -->
                                 <a href="">
@@ -346,7 +346,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     NetPy Community
                                 </a>
                                 <!-- About -->
-                                <a href="">
+                                <a href="aboutus.php">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
                                         <path fill="#181818" d="M11 9h2V7h-2m1 13c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m-1 15h2v-6h-2z" />
                                     </svg>
@@ -416,9 +416,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </li>
 
 
-                    <a href="community.php" class="join-btn-small">Join Community</a>
+                    <a href="https://www.netpyconcepts.in/" target="_blank" class="join-btn-small">Join Community</a>
                 </ul>
-                <a href="community.php" class="join-btn-large">Join Community</a>
+                <a href="https://www.netpyconcepts.in/" target="_blank" class="join-btn-large">Join Community</a>
             </div>
         </nav>
     </header>
@@ -713,7 +713,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <li>Build the Trust</li>
                     </ul> -->
                     <p>With years of industry experience, we have the technical expertise and practical know-how to deliver results that matter.</p>
-                    <a href="contact.php" class="learn-more">Talk to Experts</a>
+                    <a href="https://netpytechnologies.zohobookings.in/#/customer/netpytechnologies" target="_blank" class="learn-more">Talk to Experts</a>
                 </div>
             </div>
 

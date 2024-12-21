@@ -433,7 +433,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="hero-content">
                 <h1>Latest Blogs</h1>
-                <a href="#" class="learn-more-btn">Learn More</a>
+                <a href="#" class="learn-more-btn" onclick="window.scrollTo(0, document.body.scrollHeight); return false;">Subscribe</a>
             </div>
 
             <div class="slider-arrows">

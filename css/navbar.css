@@ -451,7 +451,6 @@
    
   }
 
-
   .hover-item:hover {
     color: blue;
   }
@@ -463,8 +462,7 @@
   .navbar .dropdown-conatiner .vertical-separator {
     width: 2px; 
     height: 200px; 
-    background-color: blue; 
-    box-shadow: 0 0 1px blue; 
+    background-color: #181818; 
     margin: 0 10px;
     display: block;
   }
@@ -506,6 +504,7 @@
     }
     .navbar .dropdown-conatiner .vertical-separator {
         display: none; 
+        background-color: #181818;
     }
   
     /* Hide second and third columns */

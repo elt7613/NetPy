@@ -428,7 +428,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <div class="buttons">
             <a href="workflow.php" class="learn-more-btn">Learn more</a>
-            <a href="" class="join-community-btn">Join Community</a>
+            <a href="https://www.netpyconcepts.in/" target="_blank" class="join-community-btn">Join Community</a>
         </div>
     </section>
 

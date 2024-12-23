@@ -50,6 +50,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NetPy | Contact</title>
 
+    <link rel="icon" type="image/png" href="images/fav-icon.jpg">
+
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Urbanist' rel='stylesheet'>
@@ -448,7 +451,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="contact-options">
                 <div class="contact-box">
                     <h3>Chat <span>with us</span></h3>
-                    <p class="info">Speak To our friendly team via live chat</p>
+                    <p class="info">Speak to our friendly team via live chat</p>
                     <div class="buttons">
                         <a href="https://wa.me/9036187196" target="_blank">
                             <button class="btn btn-primary">
@@ -493,7 +496,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         </a>
 
                         <p class="address">
-                            #2, near Air Force Gate, Ganesha Layout, Vidyaranyapura, Bengaluru, Karnataka 560097
+                            #2, Ganesh Layout, Near Air Force Gate, Vidyaranyapura, Bengaluru, Karnataka 560097
                         </p>
                     </div>
                 </div>
@@ -501,7 +504,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <!-- Conatct Box -->
                 <div class="contact-box">
                     <h3>Call <span>us</span></h3>
-                    <p class="info">Call or Team Monday-Friday</p>
+                    <p class="info">Call our Team Monday-Friday</p>
                     <a href="tel:+917454860294">
                         <button class="btn btn-primary">
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
@@ -618,8 +621,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
             </div>
 
-                    <!--==== Contact Form =====-->
-                    <div class="form-container">
+        <!--==== Contact Form =====-->
+        <div class="form-container">
         <h3>Tell Us How We Can Help You</h3>
         <form class="form-grid" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
         <div class="form-group">

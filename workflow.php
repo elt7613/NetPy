@@ -28,6 +28,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NetPy | WorkFlow</title>
 
+  <link rel="icon" type="image/png" href="images/fav-icon.jpg">
+
   <link rel="stylesheet" href="css/workflow_page/section_1.css ">
   <link rel="stylesheet" href="css/workflow_page/section_2.css ">
   <link rel="stylesheet" href="css/workflow_page/section_3.css ">

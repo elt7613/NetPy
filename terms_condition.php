@@ -28,6 +28,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NetPy | Terms and Conditions</title>
 
+    <link rel="icon" type="image/png" href="images/fav-icon.jpg">
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Urbanist' rel='stylesheet'>
@@ -470,7 +472,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <p>
             <h2>7. Governing Law</h2><br />
-            These Terms and Conditions shall be governed by and construed in accordance with the laws of [insert jurisdiction]. Any disputes arising under these terms shall be subject to the exclusive jurisdiction of the courts located within that jurisdiction.
+            These Terms and Conditions shall be governed by and construed in accordance with the laws of Bengaluru Jurisdiction. Any disputes arising under these terms shall be subject to the exclusive jurisdiction of the courts located within that jurisdiction.
             </p>
 
             <p>

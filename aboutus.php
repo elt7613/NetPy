@@ -67,9 +67,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </style>
 
 </head>
+
 <body>
 
-<?php if (isset($message)): ?>
+    <?php if (isset($message)): ?>
         <div class="alert alert-<?php echo $messageType; ?>">
             <?php echo $message; ?>
         </div>
@@ -84,11 +85,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <!--================ Top Info Bar ======================-->
     <div class="info-bar">
-        <a href="IT-enterprise.php">
+        <a href="services.php">
             <span>Software Development</span>
         </a>
         <a href="">
-            <span>Cloud Solutions</span>
+            <span class="cloud-solutions">Cloud Solutions</span>
+            <span class="tally-on-cloud">Tally on Cloud</span>
         </a>
         <a href="https://robo.netpy.in/" target="_blank">
             <span>Robotics</span>
@@ -136,113 +138,113 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <li class="dropdown-conatiner">
                         <span>What we do? </span>
 
-                            <div class="columns-container">
-                                <!-- First Column -->
-                                <div class="column" id="firstColumn">
-                                    <ul>
-                                        <li class="hover-item default-active" data-type="netpyTech">
-                                            NetPy Tech
-                                            <ul class="netpy-subcontent">
-                                                <li>Software Development
-                                                    <ul class="netpy-sub-subcontent">
-                                                        <h4>Mobile App Development</h4>
-                                                        <p>Native IOS | Native Android | Hybrid</p>
-                                                    </ul>
-                                                </li>
-                                                <li>UI/UX Design
-                                                    <ul class="netpy-sub-subcontent">
-                                                        <h4>Mobile App Development</h4>
-                                                        <p>Native IOS | Native Android | Hybrid</p>
-                                                    </ul>
-                                                </li>
-                                                <li>Quality Analysis
-                                                    <ul class="netpy-sub-subcontent">
-                                                        <h4>Mobile App Development</h4>
-                                                        <p>Native IOS | Native Android | Hybrid</p>
-                                                    </ul>
-                                                </li>
-                                                <li>Cloud & Computing
-                                                    <ul class="netpy-sub-subcontent">
-                                                        <h4>Mobile App Development</h4>
-                                                        <p>Native IOS | Native Android | Hybrid</p>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="hover-item" data-type="netpyAcademy">
-                                            NetPy Academy
-                                            <ul class="netpy-subcontent">
-                                                <li>Software Development Academy
-                                                    <ul class="netpy-sub-subcontent">
-                                                        <h4>Mobile App Development</h4>
-                                                        <p>Native IOS | Native Android | Hybrid</p>
-                                                    </ul>
-                                                </li>
-                                                <li>UI/UX Design Academy
-                                                    <ul class="netpy-sub-subcontent">
-                                                        <h4>Mobile App Development</h4>
-                                                        <p>Native IOS | Native Android | Hybrid</p>
-                                                    </ul>
-                                                </li>
-                                                <li>Quality Analysis Academy
-                                                    <ul class="netpy-sub-subcontent">
-                                                        <h4>Mobile App Development</h4>
-                                                        <p>Native IOS | Native Android | Hybrid</p>
-                                                    </ul>
-                                                </li>
-                                                <li>Cloud & Computing Academy
-                                                    <ul class="netpy-sub-subcontent">
-                                                        <h4>Mobile App Development</h4>
-                                                        <p>Native IOS | Native Android | Hybrid</p>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="hover-item" data-type="netpyKidz">
-                                            NetPy Kidz
-                                            <ul class="netpy-subcontent">
-                                                <li>Software Development Kidz
-                                                    <ul class="netpy-sub-subcontent">
-                                                        <h4>Mobile App Development</h4>
-                                                        <p>Native IOS | Native Android | Hybrid</p>
-                                                    </ul>
-                                                </li>
-                                                <li>UI/UX Design Kidz
-                                                    <ul class="netpy-sub-subcontent">
-                                                        <h4>Mobile App Development</h4>
-                                                        <p>Native IOS | Native Android | Hybrid</p>
-                                                    </ul>
-                                                </li>
-                                                <li>Quality Analysis Kidz
-                                                    <ul class="netpy-sub-subcontent">
-                                                        <h4>Mobile App Development</h4>
-                                                        <p>Native IOS | Native Android | Hybrid</p>
-                                                    </ul>
-                                                </li>
-                                                <li>Cloud & Computing Kidz
-                                                    <ul class="netpy-sub-subcontent">
-                                                        <h4>Mobile App Development</h4>
-                                                        <p>Native IOS | Native Android | Hybrid</p>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <!-- Vertical Line Separator -->
-                                <div class="vertical-separator"></div>
-                                <!-- Second Column -->
-                                <div class="column" id="secondColumn">
-                                    <p>Select a category to see details</p>
-                                </div>
-                                <!-- Vertical Line Separator -->
-                                <div class="vertical-separator"></div>
-                                <!-- Third Column -->
-                                <div class="column" id="thirdColumn">
-                                    <p>Hover over a category in the second column for details</p>
-                                </div>
+                        <div class="columns-container">
+                            <!-- First Column -->
+                            <div class="column" id="firstColumn">
+                                <ul>
+                                    <li class="hover-item default-active" data-type="netpyTech">
+                                        NetPy Tech
+                                        <ul class="netpy-subcontent">
+                                            <li>Software Development
+                                                <ul class="netpy-sub-subcontent">
+                                                    <h4>Mobile App Development</h4>
+                                                    <p>Native IOS | Native Android | Hybrid</p>
+                                                </ul>
+                                            </li>
+                                            <li>UI/UX Design
+                                                <ul class="netpy-sub-subcontent">
+                                                    <h4>Mobile App Development</h4>
+                                                    <p>Native IOS | Native Android | Hybrid</p>
+                                                </ul>
+                                            </li>
+                                            <li>Quality Analysis
+                                                <ul class="netpy-sub-subcontent">
+                                                    <h4>Mobile App Development</h4>
+                                                    <p>Native IOS | Native Android | Hybrid</p>
+                                                </ul>
+                                            </li>
+                                            <li>Cloud & Computing
+                                                <ul class="netpy-sub-subcontent">
+                                                    <h4>Mobile App Development</h4>
+                                                    <p>Native IOS | Native Android | Hybrid</p>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="hover-item" data-type="netpyAcademy">
+                                        NetPy Academy
+                                        <ul class="netpy-subcontent">
+                                            <li>Software Development Academy
+                                                <ul class="netpy-sub-subcontent">
+                                                    <h4>Mobile App Development</h4>
+                                                    <p>Native IOS | Native Android | Hybrid</p>
+                                                </ul>
+                                            </li>
+                                            <li>UI/UX Design Academy
+                                                <ul class="netpy-sub-subcontent">
+                                                    <h4>Mobile App Development</h4>
+                                                    <p>Native IOS | Native Android | Hybrid</p>
+                                                </ul>
+                                            </li>
+                                            <li>Quality Analysis Academy
+                                                <ul class="netpy-sub-subcontent">
+                                                    <h4>Mobile App Development</h4>
+                                                    <p>Native IOS | Native Android | Hybrid</p>
+                                                </ul>
+                                            </li>
+                                            <li>Cloud & Computing Academy
+                                                <ul class="netpy-sub-subcontent">
+                                                    <h4>Mobile App Development</h4>
+                                                    <p>Native IOS | Native Android | Hybrid</p>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="hover-item" data-type="netpyKidz">
+                                        NetPy Kidz
+                                        <ul class="netpy-subcontent">
+                                            <li>Software Development Kidz
+                                                <ul class="netpy-sub-subcontent">
+                                                    <h4>Mobile App Development</h4>
+                                                    <p>Native IOS | Native Android | Hybrid</p>
+                                                </ul>
+                                            </li>
+                                            <li>UI/UX Design Kidz
+                                                <ul class="netpy-sub-subcontent">
+                                                    <h4>Mobile App Development</h4>
+                                                    <p>Native IOS | Native Android | Hybrid</p>
+                                                </ul>
+                                            </li>
+                                            <li>Quality Analysis Kidz
+                                                <ul class="netpy-sub-subcontent">
+                                                    <h4>Mobile App Development</h4>
+                                                    <p>Native IOS | Native Android | Hybrid</p>
+                                                </ul>
+                                            </li>
+                                            <li>Cloud & Computing Kidz
+                                                <ul class="netpy-sub-subcontent">
+                                                    <h4>Mobile App Development</h4>
+                                                    <p>Native IOS | Native Android | Hybrid</p>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
+
+                            <!-- Vertical Line Separator -->
+                            <div class="vertical-separator"></div>
+                            <!-- Second Column -->
+                            <div class="column" id="secondColumn">
+                                <p>Select a category to see details</p>
+                            </div>
+                            <!-- Vertical Line Separator -->
+                            <div class="vertical-separator"></div>
+                            <!-- Third Column -->
+                            <div class="column" id="thirdColumn">
+                                <p>Hover over a category in the second column for details</p>
+                            </div>
+                        </div>
                     </li>
 
                     <!-- Lerarn dropdown -->
@@ -252,14 +254,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <div class="list">
                                 <!-- Mentorship to Internship -->
                                 <a href="blog.php" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
                                         <path fill="none" stroke="#181818" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m12 22l-2-6H2l2 6zm0 0h4m-4-9v-.5c0-1.886 0-2.828-.586-3.414S9.886 8.5 8 8.5s-2.828 0-3.414.586S4 10.614 4 12.5v.5m15 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0m-9-9a2 2 0 1 1-4 0a2 2 0 0 1 4 0m4 13.5h6a2 2 0 0 1 2 2v.5a2 2 0 0 1-2 2h-1" color="#181818" />
                                     </svg>
                                     <span>Mentorship to Internship Program</span>
                                 </a>
                                 <!-- Training and Certification -->
                                 <a href="blog.php" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
                                         <g fill="#181818">
                                             <path d="M3 3h18v4.385h-2V5H5v9h4.333v2H3z" />
                                             <path d="M12.684 10.287C13.558 11.212 14.303 12 16 12h2a2 2 0 0 1 2 2v1a2 2 0 0 1-1 1.732V22h-3v-8c-2.617 0-3.956-1.45-4.84-2.405a14 14 0 0 0-.367-.388l1.414-1.414q.249.25.477.494M19 9.5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0" />
@@ -269,7 +271,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 </a>
                                 <!-- Robotics | IOT | AI | Coding -->
                                 <a href="blog.php" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 32 32">
                                         <path fill="#181818" d="M30 19h-4v-4h-2v9H8V8h9V6h-4V2h-2v4H8a2 2 0 0 0-2 2v3H2v2h4v6H2v2h4v3a2 2 0 0 0 2 2h3v4h2v-4h6v4h2v-4h3a2.003 2.003 0 0 0 2-2v-3h4Z" />
                                         <path fill="#181818" d="M26 2a4.004 4.004 0 0 0-4 4a3.96 3.96 0 0 0 .567 2.02L19.586 11H11v10h10v-8.586l2.98-2.98A3.96 3.96 0 0 0 26 10a4 4 0 0 0 0-8m-7 17h-6v-6h6Zm7-11a2 2 0 1 1 2-2a2 2 0 0 1-2 2" />
                                     </svg>
@@ -277,15 +279,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 </a>
                                 <!-- Servers and Webniars -->
                                 <a href="blog.php" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
-                                        <path fill="#181818" fill-rule="evenodd" d="M1.25 5A3.75 3.75 0 0 1 5 1.25h14A3.75 3.75 0 0 1 21.25 8A3.75 3.75 0 0 1 19 14.75h-6.25v1.604c.916.259 1.637.98 1.896 1.896H22a.75.75 0 0 1 0 1.5h-7.353a2.751 2.751 0 0 1-5.293 0H2a.75.75 0 0 1 0-1.5h7.354a2.76 2.76 0 0 1 1.896-1.896V14.75H5A3.75 3.75 0 0 1 2.75 8a3.74 3.74 0 0 1-1.5-3M5 7.25a2.25 2.25 0 0 1 0-4.5h14a2.25 2.25 0 0 1 0 4.5zm14 1.5H5a2.25 2.25 0 0 0 0 4.5h14a2.25 2.25 0 0 0 0-4.5M12.25 5a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5h-6a.75.75 0 0 1-.75-.75m0 6a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5h-6a.75.75 0 0 1-.75-.75M12 17.75a1.25 1.25 0 1 0 0 2.5a1.25 1.25 0 0 0 0-2.5" clip-rule="evenodd" />
-                                        <path fill="#181818" d="M7 5a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0 6a1 1 0 1 1-2 0a1 1 0 0 1 2 0" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 28 28">
+                                        <path fill="#000" d="M4.974 5.58A3.5 3.5 0 0 1 8.35 3h11.3a3.5 3.5 0 0 1 3.378 2.58l2.828 10.368C26.55 18.492 24.635 21 21.997 21h-9.995v-1.5h9.995a2.5 2.5 0 0 0 2.412-3.158L21.581 5.974a2 2 0 0 0-1.93-1.474h-11.3a2 2 0 0 0-1.93 1.474L5.323 10H4.25q-.253 0-.493.037zM11.992 24h8.26a.75.75 0 1 0 0-1.5h-8.25v1.25q0 .126-.01.25m-5.491-7a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3M2 13.25A2.25 2.25 0 0 1 4.25 11h4.501a2.25 2.25 0 0 1 2.25 2.25v10.5A2.25 2.25 0 0 1 8.751 26h-4.5A2.25 2.25 0 0 1 2 23.75zm2.25-.75a.75.75 0 0 0-.75.75v10.5c0 .414.336.75.75.75h4.501a.75.75 0 0 0 .75-.75v-10.5a.75.75 0 0 0-.75-.75z" />
                                     </svg>
-                                    <span>Servers and Webinar</span>
+                                    <span>Webinar</span>
                                 </a>
                                 <!-- Learning Resourses & Assets -->
                                 <a href="blog.php" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
                                         <path fill="none" stroke="#181818" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.5 6c0-1.54 0-2.31.347-2.876c.194-.317.46-.583.777-.777C4.189 2 4.96 2 6.5 2s2.31 0 2.876.347c.317.194.583.46.777.777c.347.565.347 1.336.347 2.876s0 2.31-.347 2.876c-.194.317-.46.583-.777.777C8.811 10 8.04 10 6.5 10s-2.31 0-2.876-.347a2.35 2.35 0 0 1-.777-.777C2.5 8.311 2.5 7.54 2.5 6m1.282 8.782c1.047-1.047 1.57-1.57 2.19-1.72a2.26 2.26 0 0 1 1.056 0c.62.15 1.143.673 2.19 1.72s1.57 1.57 1.72 2.19a2.3 2.3 0 0 1 0 1.056c-.15.62-.673 1.144-1.72 2.19s-1.57 1.57-2.19 1.72a2.26 2.26 0 0 1-1.056 0c-.62-.15-1.143-.673-2.19-1.72s-1.57-1.57-1.72-2.19a2.26 2.26 0 0 1 0-1.056c.15-.62.673-1.144 1.72-2.19M14 18c0-1.54 0-2.31.347-2.876c.194-.317.46-.583.777-.777C15.689 14 16.46 14 18 14s2.31 0 2.877.347c.316.194.582.46.776.777C22 15.689 22 16.46 22 18s0 2.31-.347 2.877a2.36 2.36 0 0 1-.776.776C20.31 22 19.54 22 18 22s-2.31 0-2.876-.347a2.35 2.35 0 0 1-.777-.776C14 20.31 14 19.54 14 18m4-16v8m4-4h-8" color="#181818" />
                                     </svg>
                                     <span>Learning Resourses & Assets</span>
@@ -305,16 +306,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     </svg>
                                     Blogs
                                 </a>
-                                <!-- Careers -->
-                                <a href="">
+                                <!-- Workflow -->
+                                <!-- <a href="workflow.php">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
                                         <g fill="none" stroke="#181818" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="#181818">
                                             <path d="M11.007 21H9.605c-3.585 0-5.377 0-6.491-1.135S2 16.903 2 13.25s0-5.48 1.114-6.615S6.02 5.5 9.605 5.5h3.803c3.585 0 5.378 0 6.492 1.135c.857.873 1.054 2.156 1.1 4.365" />
                                             <path d="M17.111 13.255c.185-.17.277-.255.389-.255s.204.085.389.255l.713.657c.086.079.129.119.182.138c.054.02.112.018.23.013l.962-.038c.248-.01.372-.014.457.057s.102.194.135.44l.132.986c.016.114.023.17.051.22c.028.048.073.083.163.154l.776.61c.192.152.288.227.307.335s-.046.212-.174.42l-.526.847c-.06.097-.09.146-.1.2s.002.111.026.223l.209.978c.05.24.076.36.021.456s-.172.134-.405.21l-.926.301c-.11.036-.166.054-.209.09c-.043.037-.07.089-.123.192l-.452.871c-.115.223-.173.334-.278.372s-.22-.01-.452-.106l-.888-.368c-.109-.045-.163-.068-.22-.068s-.111.023-.22.068l-.888.368c-.232.096-.347.144-.452.106s-.163-.15-.278-.372l-.452-.871c-.054-.103-.08-.155-.123-.191s-.099-.055-.209-.09l-.926-.302c-.233-.076-.35-.114-.405-.21s-.03-.215.021-.456l.21-.978c.023-.112.035-.168.025-.222a.6.6 0 0 0-.1-.2l-.525-.848c-.13-.208-.194-.312-.175-.42s.115-.183.307-.334l.776-.61c.09-.072.135-.107.163-.156s.035-.105.05-.22l.133-.985c.033-.245.05-.369.135-.44s.209-.067.457-.057l.963.038c.117.005.175.007.229-.013c.053-.02.096-.059.182-.138zM16 5.5l-.1-.31c-.495-1.54-.742-2.31-1.331-2.75C13.979 2 13.197 2 11.63 2h-.263c-1.565 0-2.348 0-2.937.44c-.59.44-.837 1.21-1.332 2.75L7 5.5" />
                                         </g>
                                     </svg>
-                                    Careers
-                                </a>
+                                    WorkFlow
+                                </a> -->
                                 <!-- Netpy Academy -->
                                 <a href="">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
@@ -327,7 +328,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
                                         <path fill="none" stroke="#181818" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.59 17.74c-.629.422-2.277 1.282-1.273 2.358c.49.526 1.037.902 1.723.902h3.92c.686 0 1.233-.376 1.723-.902c1.004-1.076-.644-1.936-1.273-2.357a4.29 4.29 0 0 0-4.82 0M20 12.5a2 2 0 1 1-4 0a2 2 0 0 1 4 0M10 6h5m-5-3h8M7 9.5V14c0 .943 0 1.414-.293 1.707S5.943 16 5 16H4c-.943 0-1.414 0-1.707-.293S2 14.943 2 14v-2.5c0-.943 0-1.414.293-1.707S3.057 9.5 4 9.5zm0 0h5M6.5 5a2 2 0 1 1-4 0a2 2 0 0 1 4 0" color="#181818" />
                                     </svg>
-                                    Bcome Trainer
+                                    Become Trainer
                                 </a>
                                 <!-- Certification -->
                                 <a href="">
@@ -344,7 +345,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     NetPy Community
                                 </a>
                                 <!-- About -->
-                                <a href="">
+                                <a href="aboutus.php">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
                                         <path fill="#181818" d="M11 9h2V7h-2m1 13c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m-1 15h2v-6h-2z" />
                                     </svg>
@@ -357,7 +358,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <div class="list-2">
                                 <!-- Contact -->
                                 <h4>
-                                    Contact Us
+                                    <a href="contact.php">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 2048 2048" style="position: relative; top:-1px;">
+                                            <path fill="#000" d="M1330 1203q136 47 245 131t186 196t118 243t41 275h-128q0-164-58-304t-162-244t-243-161t-305-59q-107 0-206 27t-184 76t-155 119t-119 155t-77 185t-27 206H128q0-144 42-275t119-242t186-194t245-133q-78-42-140-102T475 969t-67-157t-24-172q0-133 50-249t137-204T774 50t250-50q133 0 249 50t204 137t137 203t50 250q0 88-23 171t-67 156t-105 133t-139 103M512 640q0 106 40 199t110 162t163 110t199 41t199-40t162-110t110-163t41-199t-40-199t-110-162t-163-110t-199-41t-199 40t-162 110t-110 163t-41 199" />
+                                        </svg>
+                                        Contact Us
+                                    </a>
                                 </h4>
                                 <div class="container">
                                     <!-- Linkedin -->
@@ -414,29 +420,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </li>
 
 
-                    <a href="community.php" class="join-btn-small">Join Community</a>
+                    <a href="https://www.netpyconcepts.in/" target="_blank" class="join-btn-small">Join Community</a>
                 </ul>
-                <a href="community.php" class="join-btn-large">Join Community</a>
+                <a href="https://www.netpyconcepts.in/" target="_blank" class="join-btn-large">Join Community</a>
             </div>
         </nav>
     </header>
 
 
-<!--=====================    about us   ===========================-->
-<!--===================== about us section1 ======================-->
+    <!--=====================    about us   ===========================-->
+    <!--===================== about us section1 ======================-->
     <section class="section1-about-us">
         <img src="images/aboutus/section-1/ntt.png" alt="NetPy Technologies" class="background-img">
-   
+
         <div class="hero-content">
             <h1>All about NetPy Technologies</h1>
             <p>
-                In today’s fast-paced world, innovation is the key to staying ahead—and at 
-                NetPy Technologies, we’re all about driving that innovation. As a 
-                startup born out of a passion to solve real-world problems and empower 
-                businesses through cutting-edge solutions, we are excited to introduce 
+                In today’s fast-paced world, innovation is the key to staying ahead—and at
+                NetPy Technologies, we’re all about driving that innovation. As a
+                startup born out of a passion to solve real-world problems and empower
+                businesses through cutting-edge solutions, we are excited to introduce
                 ourselves and share our journey with you.
             </p>
-            <a href="#" class="btn learn-more">Learn More</a>
+            <a href="contact.php" class="btn learn-more">Learn More</a>
         </div>
     </section>
 
@@ -444,106 +450,106 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <section class="section2-who-we-are">
         <h2>Who we are?</h2>
         <p>
-            At NetPy Technologies, we are more than just an IT solutions provider—we are 
-            a forward-thinking organization dedicated to empowering businesses, students, 
-            and communities through technology and innovation. Founded with a vision to 
-            simplify complex technological challenges, we strive to create solutions that 
+            At NetPy Technologies, we are more than just an IT solutions provider—we are
+            a forward-thinking organization dedicated to empowering businesses, students,
+            and communities through technology and innovation. Founded with a vision to
+            simplify complex technological challenges, we strive to create solutions that
             are not only impactful but also accessible.
         </p>
     </section>
 
-<!--===================== about us section-3 ======================-->
-<section class="section3-ecosystem">
-    <div class="container">
-        <h2>Our Ecosystem of Growth</h2>
-        <p>
-            At the heart of NetPy Technologies lies a commitment to fostering growth—not just for businesses
-            but for people. We are proud to build an ecosystem that combines cutting-edge IT solutions with
-            initiatives designed to inspire and nurture talent across all age groups.
-        </p>
-    
-        <h1>Our Efforts Include</h1>
-        <div class="efforts">
-        
-            <div class="effort">
-                <h3>Innovative Business Solutions</h3>
-                <p>
-                    Providing cutting-edge IT services, including Software development, UI/UX, and Cloud solutions tailored
-                    to meet the unique needs of businesses.
-                </p>
-            </div>
-            <div class="effort">
-                <h3>Mentorship to Internship Program</h3>
-                <p>
-                    Guiding aspiring minds through tailored mentorship programs that bridge the gap between academics and
-                    industry, preparing them for successful careers.
-                </p>
-            </div>
-            <div class="effort">
-                <h3>Skill Development for College Students</h3>
-                <p>
-                    Equipping the next generation of professionals with critical technical and soft skills to excel in a
-                    competitive world.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--===================== about us section-4 ======================-->
-<section class="section4-empowering-kids">
-    <div class="content">
-        <div class="text">
-            <h2>Empowering Kids <br> (8+ years)</h2>
+    <!--===================== about us section-3 ======================-->
+    <section class="section3-ecosystem">
+        <div class="container">
+            <h2>Our Ecosystem of Growth</h2>
             <p>
-                At NetPy Technologies, we believe in starting early when it comes to fostering innovation and creativity. Our mission to build a thriving ecosystem of growth extends beyond college students and professionals—we are equally dedicated to inspiring young minds. That’s why we’ve introduced specialized programs for school children, alongside our initiatives for older students.
+                At the heart of NetPy Technologies lies a commitment to fostering growth—not just for businesses
+                but for people. We are proud to build an ecosystem that combines cutting-edge IT solutions with
+                initiatives designed to inspire and nurture talent across all age groups.
             </p>
-        </div>
-        <div class="image-grid">
-            <!-- First Column Images -->
-            <div class="image-item">
-                <img src="images/aboutus/section-4/mentorship.png" alt="Skill Development">
-                <div class="overlay">Skill development <br> and Mentorship for <br> students</div>
-            </div>
-            <div class="image-item">
-                <img src="images/aboutus/section-4/logical thinking.png" alt="Technology and Creativity">
-                <div class="overlay">Develop logical thinking and problem-solving abilities in a fun, interactive way</div>
-            </div>
 
-            <!-- Second Column Images -->
-            <div class="image-item">
-                <img src="images/aboutus/section-4/cretivity.png" alt="Group Learning">
-                <div class="overlay">Spark curiosity and creativity in young learners</div>
-            </div>
-            <div class="image-item">
-                <img src="images/aboutus/section-4/tech foundations.png" alt="Creative Thinking">
-                <div class="overlay">Tech foundational skill in Robotics, IOT, Coding, and AI technology</div>
-            </div>
-            <div class="image-item">
-                <img src="images/aboutus/section-4/iot.png" alt="Building Robots">
-                <div class="overlay">
-                    Children get to build their own robots, explore how IoT connects devices, and learn the basics of coding—all while enjoying a supportive and engaging learning environment.
+            <h1>Our Efforts Include</h1>
+            <div class="efforts">
+
+                <div class="effort">
+                    <h3>Innovative Business Solutions</h3>
+                    <p>
+                        Providing cutting-edge IT services, including Software development, UI/UX, and Cloud solutions tailored
+                        to meet the unique needs of businesses.
+                    </p>
+                </div>
+                <div class="effort">
+                    <h3>Mentorship to Internship Program</h3>
+                    <p>
+                        Guiding aspiring minds through tailored mentorship programs that bridge the gap between academics and
+                        industry, preparing them for successful careers.
+                    </p>
+                </div>
+                <div class="effort">
+                    <h3>Skill Development for College Students</h3>
+                    <p>
+                        Equipping the next generation of professionals with critical technical and soft skills to excel in a
+                        competitive world.
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!--=====================aboutus section 5 =======================-->
-<section class="section5-whats-next">
-    <div class="content">
-        <h2>What’s Next?</h2>
-        <p>
-            Our approach is built on innovation, collaboration, and a deep understanding of the challenges our clients and community face. Whether we’re helping a business navigate digital transformation or inspiring a child to build their first robot, our focus remains on delivering value and driving progress.
-        </p>
-        <p>
-            At NetPy Technologies, we believe that technology is more than just a tool—it’s a catalyst for growth, a bridge to new opportunities, and a means to empower people and businesses alike. Together, let’s shape a future where technology and talent work hand in hand to create a better tomorrow.
-        </p>
-    </div>
-</section>
+    <!--===================== about us section-4 ======================-->
+    <section class="section4-empowering-kids">
+        <div class="content">
+            <div class="text">
+                <h2>Empowering Kids <br> (8+ years)</h2>
+                <p>
+                    At NetPy Technologies, we believe in starting early when it comes to fostering innovation and creativity. Our mission to build a thriving ecosystem of growth extends beyond college students and professionals—we are equally dedicated to inspiring young minds. That’s why we’ve introduced specialized programs for school children, alongside our initiatives for older students.
+                </p>
+            </div>
+            <div class="image-grid">
+                <!-- First Column Images -->
+                <div class="image-item">
+                    <img src="images/aboutus/section-4/mentorship.png" alt="Skill Development">
+                    <div class="overlay">Skill development <br> and Mentorship for <br> students</div>
+                </div>
+                <div class="image-item">
+                    <img src="images/aboutus/section-4/logical thinking.png" alt="Technology and Creativity">
+                    <div class="overlay">Develop logical thinking and problem-solving abilities in a fun, interactive way</div>
+                </div>
 
-<!--===================== aboutus section 6 =======================-->
-<section class="footer-container">
+                <!-- Second Column Images -->
+                <div class="image-item">
+                    <img src="images/aboutus/section-4/cretivity.png" alt="Group Learning">
+                    <div class="overlay">Spark curiosity and creativity in young learners</div>
+                </div>
+                <div class="image-item">
+                    <img src="images/aboutus/section-4/tech foundations.png" alt="Creative Thinking">
+                    <div class="overlay">Tech foundational skill in Robotics, IOT, Coding, and AI technology</div>
+                </div>
+                <div class="image-item">
+                    <img src="images/aboutus/section-4/iot.png" alt="Building Robots">
+                    <div class="overlay">
+                        Children get to build their own robots, explore how IoT connects devices, and learn the basics of coding—all while enjoying a supportive and engaging learning environment.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=====================aboutus section 5 =======================-->
+    <section class="section5-whats-next">
+        <div class="content">
+            <h2>What’s Next?</h2>
+            <p>
+                Our approach is built on innovation, collaboration, and a deep understanding of the challenges our clients and community face. Whether we’re helping a business navigate digital transformation or inspiring a child to build their first robot, our focus remains on delivering value and driving progress.
+            </p>
+            <p>
+                At NetPy Technologies, we believe that technology is more than just a tool—it’s a catalyst for growth, a bridge to new opportunities, and a means to empower people and businesses alike. Together, let’s shape a future where technology and talent work hand in hand to create a better tomorrow.
+            </p>
+        </div>
+    </section>
+
+    <!--===================== aboutus section 6 =======================-->
+    <section class="footer-container">
         <footer class="footer">
             <p class="footer-heading">Let there be <span>INNOVATION</span></p>
 
@@ -625,4 +631,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <script src="js/top-scroller.js"></script>
 
 </body>
+
 </html>

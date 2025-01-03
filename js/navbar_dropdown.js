@@ -6,16 +6,16 @@ const secondColumnContent = {
       "Cloud & Computing"
     ],
     netpyAcademy: [
-      "Software Development Academy",
-      "UI/UX Design Academy",
-      "Quality Analysis Academy",
-      "Cloud & Computing Academy"
+      "Mentorship to internship program",
+      "Training & Certification",
+      "Robotics | IOT | AI | Coding",
+      "Events & Webinars",
+      "Learning resources & Assets"
     ],
     netpyKidz: [
-      "Software Development Kidz",
-      "UI/UX Design Kidz",
-      "Quality Analysis Kidz",
-      "Cloud & Computing Kidz"
+      "Avishkaar",
+      "Robotics",
+      "IOT | AI | Coding"
     ]
   };
   
@@ -38,6 +38,9 @@ const secondColumnContent = {
     const secondColumn = document.getElementById("secondColumn");
     const subcategories = secondColumnContent[type];
   
+    // Update data-active attribute on columns container
+    document.querySelector('.columns-container').setAttribute('data-active', type);
+  
     // Clear second column
     secondColumn.innerHTML = "";
   
@@ -55,7 +58,10 @@ const secondColumnContent = {
         if (window.innerWidth > 768) { // Desktop: Hover behavior
           document.querySelectorAll(".subcategory-hover").forEach(item => item.classList.remove("active"));
           subcategoryItem.classList.add("active");
-          updateThirdColumn(subcategory);
+          // Only update third column for NetPy Tech
+          if (type === "netpyTech") {
+            updateThirdColumn(subcategory);
+          }
         }
       });
   
@@ -63,12 +69,17 @@ const secondColumnContent = {
       subcategoryItem.addEventListener("click", () => {
         document.querySelectorAll(".subcategory-hover").forEach(item => item.classList.remove("active"));
         subcategoryItem.classList.add("active");
-        updateThirdColumn(subcategory);
+        // Only update third column for NetPy Tech
+        if (type === "netpyTech") {
+          updateThirdColumn(subcategory);
+        }
       });
     });
   
-    // Update third column with the first subcategory content
-    updateThirdColumn(subcategories[0]);
+    // Update third column with the first subcategory content only for NetPy Tech
+    if (type === "netpyTech") {
+      updateThirdColumn(subcategories[0]);
+    }
   }
   
   function updateThirdColumn(title) {

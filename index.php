@@ -492,8 +492,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
                         <path fill="none" stroke="#0e47a1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.50" d="m12 22l-2-6H2l2 6zm0 0h4m-4-9v-.5c0-1.886 0-2.828-.586-3.414S9.886 8.5 8 8.5s-2.828 0-3.414.586S4 10.614 4 12.5v.5m15 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0m-9-9a2 2 0 1 1-4 0a2 2 0 0 1 4 0m4 13.5h6a2 2 0 0 1 2 2v.5a2 2 0 0 1-2 2h-1" color="#0e47a1" />
                     </svg>
-                    <h2 class="service-title">Mentorship to Internship Program</h2>
-                    <p class="service-description">Guiding aspiring minds through tailored mentorship programs that bridge the gap between academics and industry, preparing them for successful careers.</p>
+                    <h2 class="service-title">Empowering Kids</h2>
+                    <p class="service-description"><br> Introducing young learners to the exciting world of Robotics, IoT, and Artificial Intelligence in collaboration with Avishkar and STEM.org</p>
                     <a href="#" class="service-link">
                         <img src="images/landing_page/section-2/arrow-black.png" class="arrow-black" alt="Arrow">
                         <img src="images/landing_page/section-2/arrow-white.png" class="arrow-white" alt="Arrow">
@@ -508,9 +508,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.765 8.413v-4.1m18.46 4.1l-.01-4.1M9.94 15.588h4.1m-6.16-4.613L8.903 9.95l1.025 1.025m4.102 0l1.025-1.025l1.024 1.025" />
                         </g>
                     </svg>
-                    <h2 class="service-title">Empowering Kids</h2>
+                    <h2 class="service-title">Mentorship to 
+                    Internship</h2>
                     <p class="service-description">
-                        Introducing young learners to the exciting world of Robotics, IoT, and Artificial Intelligence in collaboration with Avishkar and STEM.org
+                    Guiding aspiring minds through tailored mentorship programs that bridge the gap between academics and industry, preparing them for successful careers.
                     </p>
                     <a href="https://robo.netpy.in/" target="_blank" class="service-link">
                         <img src="images/landing_page/section-2/arrow-black.png" class="arrow-black" alt="Arrow">
@@ -606,8 +607,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                         </svg>
                     </div>
-                    <h2>Grounded</h2>
-                    <p>We remain firmly anchored in our principles and stay true to our mission, no matter the challenges. Our grounded approach ensures that we provide solutions that are both practical and effective, helping our clients achieve lasting success.</p>
+                    <h2>We are grounded</h2>
+                    <p>Our approach is practical and focused, staying rooted in real-world solutions that meet your unique needs.</p>
                 </div>
 
                 <!-- Value Card 2 -->
@@ -620,8 +621,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                         </svg>
                     </div>
-                    <h2>Good Listener</h2>
-                    <p>We believe that listening is key to understanding. By taking the time to truly listen to our clients and partners, we gain deeper insights into their needs and goals, allowing us to tailor our solutions to best support their objectives.</p>
+                    <h2>We listen to you carefully</h2>
+                    <p>Your voice guides us—every project begins with a deep commitment to understanding your vision and goals.</p>
                 </div>
 
                 <!-- Value Card 3 -->
@@ -632,8 +633,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
                         </svg>
                     </div>
-                    <h2>Understanding Needs</h2>
-                    <p>Understanding the unique needs of each client is at the heart of everything we do. We take a personalized approach, ensuring that the solutions we deliver are aligned with each client’s specific challenges and aspirations.</p>
+                    <h2>We understand your need</h2>
+                    <p>We believe technology should serve you—our designs are intuitive and human-centered, crafted to simplify your life.</p>
                 </div>
 
                 <!-- Value Card 4 -->
@@ -643,8 +644,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <path fill="#0D47A1" d="M6.813 2.406L5.405 3.812L7.5 5.906L8.906 4.5zm18.375 0L23.093 4.5L24.5 5.906l2.094-2.093zM16 3.03q-.495.004-1 .064h-.03c-4.056.465-7.284 3.742-7.845 7.78c-.448 3.25.892 6.197 3.125 8.095a5.24 5.24 0 0 1 1.75 3.03v6h2.28c.348.597.983 1 1.72 1s1.372-.403 1.72-1H20v-4h.094v-1.188c0-1.466.762-2.944 2-4.093C23.75 17.06 25 14.705 25 12c0-4.94-4.066-9.016-9-8.97m0 2c3.865-.054 7 3.11 7 6.97c0 2.094-.97 3.938-2.313 5.28l.032.032A7.8 7.8 0 0 0 18.279 22h-4.374c-.22-1.714-.955-3.373-2.344-4.563c-1.767-1.5-2.82-3.76-2.468-6.312c.437-3.15 2.993-5.683 6.125-6.03a7 7 0 0 1 .78-.064zM2 12v2h3v-2zm25 0v2h3v-2zM7.5 20.094l-2.094 2.093l1.407 1.407L8.905 21.5zm17 0L23.094 21.5l2.093 2.094l1.407-1.407zM14 24h4v2h-4z" />
                         </svg>
                     </div>
-                    <h2>Innovation</h2>
-                    <p>Innovation is not just a buzzword for us; it’s a mindset. We constantly seek new ways to solve problems, improve processes, and drive progress. Our commitment to innovation ensures that we are always ahead of the curve, offering cutting-edge solutions that meet the demands of an ever-changing landscape.</p>
+                    <h2>We innovate with purpose</h2>
+                    <p>Our approach is practical and focused, staying rooted in real-world solutions that meet your unique needs.</p>
                 </div>
 
                 <!-- Value Card 5 -->
@@ -655,8 +656,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <path fill="#0D47A1" d="M20.733 4.657a.997.997 0 0 0-1.399.009a.997.997 0 0 0 .01-1.4A6.47 6.47 0 0 0 15.5 2A6.5 6.5 0 0 0 9 8.5l.031.379c-.337.239-2.893 2.147-4.258 3.301C3.638 13.17 3 14.555 3 16c0 2.757 2.243 5 5 5c1.465 0 2.854-.65 3.811-1.784c1.173-1.375 3.08-3.923 3.317-4.229L15.5 15A6.5 6.5 0 0 0 22 8.5c0-1.44-.474-2.766-1.267-3.843M8 19a3 3 0 0 1-3-3c0-.92.423-1.732 1.064-2.292c2.368-2.002 3.617-2.748 5.115-4.015A4.5 4.5 0 0 1 11 8.5A4.5 4.5 0 0 1 15.5 4c.47 0 .914.092 1.339.226L14 7l.5 2.5l2.5.5l2.805-2.741c.115.396.195.807.195 1.241a4.5 4.5 0 0 1-4.5 4.5c-.416 0-.811-.074-1.193-.18c-1.267 1.498-2.013 2.748-4.024 5.105A2.98 2.98 0 0 1 8 19M19.384 6.271l-2.705 2.645l-1.329-.266l-.263-1.314l2.726-2.663c.651.393 1.19.939 1.571 1.598" />
                         </svg>
                     </div>
-                    <h2>Relations</h2>
-                    <p>Building lasting relationships is a key priority. We see our clients as long-term partners, and we believe that trust and collaboration are essential to the success of any project. Our focus on relationships helps us create stronger, more meaningful outcomes.</p>
+                    <h2>We build relationships, not just projects</h2>
+                    <p>Every interaction is an opportunity to understand your business better.</p>
                 </div>
 
                 <!-- Value Card 6 -->
@@ -666,8 +667,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <path fill="#0D47A1" d="M2 13.5C2 7.701 6.701 3 12.5 3S23 7.701 23 13.5S18.3 24 12.5 24c-1.686 0-3.281-.398-4.695-1.106L3.89 23.943a1.5 1.5 0 0 1-1.837-1.837l1.05-3.918A10.4 10.4 0 0 1 2 13.5m10.5 12q1-.001 1.955-.158A8.46 8.46 0 0 0 19.5 27c1.486 0 2.88-.38 4.094-1.049a1 1 0 0 1 .741-.09l3.456.926l-.926-3.458a1 1 0 0 1 .09-.74A8.46 8.46 0 0 0 28 18.5a8.49 8.49 0 0 0-3.665-6.991a12 12 0 0 0-.787-2.7A10.5 10.5 0 0 1 30 18.5a10.5 10.5 0 0 1-1.102 4.688l1.05 3.918a1.5 1.5 0 0 1-1.838 1.837l-3.915-1.049A10.46 10.46 0 0 1 19.5 29c-3.124 0-5.93-1.364-7.853-3.53q.423.03.853.03" />
                         </svg>
                     </div>
-                    <h2>Client Satisfaction</h2>
-                    <p>Above all, we are dedicated to ensuring the success and satisfaction of our clients. By consistently delivering high-quality, reliable solutions and services, we ensure that every project is a success and that our clients are empowered to reach their full potential.</p>
+                    <h2>Your satisfaction drives us</h2>
+                    <p>From start to finish, we ensure each step aligns with your vision, putting your success at the heart of what we do.</p>
                 </div>
             </div>
         </div>
@@ -730,7 +731,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <img src="images/landing_page/section-5/section5_4_img.png" alt="Innovation Workshop">
                 </div>
                 <div class="content content-4">
-                    <h2>Innovative Approach <span>With NetPy</span></h2>
+                    <h2>Innovation and Adaptation <span>With NetPy </span></h2>
                     <p>We are always looking for new ways to solve problems and create value. Our commitment to innovation keeps us ahead of the curve, providing you with cutting-edge solutions.</p>
                     <a href="workflow.php" class="learn-more">Learn more</a>
                 </div>
